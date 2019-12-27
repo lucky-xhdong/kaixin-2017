@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+</head>
+<style>
+    .wrap li {
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+    }
+
+    .wrap li.active a {
+        color: #f00;
+    }
+</style>
+<body>
+<a href="javascript:;" class="btn-start">开始</a>
+
+<div class="wrap">
+    <ul>
+        <li class="item-0"><a href="javascript:;">0</a></li>
+        <li class="item-1"><a href="javascript:;">1</a></li>
+        <li class="item-2"><a href="javascript:;">2</a></li>
+        <li class="item-3"><a href="javascript:;">3</a></li>
+        <li class="item-4"><a href="javascript:;">4</a></li>
+        <li class="item-5"><a href="javascript:;">5</a></li>
+        <li class="item-6"><a href="javascript:;">6</a></li>
+        <li class="item-7"><a href="javascript:;">7</a></li>
+        <li class="item-8"><a href="javascript:;">8</a></li>
+        <li class="item-9"><a href="javascript:;">9</a></li>
+        <li class="item-10"><a href="javascript:;">10</a></li>
+        <li class="item-11"><a href="javascript:;">11</a></li>
+        <li class="item-12"><a href="javascript:;">12</a></li>
+        <li class="item-13"><a href="javascript:;">13</a></li>
+        <li class="item-14"><a href="javascript:;">14</a></li>
+        <li class="item-15"><a href="javascript:;">15</a></li>
+        <li class="item-16"><a href="javascript:;">16</a></li>
+        <li class="item-17"><a href="javascript:;">17</a></li>
+        <li class="item-18"><a href="javascript:;">18</a></li>
+        <li class="item-19"><a href="javascript:;">19</a></li>
+        <li class="item-20"><a href="javascript:;">20</a></li>
+        <li class="item-21"><a href="javascript:;">21</a></li>
+        <li class="item-22"><a href="javascript:;">22</a></li>
+    </ul>
+</div>
+<script src="js/111.js">
+
+
+</script>
+<script>
+//    (function ($) {
+//        var idx = 0;
+//        var num = Math.floor(Math.random() * 6 + 1);
+//        console.log(num)
+//        var Plugin = function (o, options) {
+//            this.o = o;
+//            this.options = $.extend({}, Plugin.options, options);
+//            this.number= this.options.number;
+//            this.index = this.options.index;
+//            this.timer = null;
+//            this.init();
+//        };
+//        Plugin.prototype = {
+//            init: function () {
+//                this.gridRoll(RichmanOpitons.number);
+//            },
+//            gridRoll: function (number) {
+//                console.log(idx+'=='+num);
+//                var _this = this;
+//                this.index = RichmanOpitons.index + RichmanOpitons.number;
+//                function rotate(){
+//                    $(".item-" + idx).addClass('active').siblings().removeClass('active');
+//                    idx++;
+//                    if(idx == _this.index) {
+//                        clearInterval(_this.timer);
+//                        idx = number;
+//                    }
+//                }
+//                clearInterval(this.timer);
+//                this.timer = setInterval(rotate, 500);
+//            }
+//        };
+//        $.fn.Plugin = function (options) {
+//            options = $.extend({}, $.fn.Plugin.options, options);
+//            this.each(function () {
+//                new Plugin($(this), options);
+//            })
+//        };
+//        Plugin.options = {
+//            number: 0,
+//            index: 0
+//        }
+//    })(jQuery);
+//    $(document).ready(function(){
+//        $(".btn-start").on('click', function () {
+//            $(".wrap").Plugin({
+//                number: 2
+//            });
+//        })
+//    })
+</script>
+</body>
+</html>

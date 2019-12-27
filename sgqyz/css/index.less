@@ -1,0 +1,1731 @@
+.topBar {
+  position: relative;
+  z-index: 11;
+}
+
+.topBar .logoC {
+  height: 35px;
+}
+.topBar .inner {
+  width: 1160px;
+  height: 35px;
+}
+.friend-links, .footer {
+  width: 1200px;
+}
+.friend-links {
+  margin:0 auto;
+}
+.sgqyz-footer {
+  position: relative;
+  z-index:11;
+  padding-top: 30px;
+  background-color: #e3e3e3;
+}
+.sgqyz-home-body {
+  background: #000 url("../images/bg-body-01.jpg") no-repeat;
+  background-position: center 718px;
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+    height: 300px;
+  }
+  .sgqyz-home-container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 354px;
+    padding-bottom: 20px;;
+    z-index: 2;
+    .sgqyz-moudle-01 {
+      padding-top: 186px;
+      font-size: 0;
+      .moudle-01-left,
+      .moudle-01-right {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0;
+      }
+      .moudle-01-left {
+        margin-left: -4px;
+        .bg-start-lg {
+          display: block;
+          width: 307px;
+          height: 144px;
+          font-size: 0;
+          background: url("../images/btn-start-lg.png") no-repeat;
+        }
+      }
+      .moudle-01-right {
+        font-size: 0;
+        .server-lists, .btn-more {
+          display: inline-block;
+          vertical-align: bottom;
+        }
+        .server-lists {
+          height: 92px;
+          padding-left: 6px;
+          .top {
+            position: relative;
+            padding: 5px 102px;
+            border-bottom: 1px solid #afafaf;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              width: 81px;
+              height: 18px;
+              font-size: 0;
+              top: 50%;
+              margin-top: -9px;
+              left: 0;
+              background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+              background-position: -227px -455px;
+            }
+            input, a {
+              height:19px;
+              display: inline-block;
+              vertical-align: middle;
+              font-family: 'SimHei';
+              font-size: 14px;
+            }
+            input {
+              width:32px;
+              padding: 5px 2px;
+              color: #404147;
+              background-color: #afafaf;
+              &:focus {
+                outline: none;
+              }
+            }
+            a {
+              color: #fff;
+              letter-spacing: -1px;
+              width: 58px;
+              text-align: center;;
+              padding: 2px 1px;
+              background-color: #963000;
+              margin-left: 22px;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+          .bottom {
+            ul {
+              display: inline-block;
+              vertical-align: middle;
+              width: 760px;
+              margin-left: 49px;
+              &:first-child {
+                margin-left: 0;
+              }
+              li {
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                border-bottom: 1px dashed #afafaf;
+                padding-left: 27px;
+                margin-left: 56px;
+                width: 216px;
+                &:before {
+                  content: '';
+                  position: absolute;
+                  width: 11px;
+                  height: 12px;
+                  left: 7px;
+                  top: 50%;
+                  margin-top: -6px;
+                  background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                  background-position: -178px -252px;
+                }
+                &:first-child,
+                &:nth-child(3n+1){
+                  margin-left: 0;
+                }
+                a {
+                  font: 15px 'SimHei';
+                  color: #afafaf;
+                  display: block;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  line-height: 28px;
+                  &:hover {
+                    color: #e94d00;
+                  }
+                  span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:first-child {
+                      padding-right: 20px;
+                    }
+                    &:first-child + span {
+                      padding-right: 19px;
+                    }
+                  }
+                  em {
+                    font-style: normal;
+                    position: absolute;
+                    right: -18px;
+                    top: 8px;
+                    border: 1px solid #bd9d60;
+                    color: #bd9d60;
+                    font-weight: bold;
+                    line-height: normal;
+                    padding: 0 1px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btn-more {
+          width: 88px;
+          height: 62px;
+          margin-left: 42px;
+          background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+          background-position: -219px -252px;
+          &:hover {
+            background-position: -219px -316px;
+          }
+        }
+      }
+    }
+    .sgqyz-moudle-02 {
+      position: relative;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+      .left, .center, .right {
+        float: left;
+      }
+      .left {
+        width: 299px;
+      }
+      .center {
+        width: 632px;
+        .bxslider {
+          overflow: hidden;
+          position: relative;
+          height: 250px;
+          ul {
+            position: absolute;
+            li {
+              float: left;
+              height: 250px;
+            }
+          }
+        }
+        .fs-carousel-pager {
+          position: absolute;
+          height: 8px;
+          left: 0;
+          right: 0;
+          bottom: 10px;
+          ul {
+            height: 8px;
+            font-size: 0;
+            text-align: right;
+            padding: 0 18px;
+            position: relative;
+            li {
+              float: none;
+              display: inline-block;
+              vertical-align: middle;
+              width: 8px;
+              height: 8px;
+              background-color: #8d8a89;
+              border-radius: 50%;
+              margin-right: 5px;
+              -webkit-transition: all .3s ease .2s;
+              -moz-transition: all .3s ease .2s;
+              -ms-transition: all .3s ease .2s;
+              -o-transition: all .3s ease .2s;
+              transition: all .3s ease .2s;
+              a {
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+              }
+              &:hover,
+              &.active {
+                width: 13px;
+                border-radius: 8px;
+                background-color: #fbe0d0;
+                a {
+                  width: 13px;
+                  border-radius: 8px;
+                }
+              }
+            }
+          }
+        }
+        .bx-controls-direction {
+          display: none;
+        }
+        .news-lists {
+          padding-left: 22px;
+          padding-right: 22px;
+          padding-bottom: 10px;
+          width: 632px;
+          height: 270px;
+          background-color: #202020;
+          nav {
+            border-bottom: 2px solid #56565e;
+            &:after {
+              content: '';
+              display: table;
+              width: 100%;
+              clear: both;
+            }
+            .more {
+              float: right;
+              width: 18px;
+              height: 17px;
+              font-size: 0;
+              margin: 13px 0 12px 0;
+              text-decoration: none;
+              background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+              background-position: -198px -252px;
+              &:hover {
+                background-position: -198px -271px;
+              }
+            }
+            ul {
+              font-size: 0;
+              li {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                height: 42px;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  left: 50%;
+                  height: 2px;
+                  right: 50%;
+                  bottom: -2px;
+                  background-color: #bd9d60;
+                  -webkit-transition: all .2s ease .2s;
+                  -moz-transition: all .2s ease .2s;
+                  -ms-transition: all .2s ease .2s;
+                  -o-transition: all .2s ease .2s;
+                  transition: all .2s ease .2s;
+                }
+                a {
+                  font: 17px SimHei;
+                  color: #888d94;
+                  display: block;
+                  padding: 11px 36px;
+                }
+                &:hover,
+                &.active {
+                  &:after {
+                    left: 0;
+                    right: 0;
+                  }
+                  a {
+                    color: #eae6e7;
+                  }
+                }
+              }
+            }
+          }
+          .con {
+            .multiple-wrapper,
+            .new-wrapper,
+            .activity-wrapper,
+            .gonglue-wrapper,
+            .media-wrapper {
+              ul {
+                li {
+                  border-bottom: 1px dashed #687486;
+                  &:before, &:after {
+                    font: 14px SimHei;
+                    line-height: 35px;
+                  }
+                  &:before {
+                    content: attr(data-before);
+                    color: #b2b3b6;
+                    display: inline-block;
+                    vertical-align: middle;
+                  }
+                  &:after {
+                    content: attr(data-after);
+                    color: #cacbc9;
+                    float: right;
+                  }
+                  a {
+                    font: 14px SimHei;
+                    color: #a77223;
+                    line-height: 33px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    max-width: 530px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    -webkit-transition: all .1s ease .2s;
+                    -moz-transition: all .1s ease .2s;
+                    -ms-transition: all .1s ease .2s;
+                    -o-transition: all .1s ease .2s;
+                    transition: all .1s ease .2s;
+                  }
+                  &:first-child {
+                    a {
+                      color: #f00;
+                    }
+                  }
+                  &:first-child + li,
+                  &:first-child + li + li {
+                    a {
+                      color: #ff0;
+                    }
+                  }
+                  &:hover {
+                    a {
+                      color: #d4b158 !important;
+                      font: 15px SimHei;
+                    }
+                  }
+                }
+              }
+            }
+            .new-wrapper,
+            .activity-wrapper,
+            .gonglue-wrapper,
+            .media-wrapper {
+              display: none;
+            }
+          }
+        }
+      }
+      .right {
+        width: 269px;
+        .news-headlines {
+          height: 252px;
+          padding: 12px 15px 10px 15px;
+          background-color: #202020;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 249px;
+            right:0;
+            top: 3px;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            background-position: -215px 0;
+          }
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          h2 {
+            font: 18px 'SimHei';
+            color: #cecece;
+            padding: 8px 9px 10px 9px;
+            margin: 0;
+            border-bottom: 1px solid #434349;
+            &:after {
+              content: attr(data-after);
+              font: 12px 'SimHei';
+              color: #52535b;
+              display: inline-block;
+              vertical-align: bottom;
+              padding-left: 7px;
+              text-transform: uppercase;
+            }
+          }
+          .content {
+            position: relative;
+            z-index: 1;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              font: 17px SimHei;
+              color: #b9954a;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              padding-top: 10px;
+              padding-bottom: 6px;
+            }
+            p {
+              &:first-child {
+                text-indent: 20px;
+              }
+              margin: 0;
+              font: 13px 'SimHei';
+              line-height: 20px;
+              letter-spacing: -1px;
+              color: #9ca0a3;
+            }
+          }
+          .view-wrapper {
+            float: right;
+            margin-top: 8px;
+            position: relative;
+            overflow: hidden;
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              transition: all 0.4s ease .1s;
+              z-index: 1;
+            }
+            &:before {
+              width: 100%;
+              height: 1px;
+              top: 0;
+              left: 0;
+              background-color: #d7d7d7;
+              -webkit-transform: translateX(-100%);
+              -moz-transform: translateX(-100%);
+              -ms-transform: translateX(-100%);
+              -o-transform: translateX(-100%);
+              transform: translateX(-100%);
+            }
+            &:after {
+              width: 1px;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-color: #d7d7d7;
+              -webkit-transform: translateY(-100%);
+              -moz-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+              -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+            }
+            a {
+              display: block;
+              padding: 3px;
+              border: 1px solid #d7d7d7;
+              font: 15px SimHei;
+              color: #d7d7d7;
+              position: relative;
+              &:hover {
+                color: #b9954a;
+              }
+              &:before, &:after {
+                content: '';
+                position: absolute;
+                transition: all 0.4s ease 0s;
+                z-index: 1;
+              }
+              &:before {
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -1px;
+                background-color: #d7d7d7;
+                -webkit-transform: translateX(-100%);
+                -moz-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                -o-transform: translateX(-100%);
+                transform: translateX(-100%);
+              }
+              &:after {
+                width: 1px;
+                height: 100%;
+                top: 0;
+                right: -1px;
+                background-color: #d7d7d7;
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+              }
+            }
+            &:hover {
+              &:before, &:after {
+                background-color: #b9954a;
+              }
+              &:before {
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+              }
+              &:after {
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                transform: translateY(0);
+              }
+              a {
+                &:before, &:after {
+                  background-color: #b9954a;
+                }
+                &:before {
+                  -webkit-transform: translateX(0);
+                  -moz-transform: translateX(0);
+                  -ms-transform: translateX(0);
+                  -o-transform: translateX(0);
+                  transform: translateX(0);
+                }
+                &:after {
+                  -webkit-transform: translateY(0);
+                  -moz-transform: translateY(0);
+                  -ms-transform: translateY(0);
+                  -o-transform: translateY(0);
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+        }
+        .game-resources {
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right:0;
+            bottom:0;
+            z-index: 1;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            background-position: -188px -25px;
+          }
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          .getting-started,
+          .characteristic-system {
+            background-color: #2d2d2d;
+          }
+          .system-introduction,
+          .master-advanced {
+            background-color: #383838;
+          }
+          .system-introduction,
+          .characteristic-system {
+            width: 134px;
+          }
+          .getting-started,
+          .master-advanced {
+            width: 135px;
+          }
+          .getting-started,
+          .system-introduction,
+          .master-advanced,
+          .characteristic-system {
+
+          }
+          .getting-started,
+          .system-introduction,
+          .master-advanced,
+          .characteristic-system {
+            float: left;
+            position: relative;
+            height: 134px;
+            figure, .lists {
+              position: absolute;
+            }
+            figure {
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              opacity: 1;
+              margin:0;
+              -webkit-transition: all .4s ease .2s;
+              -moz-transition: all .4s ease .2s;
+              -ms-transition: all .4s ease .2s;
+              -o-transition: all .4s ease .2s;
+              transition: all .4s ease .2s;
+              a, i {
+                display: block;
+              }
+              a {
+                font: 20px 'SimHei';
+                line-height: 22px;
+                color: #b49453;
+                margin-top: 18px;
+                &:after {
+                  content: attr(data-after);
+                  display: block;
+                  text-align: center;
+                  font: 12px SimHei;
+                  line-height: 16px;
+                  padding-top: 5px;
+                  color: #8d8d8d;
+                  text-transform: uppercase;
+                  letter-spacing: -1px;
+                }
+              }
+              i {
+                width: 45px;
+                height: 42px;
+                position: absolute;
+                left: 50%;
+                bottom:18px;
+                margin-left: -22px;
+                font-size: 0;
+                background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+              }
+            }
+          }
+          .getting-started,
+          .system-introduction,
+          .master-advanced,
+          .characteristic-system {
+            .lists {
+              position: relative;
+              opacity: 0;
+              padding: 22px 0;
+              -webkit-transition: all .4s ease .2s;
+              -moz-transition: all .4s ease .2s;
+              -ms-transition: all .4s ease .2s;
+              -o-transition: all .4s ease .2s;
+              transition: all .4s ease .2s;
+              -webkit-transform: rotateY(180deg);
+              -moz-transform: rotateY(180deg);
+              -ms-transform: rotateY(180deg);
+              -o-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+              &:after {
+                content: '';
+                position: absolute;
+                width: 87px;
+                height: 14px;
+                top: 4px;
+                left:50%;
+                margin-left: -44px;
+                background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                background-position: -31px -36px;
+              }
+              ul {
+                li {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 62px;
+                  color: #d4b158;
+                  position: relative;
+                  padding-left: 5px;
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #d4b158;
+                    border-radius: 50%;
+                    top: 50%;
+                    margin-top: -2px;
+                    left: 2px;
+                  }
+                  a {
+                    font: 13px SimHei;
+                    line-height: 30px;
+                    color: #aaabac;
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:hover {
+                      color: #d4b158;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .getting-started,
+          .system-introduction,
+          .master-advanced,
+          .characteristic-system {
+            &:hover {
+              figure {
+                opacity: 0;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+              }
+              .lists {
+                opacity: 1;
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+              }
+            }
+          }
+          .getting-started {
+            .icon-getting-started {
+              background-position: 0 -456px;
+            }
+          }
+          .system-introduction {
+            .icon-system-introduction {
+              background-position: -47px -456px;
+            }
+          }
+          .master-advanced {
+            .icon-master-advanced {
+              background-position: -93px -456px;
+            }
+          }
+          .characteristic-system {
+            .icon-characteristic-system {
+              background-position: -139px -456px;
+            }
+          }
+        }
+      }
+    }
+    .sgqyz-moudle-03 {
+      position: relative;
+      height: 370px;
+      .avatar-wujiangku, .avatar-bingzhongku {
+        position: absolute;
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        top: 90px;
+        z-index: 11;
+        &:after {
+          content: attr(data-after);
+          display: block;
+          font: 20px 'SimHei';
+          color: #d4b158;
+          text-align: center;
+          padding-top: 10px;
+        }
+        a {
+          display: block;
+          position: relative;
+          width:113px;
+          height:113px;
+          font-size: 0;
+        }
+      }
+      .avatar-wujiangku {
+        left: 20px;
+        a {
+          background: url("../images/avatar-wujiangku.png") center center no-repeat;
+        }
+        &:hover, &.active {
+          a {
+            -webkit-animation: avatar 1.5s ease-in;
+            -moz-animation: avatar 1.5s ease-in;
+            -ms-animation: avatar 1.5s ease-in;
+            animation: avatar 1.5s ease-in;
+            background: url("../images/avatar-wujiangku-active.png") center center no-repeat;
+          }
+        }
+      }
+      .avatar-bingzhongku {
+        right: 20px;
+        a {
+          background: url("../images/avatar-bingzhongku.png") center center no-repeat;
+        }
+        &:hover, &.active {
+          a {
+            -webkit-animation: avatar 1.5s ease-in;
+            -moz-animation: avatar 1.5s ease-in;
+            -ms-animation: avatar 1.5s ease-in;
+            animation: avatar 1.5s ease-in;
+            background: url("../images/avatar-bingzhongku-active.png") center center no-repeat;
+          }
+        }
+      }
+      .wujiangku, .bingzhongku {
+        position: absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        .cascade-wujiangku {
+          position: relative;
+          padding-top: 38px;
+          width: 688px;
+          margin: 0 auto;
+          ul {
+            position: relative;
+            height: 335px;
+            overflow: hidden;
+            li {
+              position: absolute;
+              img {
+                max-width: 100%;
+              }
+              .total {
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                left: 0;
+                p {
+                  &.stars {
+                    span {
+                      display: block;
+                      width: 95px;
+                      height: 16px;
+                      margin: 0 auto;
+                      background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                      background-position: -97px -435px;
+                      i {
+                        display: block;
+                        height: 16px;
+                        font-size: 0;
+                        background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                        background-position: -192px -435px;
+                      }
+                    }
+                  }
+                  &.count {
+                    padding: 0 20px;
+                    margin-top: 4px;
+                    span {
+                      display: inline-block;
+                      vertical-align: middle;
+                      font: 16px 'arial';
+                      color: #fff;
+                      &.tong {
+                        margin-left: 28px;
+                      }
+                      &.wu {
+                        margin-left: 15px;
+                      }
+                      &.zhi {
+                        margin-left: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+              &.current {
+                .total {
+                  p {
+                    &.stars {
+                    }
+                    &.count {
+                      span {
+                        &.tong {
+                          margin-left: 38px;
+                        }
+                        &.wu {
+                          margin-left: 26px;
+                        }
+                        &.zhi {
+                          margin-left: 26px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .carousel-controls {
+            .btn-prev, .btn-next {
+              position: absolute;
+              width: 59px;
+              height: 106px;
+              top: 50%;
+              margin-top: -53px;
+              font-size: 0;
+              z-index: 11;
+              background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            }
+            .btn-prev {
+              left: -135px;
+              background-position: -87px -275px;
+              &:hover {
+                background-position: -190px -815px;
+              }
+            }
+            .btn-next {
+              right: -135px;
+              background-position: -139px -275px;
+              &:hover {
+                background-position: -249px -815px;
+              }
+            }
+          }
+        }
+      }
+      .wujiangku {
+        //display: none;
+        background: url("../images/bg-wujiangku.jpg") top center no-repeat;
+        .cascade-wujiangku {
+          ul {
+            li {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .bingzhongku {
+        display: none;
+        overflow: hidden;
+        background: url("../images/bg-bingzhongku.jpg") top center no-repeat;
+        .arms-nav {
+          width: 836px;
+          margin: 17px auto 0;
+          ul {
+            font-size: 0;
+            width: 400px;
+            background-color: #383838;;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              height: 32px;
+              a {
+                display: block;
+                font: 16px 'SimHei';
+                line-height: 32px;
+                padding: 0 34px;
+                color: #93938a;
+                position: relative;
+                &:before, &:after {
+                  content: '';
+                  position: absolute;
+                  width: 4px;
+                  height: 4px;
+                  background-color: #a8a89e;
+                  top: 50%;
+                  margin-top: -2px;
+                }
+                &:before {
+                  left: 17px;
+                }
+                &:after {
+                  right: 17px;
+                }
+              }
+              &:after {
+                content: '';
+                position: absolute;
+                height: 3px;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                background-color: #383838;
+                -webkit-transition: all .2s ease .2s;
+                -moz-transition: all .2s ease .2s;
+                -ms-transition: all .2s ease .2s;
+                -o-transition: all .2s ease .2s;
+                transition: all .2s ease .2s;
+              }
+              &:hover, &.active {
+                background-color: #372c1f;
+                &:after {
+                  left: 0;
+                  right: 0;
+                  background-color: #d4b158;
+                }
+                a {
+                  color: #d4b158;
+                  &:before, &:after {
+                    background-color: #e6d6a2;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .arms-switch {
+          width: 836px;
+          height: 320px;
+          position: relative;
+          margin: 0 auto;
+          .arms-bubing, .arms-gongbing, .arms-qibing, .arms-jixie {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            &:after {
+              content: '';
+              display: table;
+              width: 100%;
+              clear: both;
+            }
+            .slide-wrapper {
+              position: relative;
+              width: 836px;
+              height: 320px;
+              overflow: hidden;
+            }
+            ul {
+              position: absolute;
+              width:100%;
+              height: 320px;
+              top:0;
+              li {
+                width: 836px;
+                height: 320px;
+                float: left;
+              }
+            }
+            figure {
+              float: left;
+              a {
+                font-size: 0;
+                display: block;
+                margin: 0 auto;
+              }
+            }
+            .arms-abilities {
+              float: right;
+              width: 276px;
+              height: 269px;
+              margin-right: 64px;
+              position: relative;
+              &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: #353434;
+                opacity: .6;
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+              }
+              h2 {
+                position: relative;
+                z-index: 1;
+                font: 16px 'SimHei';
+                color: #fff;
+                text-align: center;
+                margin-top: 17px;
+                margin-bottom: 10px;
+                &:before, &:after {
+                  content: '';
+                  position: absolute;
+                  width: 11px;
+                  height: 10px;
+                  top: 50%;
+                  margin-top: -5px;
+                  background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                }
+                &:before {
+                  left: 66px;
+                  background-position: -198px -289px;
+                }
+                &:after {
+                  right: 66px;
+                  background-position: -198px -302px;
+                }
+              }
+              .start-lists {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                font-size: 0;
+                a {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 18px;
+                  height: 16px;
+                  background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                  background-position: -198px -314px;
+                }
+              }
+              .ability-lists {
+                position: relative;
+                z-index: 1;
+                padding: 0 20px;
+                .live, .attack, .defense {
+                  p {
+                    font: 14px 'SimHei';
+                    color: #cacaca;
+                    margin: 5px 0 8px;
+                    &:before {
+                      content: attr(data-before);
+                      color: #fff;
+                      font-size: 13px;
+                    }
+                  }
+                  .progress-bar {
+                    overflow: hidden;
+                    background-color: #323230;
+                    border: 1px solid #40331e;
+                    box-shadow: 0 0 5px #ffffbe;
+                    span {
+                      display: block;
+                      font-size: 0;
+                      height: 6px;
+                      position: relative;
+                      &:before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: #ebd059;
+                        -webkit-transition: all .2s ease .2s;
+                        -moz-transition: all .2s ease .2s;
+                        -ms-transition: all .2s ease .2s;
+                        -o-transition: all .2s ease .2s;
+                        transition: all .2s ease .2s;
+                        -webkit-animation: progressBar .4s linear .2s forwards;
+                        -moz-animation: progressBar .4s linear .2s forwards;
+                        -ms-animation: progressBar .4s linear .2s forwards;
+                        -o-animation: progressBar .4s linear .2s forwards;
+                        animation: progressBar .4s linear .2s forwards;
+                      }
+                    }
+                  }
+                }
+              }
+              .arms-lists {
+                position: relative;
+                z-index: 1;
+                margin-top: 10px;
+                p {
+                  font: 14px 'SimHei';
+                  color: #cacaca;
+                  position: relative;
+                  z-index: 1;
+                  margin: 0;
+                  padding: 4px 25px;
+                  &:before {
+                    content: attr(data-before);
+                    color: #fff;
+                    font-size: 13px;
+                  }
+                  &:first-child,
+                  &:first-child + p + p {
+                    background-color: #fff;
+                    &:after {
+                      content: '';
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      left: 0;
+                      top: 0;
+                      background-color: #545150;
+                      z-index: -1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .arms-bubing {
+            .jinweijun {
+              width: 183px;
+              height: 150px;
+              margin:130px 156px 40px 156px;
+              a {
+                width: 183px;
+                height: 150px;
+              }
+            }
+            .zhongjiajishi {
+              width: 152px;
+              height: 169px;
+              margin: 122px 172px 30px 172px;
+              a {
+                width: 152px;
+                height: 169px;
+              }
+            }
+            .zhongjiadaowei {
+              width: 161px;
+              height: 147px;
+              margin: 140px 167px 34px 167px;
+              a {
+                width: 161px;
+                height: 147px;
+              }
+            }
+            .zhongbubing {
+              width: 190px;
+              height: 139px;
+              margin: 150px 153px 32px 153px;
+              a {
+                width: 190px;
+                height: 139px;
+              }
+            }
+            .huangjinbing {
+              width: 120px;
+              height: 148px;
+              margin: 145px 187px 30px 187px;
+              a {
+                width: 120px;
+                height: 148px;
+              }
+            }
+          }
+          .arms-gongbing {
+            .tietaigongbing {
+              width: 106px;
+              height: 149px;
+              margin: 140px 195px 30px 195px;
+              a {
+                width: 106px;
+                height: 149px;
+              }
+            }
+            .jingruigongshou {
+              width: 157px;
+              height: 146px;
+              margin: 145px 168px 30px 168px;
+              a {
+                width: 157px;
+                height: 146px;
+              }
+            }
+            .yingnushou {
+              width: 96px;
+              height: 152px;
+              margin: 138px 200px 30px 200px;
+              a {
+                width: 96px;
+                height: 152px;
+              }
+            }
+            .qiangnushou {
+              width: 110px;
+              height: 141px;
+              margin: 150px 192px 30px 192px;
+              a {
+                width: 110px;
+                height: 141px;
+              }
+            }
+          }
+          .arms-qibing {
+            .qinweiqibing {
+              width: 272px;
+              height: 270px;
+              margin:25px 112px;
+              a {
+                width: 272px;
+                height: 270px;
+              }
+            }
+            .xiaoqibing {
+              width: 272px;
+              height: 270px;
+              margin:25px 112px;
+              a {
+                width: 272px;
+                height: 270px;
+              }
+            }
+            .zhongqibing {
+              width: 272px;
+              height: 270px;
+              margin:25px 112px;
+              a {
+                width: 272px;
+                height: 270px;
+              }
+            }
+            .chihouqibing {
+              width: 272px;
+              height: 270px;
+              margin:25px 112px;
+              a {
+                width: 272px;
+                height: 270px;
+              }
+            }
+          }
+          .arms-jixie {
+            .jinglan {
+              width: 277px;
+              height: 243px;
+              margin: 39px 108px;
+              a {
+                width: 277px;
+                height: 243px;
+              }
+            }
+            .jianlouche {
+              width: 239px;
+              height: 301px;
+              margin: 10px 128px;
+              a {
+                width: 239px;
+                height: 301px;
+              }
+            }
+            .nujianche {
+              width: 219px;
+              height: 187px;
+              margin: 94px 138px 40px 138px;
+              a {
+                width: 219px;
+                height: 187px;
+              }
+            }
+            .daoche {
+              width: 242px;
+              height: 163px;
+              margin: 118px 125px 40px 125px;
+              a {
+                width: 242px;
+                height: 163px;
+              }
+            }
+          }
+          .arms-gongbing, .arms-qibing, .arms-jixie {
+            display: none;
+          }
+        }
+        .carousel-controls {
+          .btn-prev, .btn-next {
+            position: absolute;
+            width: 59px;
+            height: 106px;
+            top: 82px;
+            font-size: 0;
+            z-index: 11;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+          }
+          .btn-prev {
+            left: -62px;
+            background-position: -87px -275px;
+            &:hover {
+              background-position: -190px -815px;
+            }
+          }
+          .btn-next {
+            right: -62px;
+            background-position: -139px -275px;
+            &:hover {
+              background-position: -249px -815px;
+            }
+          }
+        }
+      }
+      .view-wrapper {
+        position: absolute;
+        right: 12px;
+        bottom: 18px;
+        overflow: hidden;
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          transition: all 0.4s ease .1s;
+          z-index: 1;
+        }
+        &:before {
+          width: 100%;
+          height: 1px;
+          top: 0;
+          left: 0;
+          background-color: #d7d7d7;
+          -webkit-transform: translateX(-100%);
+          -moz-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+          -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+        &:after {
+          width: 1px;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #d7d7d7;
+          -webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
+        a {
+          display: block;
+          padding: 3px;
+          border: 1px solid #d7d7d7;
+          font: 15px SimHei;
+          color: #d7d7d7;
+          position: relative;
+          &:hover {
+            color: #b9954a;
+          }
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            transition: all 0.4s ease 0s;
+            z-index: 1;
+          }
+          &:before {
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: -1px;
+            background-color: #d7d7d7;
+            -webkit-transform: translateX(-100%);
+            -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+          }
+          &:after {
+            width: 1px;
+            height: 100%;
+            top: 0;
+            right: -1px;
+            background-color: #d7d7d7;
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+          }
+        }
+        &:hover {
+          &:before, &:after {
+            background-color: #b9954a;
+          }
+          &:before {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+          }
+          &:after {
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+          }
+          a {
+            &:before, &:after {
+              background-color: #b9954a;
+            }
+            &:before {
+              -webkit-transform: translateX(0);
+              -moz-transform: translateX(0);
+              -ms-transform: translateX(0);
+              -o-transform: translateX(0);
+              transform: translateX(0);
+            }
+            &:after {
+              -webkit-transform: translateY(0);
+              -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+              -o-transform: translateY(0);
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+    .smoove-wrapper {
+      background-color: #2f2f2f;
+    }
+    .sgqyz-moudle-04 {
+      padding: 13px 0;
+      background-color: #363434;
+      h2 {
+        font: 18px 'SimHei';
+        color: #c0c0c0;
+        padding: 9px 0;
+        margin: 0 20px;
+        border-bottom: 1px solid #565759;
+        &:after {
+          content: attr(data-after);
+          font: 12px 'SimHei';
+          color: #585962;
+          display: inline-block;
+          vertical-align: bottom;
+          padding-left: 7px;
+          text-transform: uppercase;
+        }
+      }
+      .cascade-screenshots {
+        position: relative;
+        padding: 20px 0;
+        ul {
+          position: relative;
+          height: 250px;
+          li {
+            position: absolute;
+            a {
+              display: block;
+              position: relative;
+              -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+              -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+              -o-box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+              box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+              &:before{
+                content:"";
+                position:absolute;
+                width:100%;
+                height:100%;
+                left:0;
+                top:0;
+                -webkit-box-shadow: 0 0 10px rgba(255, 255, 190, .75) inset;
+                -moz-box-shadow: 0 0 10px rgba(255, 255, 190, .75) inset;
+                -o-box-shadow: 0 0 10px rgba(255, 255, 190, .75) inset;
+                box-shadow: 0 0 10px rgba(255, 255, 190, .75) inset;
+              }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .carousel-controls {
+          .btn-prev, .btn-next {
+            position: absolute;
+            width: 59px;
+            height: 106px;
+            font-size: 0;
+            top: 50%;
+            margin-top: -12px;
+            z-index: 11;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+          }
+          .btn-prev {
+            left: 0;
+            background-position: -87px -275px;
+            &:hover {
+              background-position: -190px -815px;
+            }
+          }
+          .btn-next {
+            right: 0;
+            background-position: -139px -275px;
+            &:hover {
+              background-position: -249px -815px;
+            }
+          }
+        }
+      }
+    }
+    .sgqyz-moudle-05 {
+      background-color: #2f2f2f;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+      .customer-service, .associated-media, .links {
+        float: left;
+        padding: 7px 20px;
+        h2 {
+          font: 18px 'SimHei';
+          color: #cecece;
+          padding: 9px 0 6px 0;
+          margin: 0;
+          border-bottom: 1px solid #434349;
+          &:after {
+            content: attr(data-after);
+            font: 12px 'SimHei';
+            color: #52535b;
+            display: inline-block;
+            vertical-align: bottom;
+            padding-left: 7px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .customer-service {
+        width: 273px;
+        .customer-phone {
+          padding-top: 8px;
+          p {
+            font: 16px 'SimHei';
+            color: #b2b0ad;
+            margin: 17px 0;
+          }
+        }
+      }
+      .associated-media {
+        width: 273px;
+        height: 151px;
+        border: 1px solid #262626;
+        background-color: #292929;
+        .bxslider {
+          padding-top: 28px;
+          .bx-wrapper {
+            height: 50px;
+            overflow: hidden;
+          }
+          ul {
+            li {
+              width: 230px;
+              height: 50px;
+              overflow: hidden;
+            }
+          }
+        }
+        .bx-controls {
+          .bx-controls-auto {
+            display: none;
+          }
+        }
+      }
+      .links {
+        width: 654px;
+        .links-lists {
+          padding-top: 24px;
+          a {
+            display: inline-block;
+            vertical-align: middle;
+            font: 15px 'SimHei';
+            color: #c1c2c2;
+            line-height: 28px;
+            padding: 0 10px;
+            &:hover {
+              color: #e94d00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sgqyz-moudle-03 {
+  -webkit-transform: translate(0, 400px);
+  -moz-transform: translate(0, 400px);
+  -ms-transform: translate(0, 400px);
+  transform: translate(0, 400px);
+  opacity: 1;
+  -webkit-transition: all 1000ms ease-out 0s;
+  -moz-transition: all 1000ms ease-out 0s;
+  -ms-transition: all 1000ms ease-out 0s;
+  -o-transition: all 1000ms ease-out 0s;
+  transition: all 1000ms ease-out 0s;
+}
+.smoove-wrapper {
+  -webkit-transform: translate(0, 400px);
+  -moz-transform: translate(0, 400px);
+  -ms-transform: translate(0, 400px);
+  transform: translate(0, 400px);
+  opacity: 0;
+  -webkit-transition: all 1000ms ease-out .5s;
+  -moz-transition: all 1000ms ease-out .5s;
+  -ms-transition: all 1000ms ease-out .5s;
+  -o-transition: all 1000ms ease-out .5s;
+  transition: all 1000ms ease-out .5s;
+}
+.moduleEffect {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}

@@ -1,0 +1,250 @@
+@keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-webkit-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-moz-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-ms-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-o-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-webkit-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-moz-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-ms-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-o-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-webkit-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-ms-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-o-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-ms-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+@-webkit-keyframes avatar {
+    50% {
+        -webkit-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@-moz-keyframes avatar {
+    50% {
+        -moz-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -moz-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@-ms-keyframes avatar {
+    50% {
+        -ms-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -ms-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes avatar {
+    50% {
+        transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}

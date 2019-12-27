@@ -1,0 +1,6 @@
+function Richman() {
+
+}
+Richman.prototype = {
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <style type="text/css">
+        #test {
+            width: 160px;
+            height: 60px;
+            margin: 10px auto;
+            border: 1px solid blue;
+
+        }
+
+        #button {
+            display: block;
+            width: 50px;
+            margin: 10px auto;
+        }
+
+        #content {
+            width: 100px;
+            height: 20px;
+            margin: 10px auto;
+            /*background: #1d1d1d;*/
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="test">
+    <a href="javascript:;" id="button">clickMe</a>
+
+    <div id="content" style="display:none">show</div>
+</div>
+
+
+<script>
+    $('#button').on('click', function () {
+        $('#content').css('display', 'block');
+        $(document).off('click');
+        setTimeout(function () {
+            $(document).one('click', function () {
+                console.log('click ...');
+                $('#content').css('display', 'none');
+            })
+        }, 0);
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,671 @@
+body {
+  margin:0;
+  line-height: normal !important;
+  font-family: Microsoft Yahei, Arial;
+  background-color: #f9f9f9 !important;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+ul {
+  margin:0;
+  padding:0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img, button, input {
+  border: 0;
+}
+button {
+  outline: none;
+}
+header, nav, section, figure {
+  display: block;
+}
+.public-header {
+  border-bottom:2px solid #cda842;
+  background-color: #e4e4e9;
+  .header-container {
+    width: 1024px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 11px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+      height:0;
+    }
+    .hc-left {
+      float: left;
+      padding-top: 3px;
+      padding-bottom: 2px;
+      ul {
+        font-size: 0;
+        li {
+          display: inline-block;
+          &:first-child {
+            padding:0 7px;
+            border-right:1px solid #87878c;
+          }
+          &:first-child + li {
+            padding:0 5px;
+          }
+        }
+      }
+      .logo {
+        display: block;
+        background: url("../images/sprite-icon.png") no-repeat;
+        &.kaixin {
+          width: 64px;
+          height: 25px;
+          background-position: 0 0;
+        }
+        &.feidou {
+          width: 67px;
+          height: 22px;
+          background-position: 0 -26px;
+        }
+      }
+    }
+    .hc-right {
+      float: right;
+      padding-top: 8px;
+      padding-bottom: 6px;
+      ul {
+        font-size: 0;
+        li {
+          display: inline-block;
+          position: relative;
+          padding-left: 21px;
+          padding-right: 13px;
+          z-index: 11;
+          a {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            color: #14121b;
+            position: relative;
+            z-index: 1;
+            &:hover {
+              color: #369;
+            }
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top:50%;
+            margin-top: -5px;
+            background: url("../images/sprite-icon.png") no-repeat;
+          }
+          &.home {
+            &:before {
+              width: 11px;
+              height: 11px;
+              background-position: 0 -50px;
+            }
+          }
+          &.recharge {
+            &:before {
+              width: 11px;
+              height: 12px;
+              background-position: -12px -50px;
+            }
+          }
+          &.home,
+          &.recharge {
+            border-right: 1px solid #b6b4b5;
+          }
+          &.bbs {
+            &:before {
+              width: 10px;
+              height: 12px;
+              background-position: -24px -50px;
+            }
+          }
+          &.account {
+            padding-left: 27px;
+            padding-right: 9px;
+            &:before {
+              width: 11px;
+              height: 11px;
+              z-index: 1;
+              left: 9px;
+              background-position: -36px -50px;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              width: 60px;
+              height: 43px;
+              left:0;
+              top: -8px;
+              z-index: 0;
+              background: url("../images/sprite-button.png") no-repeat;
+              background-position: -163px -312px;
+            }
+            ul {
+              display: none;
+              position: absolute;
+              width: 60px;
+              left:0;
+              padding-top: 5px;
+              z-index: 1;
+              li {
+                display: block;
+                padding:0;
+                margin:0 5px;
+                text-align: center;
+                border-top:1px solid #785117;
+                a {
+                  line-height: 22px;
+                }
+              }
+            }
+            &.open,
+            &:hover {
+              &:after {
+                height: 86px;
+                background-position: -225px -312px;
+              }
+              ul {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.public-header-001 {
+  background: #95be3e;
+  background: linear-gradient(top, #95be3e, #77b241);
+  background: -o-linear-gradient(top, #95be3e, #77b241);
+  background: -ms-linear-gradient(top, #95be3e, #77b241);
+  background: -moz-linear-gradient(top, #95be3e, #77b241);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#95be3e), to(#77b241));
+  border-bottom: 1px solid #539a10;
+  .header-container {
+    width: 1024px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 11px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+      height:0;
+    }
+    .hc-left {
+      float: left;
+      padding-top: 3px;
+      padding-bottom: 2px;
+      ul {
+        font-size: 0;
+        li {
+          display: inline-block;
+          &:first-child {
+            padding:0 7px;
+            border-right:1px solid #87878c;
+          }
+          &:first-child + li {
+            padding:0 5px;
+          }
+        }
+      }
+      .logo {
+        display: block;
+        background: url("../images/sprite-icon.png") no-repeat;
+        &.kaixin {
+          width: 64px;
+          height: 25px;
+          background-position: 0 0;
+        }
+        &.feidou {
+          width: 67px;
+          height: 22px;
+          background-position: 0 -26px;
+        }
+      }
+    }
+    .hc-right {
+      float: right;
+      .login-before {
+        //display: none;
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin:3px 0;
+            a {
+              display: block;
+            }
+            &.btn-qq, &.btn-weibo {
+              a {
+                background: url("../images/sprite-button.png") no-repeat;
+              }
+            }
+            &.btn-qq {
+              margin-right: 8px;
+              a {
+                width: 84px;
+                height: 24px;
+                background-position: -180px -398px;
+              }
+              &:hover {
+                a {
+                  background-position: -180px -423px;
+                }
+              }
+            }
+            &.btn-weibo {
+              a {
+                width: 91px;
+                height: 24px;
+                background-position: -180px -448px;
+              }
+              &:hover {
+                a {
+                  background-position: -180px -473px;
+                }
+              }
+            }
+            &.link-login {
+              border-right:1px dotted #fff;
+            }
+            &.link-login, &.link-register {
+              a {
+                font-size: 12px;
+                line-height: 12px;
+                color: #fff;
+                padding:0 10px;
+              }
+            }
+          }
+        }
+      }
+      .login-after {
+        display: none;
+        ul {
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            padding:9px 0;
+            a {
+              display: block;
+              font-size: 12px;
+              line-height: 12px;
+              padding:0 10px;
+              color: #fff;
+              border-left: 1px dotted #fff;
+            }
+            &.account {
+              position: relative;
+              .account-dropdown {
+                display: none;
+                position: absolute;
+                top: 31px;
+                right: 0;
+                width: 118px;
+                border: 1px solid #d7d7d7;
+                border-top: none;
+                background-color: #fff;
+                z-index: 1;
+                li {
+                  a {
+                    color: #333;
+                    line-height: 20px;
+                  }
+                }
+              }
+              &:hover {
+                .account-dropdown {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.feidou-container {
+  width: 1024px;
+  margin: 0 auto;
+  .carousel-wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    .carousel-large {
+      height: 650px;
+      ul {
+        li {
+          position: absolute;
+          opacity: 0;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+          &:first-child {
+            opacity: 1;
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+          }
+        }
+      }
+    }
+    .carousel-thumb {
+      width: 255px;
+      height: 399px;
+      position: absolute;
+      right:0;
+      top:50%;
+      margin-top: -200px;
+      background: url("../images/half-circle-new.png") top right no-repeat;
+      ul {
+        li {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          background: url("../images/sprite-button.png") no-repeat;
+          background-position: 0 -398px;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 10px;
+            top:50%;
+            right: -33px;
+            margin-top: -11px;
+            background: url("../images/sprite-icon.png")  no-repeat;
+            background-position: -41px -62px;
+          }
+          svg {
+            position: absolute;
+          }
+          img {
+            margin: 5px;
+            border-radius: 18px;
+            max-width: 100%;
+          }
+          &.active {
+            background-position: -90px -398px;
+            &:after {
+              background-position: -41px -73px;
+            }
+            path {
+              stroke-dasharray: 1000;
+              stroke-dashoffset: 1000;
+              -webkit-animation: dash 5s linear forwards;
+              animation: dash 5s linear forwards;
+            }
+          }
+          &:first-child {
+            top: 32px;
+            right: 95px;
+            svg {
+              width: 62px;
+              height: 62px;
+              top: -31px;
+              right: -94px;
+              visibility: hidden;
+            }
+          }
+          &:first-child + li {
+            top: 162px;
+            right: 132px;
+            svg {
+              width: 34px;
+              height: 108px;
+              top: -79px;
+              right: -59px;
+            }
+          }
+          &:first-child + li + li {
+            top: 290px;
+            right: 94px;
+            svg {
+              width: 36px;
+              height: 108px;
+              top: -78px;
+              right: -24px;
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      position: absolute;
+      font-size: 0;
+      width: 572px;
+      height: 78px;
+      left: 137px;
+      bottom: 77px;
+      .btn {
+        width: 249px;
+        height: 78px;
+        background: url("../images/sprite-button.png") no-repeat;
+        &.btn-enter {
+          float: left;
+          background-position: 0 0;
+          &:hover {
+            background-position: 0 -78px;
+          }
+        }
+        &.btn-start {
+          float: right;
+          background-position: 0 -156px;
+          &:hover {
+            background-position: 0 -234px;
+          }
+        }
+      }
+    }
+  }
+  .game-wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 10px;
+    background-color: #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 7px;
+      right: 7px;
+      top:0;
+      background-color: #cda842;
+    }
+    h1 {
+      padding:0 10px 0 32px;
+      margin: 11px 11px 7px;
+      font-size: 17px;
+      line-height: 30px;
+      color: #434343;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left:0;
+        background: url("../images/sprite-icon.png") no-repeat;
+      }
+    }
+    &.hot-games {
+      h1 {
+        &:before {
+          width: 23px;
+          height: 19px;
+          margin-top: -10px;
+          background-position: 0 -62px;
+        }
+      }
+    }
+    &.popular-games {
+      h1 {
+        &:before {
+          width: 16px;
+          height: 17px;
+          margin-top: -8px;
+          background-position: -24px -62px;
+        }
+      }
+    }
+    .gw-items {
+      padding:14px 0;
+      margin-left: 39px;
+      margin-right: 28px;
+      border-top: 1px solid #e0e0e0;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+        height:0;
+      }
+      &:first-of-type {
+        border-top:none;
+      }
+      .gw-left {
+        float: left;
+        overflow: hidden;
+        .gw-left-thumb {
+          float: left;
+          width: 160px;
+          .btn-start {
+            display: block;
+            width: 160px;
+            height: 43px;
+            text-align: center;
+            font: 22px/43px 'LiSu';
+            color: #323232;
+            margin-top: 17px;
+            background: url("../images/sprite-button.png") no-repeat;
+            background-position: -1px -312px;
+            &:hover {
+              background-position: -1px -355px;
+            }
+          }
+        }
+        .gw-left-txt {
+          float: right;
+          width: 245px;
+          margin-left: 30px;
+          margin-right: 18px;
+          h2 {
+            font-size: 25px;
+            color: #323232;
+            margin:0;
+            padding-bottom: 7px;
+          }
+          .scores {
+            margin:16px 0 14px;
+            font-size: 0;
+            &:before {
+              content: attr(data-before);
+              font-size: 12px;
+              line-height: 13px;
+              color: #323232;
+              vertical-align: middle;
+            }
+            .icon-scores {
+              height: 13px;
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0;
+              margin-top: -2px;
+              background: url("../images/sprite-icon.png") no-repeat;
+              background-position: 0 -83px;
+            }
+          }
+          .total {
+            font-size: 14px;
+            line-height: 20px;
+            color: #cda842;
+            margin:0;
+          }
+          .describe {
+            font-size: 14px;
+            line-height: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            color: #323232;
+            margin:10px 0;
+          }
+        }
+      }
+      .gw-right {
+        float: right;
+        width: 504px;
+        margin-top:-6px;
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            border: 2px solid #f7a934;
+            border-radius: 2px;
+            overflow: hidden;
+            margin:6px 5px 5px 6px;
+            img {
+              max-width: 100%;
+              -webkit-transition: all 0.5s ease 0s;
+              -moz-transition: all 0.5s ease 0s;
+              -ms-transition: all 0.5s ease 0s;
+              -o-transition: all 0.5s ease 0s;
+              transition: all 0.5s ease 0s;
+            }
+            &:hover {
+              img {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@import "login";
+@import "register";
+@import "profile";

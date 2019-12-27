@@ -1,0 +1,255 @@
+.register-container {
+  width: 1024px;
+  min-height: 735px;
+  margin: 0 auto;
+  padding-top: 19px;
+  background-color: #fff;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .rc-left, .rc-right {
+    min-height: 365px;
+  }
+  .rc-left {
+    float: left;
+    width: 368px;
+    padding-left: 54px;
+  }
+  .rc-right {
+    float: right;
+    width: 656px;
+    border-left:2px solid #cda842;
+    padding: 34px 44px;
+  }
+  .register-wrapper {
+    width: 422px;
+  }
+}
+.rw-tab {
+  width: 382px;
+  margin: 0 auto;
+  border-bottom:1px solid #c8c6c6;
+  &:before {
+    content: attr(data-before);
+    display: block;
+    font-size: 22px;
+    color: #000;
+    margin-bottom:30px;
+  }
+  ul {
+    font-size: 0;
+    width: 288px;
+    margin:0 auto;;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 144px;
+      text-align: center;
+      position: relative;
+      padding-bottom: 2px;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        bottom:0;
+        background-color: #f0f0f0;
+        -webkit-transition: all .4s linear 0s;
+        -moz-transition: all .4s linear 0s;
+        -ms-transition: all .4s linear 0s;
+        -o-transition: all .4s linear 0s;
+        transition: all .4s linear 0s;
+      }
+      a {
+        display: block;
+        font-size: 16px;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        color: #999;
+      }
+      &:hover, &.active {
+        &:after {
+          left:0;
+          right:0;
+          background-color: #cda842;
+        }
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+.rw-switch {
+  .rw-switch-mobile, .rw-switch-email {
+    width: 422px;
+    min-height: 443px;
+    background-color: #fff;
+    padding:20px 40px 20px 68px;
+    .form-group {
+      min-height: 240px;
+      ul {
+       li {
+         margin-bottom: 20px;
+         font-size: 0;
+         position: relative;
+         &:before {
+           content: attr(data-before);
+           display: inline-block;
+           vertical-align: middle;
+           width: 60px;
+           margin-right:14px;
+           text-align: center;
+           font-size: 14px;
+           color: #667382;
+         }
+         &:after {
+           content: '';
+           display: table;
+           clear: both;
+         }
+         input[type=text], input[type=password], select {
+           width: 218px;
+           height: 32px;
+           padding:0 10px;
+           background-color: #fff;
+           border:1px solid #b6b6b6;
+           border-radius: 2px;
+           font-size: 14px;
+           color: #a9a9a9;
+           -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+           box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+           &:focus {
+             outline: none;
+             border-color: #66afe9;
+             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+           }
+         }
+         .check {
+           font-size: 0;
+           float: right;
+           width: 14px;
+           height: 14px;
+           margin:8px 0;
+           background: url("../images/sprite-icon.png") no-repeat;
+           &.check-error {
+             background-position: -47px -48px;
+           }
+           &.check-right {
+             background-position: -62px -48px;
+           }
+         }
+         .error-tip {
+           position: absolute;
+           font-size: 12px;
+           color: #f00;
+           left: 74px;
+           top: 33px;
+         }
+         .btn-send {
+           float: right;
+           font-size: 12px;
+           color: #fff;
+           text-align: center;
+           border-radius: 4px;
+           padding: 4px 14px;
+           margin:4px 0;
+           background-color: #f1b328;
+           &:hover {
+             background-color: #ec971f;
+             border-color: #d58512;
+           }
+           &:active {
+             background-color: #d58512;
+             border-color: #985f0d;
+           }
+         }
+         &:first-child + li,
+         &:first-child + li + li {
+           input[type=text], input[type=password], select {
+             width: 160px;
+           }
+         }
+       }
+      }
+    }
+    .toolbar {
+      padding-left: 74px;
+      label {
+        font-size: 12px;
+        color: #706f6f;
+        input[type=checkbox] {
+          margin-right: 5px;
+        }
+      }
+    }
+    .btn-group {
+      .btn-register {
+        display: block;
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        font: 22px/40px 'LiSu';
+        margin: 30px auto 26px;
+        color: #000;
+        background: url("../images/sprite-button.png") no-repeat;
+        background-position: 0 -312px;
+        &:hover {
+          background-position: 0 -355px;
+        }
+      }
+      .span-login {
+        display: block;
+        text-align: center;
+        &:before {
+          content: attr(data-before);
+          font-size: 12px;
+          color: #706f6f;
+        }
+        .btn-login {
+          display: inline-block;
+          text-align: center;
+          background-color: #f1b328;
+          width: 80px;
+          height: 24px;
+          font-size: 12px;
+          line-height: 25px;
+          margin-left: 13px;
+          color: #fff;
+          position: relative;
+          &:hover {
+            background-color: #ec971f;
+          }
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 24px;
+            top: 0;
+            background: url("../images/sprite-icon.png") no-repeat;
+          }
+          &:before {
+            left: -14px;
+            background-position: 0 -98px;
+          }
+          &:after {
+            right: -12px;
+            background-position: -14px -98px;
+          }
+          &:hover {
+            &:before {
+              background-position: 0 -191px;
+            }
+            &:after {
+              background-position: -14px -191px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rw-switch-email {
+    display: none;
+  }
+}

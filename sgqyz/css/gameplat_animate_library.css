@@ -1,0 +1,988 @@
+@keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-webkit-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-moz-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-ms-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@-o-keyframes game-resources {
+    0% {
+        bottom: 30px;
+    }
+    20%, 70% {
+        bottom: 35px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-webkit-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-moz-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-ms-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@-o-keyframes pageWidth {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 35px;
+    }
+}
+
+@keyframes horseBig {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -740px;
+    }
+}
+
+@-webkit-keyframes horseBig {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -740px;
+    }
+}
+
+@-moz-keyframes horseBig {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -740px;
+    }
+}
+
+@-ms-keyframes horseBig {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -740px;
+    }
+}
+
+@-o-keyframes horseBig {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -740px;
+    }
+}
+
+@keyframes horseSmall {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -592px;
+    }
+}
+
+@-webkit-keyframes horseSmall {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -592px;
+    }
+}
+
+@-moz-keyframes horseSmall {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -592px;
+    }
+}
+
+@-ms-keyframes horseSmall {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -592px;
+    }
+}
+
+@-o-keyframes horseSmall {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -592px;
+    }
+}
+
+@-webkit-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-ms-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-o-keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-ms-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+@-webkit-keyframes avatar {
+    50% {
+        -webkit-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@-moz-keyframes avatar {
+    50% {
+        -moz-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -moz-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@-ms-keyframes avatar {
+    50% {
+        -ms-transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        -ms-transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes avatar {
+    50% {
+        transform: rotate(-360deg) scale(1.2);
+        opacity: 0.5
+    }
+    100% {
+        transform: rotate(-360deg) scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes wujiangku {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2328px 0;
+    }
+}
+
+@-moz-keyframes wujiangku {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2328px 0;
+    }
+}
+
+@-ms-keyframes wujiangku {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2328px 0;
+    }
+}
+
+@keyframes wujiangku {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2328px 0;
+    }
+}
+
+@-webkit-keyframes jinweijun {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -915px 0;
+    }
+}
+
+@-moz-keyframes jinweijun {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -915px 0;
+    }
+}
+
+@-ms-keyframes jinweijun {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -915px 0;
+    }
+}
+
+@keyframes jinweijun {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -915px 0;
+    }
+}
+
+@-webkit-keyframes zhongjiajishi {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -608px 0;
+    }
+}
+
+@-moz-keyframes zhongjiajishi {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -608px 0;
+    }
+}
+
+@-ms-keyframes zhongjiajishi {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -608px 0;
+    }
+}
+
+@keyframes zhongjiajishi {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -608px 0;
+    }
+}
+
+@-webkit-keyframes zhongjiadaowei {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -805px 0;
+    }
+}
+
+@-moz-keyframes zhongjiadaowei {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -805px 0;
+    }
+}
+
+@-ms-keyframes zhongjiadaowei {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -805px 0;
+    }
+}
+
+@keyframes zhongjiadaowei {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -805px 0;
+    }
+}
+
+@-webkit-keyframes zhongbubing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -950px 0;
+    }
+}
+
+@-moz-keyframes zhongbubing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -950px 0;
+    }
+}
+
+@-ms-keyframes zhongbubing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -950px 0;
+    }
+}
+
+@keyframes zhongbubing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -950px 0;
+    }
+}
+
+@-webkit-keyframes huangjinbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-moz-keyframes huangjinbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-ms-keyframes huangjinbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@keyframes huangjinbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-webkit-keyframes tietaigongbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -424px 0;
+    }
+}
+
+@-moz-keyframes tietaigongbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -424px 0;
+    }
+}
+
+@-ms-keyframes tietaigongbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -424px 0;
+    }
+}
+
+@keyframes tietaigongbing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -424px 0;
+    }
+}
+
+@-webkit-keyframes jingruigongshou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -785px 0;
+    }
+}
+
+@-moz-keyframes jingruigongshou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -785px 0;
+    }
+}
+
+@-ms-keyframes jingruigongshou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -785px 0;
+    }
+}
+
+@keyframes jingruigongshou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -785px 0;
+    }
+}
+
+@-webkit-keyframes yingnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-moz-keyframes yingnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-ms-keyframes yingnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@keyframes yingnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@-webkit-keyframes qiangnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -550px 0;
+    }
+}
+
+@-moz-keyframes qiangnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -550px 0;
+    }
+}
+
+@-ms-keyframes qiangnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -550px 0;
+    }
+}
+
+@keyframes qiangnushou {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -550px 0;
+    }
+}
+
+@-webkit-keyframes qinweiqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-moz-keyframes qinweiqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-ms-keyframes qinweiqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@keyframes qinweiqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-webkit-keyframes xiaoqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -475px 0;
+    }
+}
+
+@-moz-keyframes xiaoqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-ms-keyframes xiaoqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@keyframes xiaoqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-webkit-keyframes zhongqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-moz-keyframes zhongqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-ms-keyframes zhongqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@keyframes zhongqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-webkit-keyframes chihouqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-moz-keyframes chihouqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-ms-keyframes chihouqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@keyframes chihouqibing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+@-webkit-keyframes jinglan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1108px 0;
+    }
+}
+
+@-moz-keyframes jinglan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1108px 0;
+    }
+}
+
+@-ms-keyframes jinglan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1108px 0;
+    }
+}
+
+@keyframes jinglan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1108px 0;
+    }
+}
+
+@-webkit-keyframes jianlouche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1195px 0;
+    }
+}
+
+@-moz-keyframes jianlouche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1195px 0;
+    }
+}
+
+@-ms-keyframes jianlouche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1195px 0;
+    }
+}
+
+@keyframes jianlouche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1195px 0;
+    }
+}
+
+@-webkit-keyframes nujianche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -876px 0;
+    }
+}
+
+@-moz-keyframes nujianche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -876px 0;
+    }
+}
+
+@-ms-keyframes nujianche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -876px 0;
+    }
+}
+
+@keyframes nujianche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -876px 0;
+    }
+}
+
+@-webkit-keyframes daoche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -968px 0;
+    }
+}
+
+@-moz-keyframes daoche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -968px 0;
+    }
+}
+
+@-ms-keyframes daoche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -968px 0;
+    }
+}
+
+@keyframes daoche {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -968px 0;
+    }
+}

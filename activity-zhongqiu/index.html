@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中秋国庆专题首页</title>
+    <link rel="stylesheet" href="css/gameplat_zhongqiuguoqing2015.css"/>
+    <script type="text/javascript" src="http://s.kaixin001.com.cn/js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<div class="national-body">
+    <div class="national-container">
+        <header class="national-header">
+            <ul>
+                <li><a href="javascript:;" target="_blank">游戏公告</a></li>
+                <li><a href="javascript:;" target="_blank">游戏下载</a></li>
+                <li><a href="javascript:;" target="_blank">游戏论坛</a></li>
+            </ul>
+            <a href="javascript:;" class="national-logo">logo</a>
+        </header>
+        <nav class="national-nav">
+            <ul>
+                <li><a href="javascript:;">双节活动</a></li>
+                <li><a href="javascript:;">押宝活动</a></li>
+                <li><a href="javascript:;">精彩活动</a></li>
+                <li><a href="javascript:;">祝福语</a></li>
+            </ul>
+        </nav>
+        <section class="national-lists">
+            <ul>
+                <li>
+                    <h1>双节活动</h1>
+                    <article data-before="活动时间 : 10月1号-10月7号">
+                        <p>在系统给的5种物品内，选中其中三个，参加押宝活动，若national-lists全部押中， 即可获得这三种物品。 </p>
+                        <p>累计押中5次及以上即可获得额外的抽奖机会。 </p>
+                        <a href="javascript:;" target="_blank" class="btn-view-detail">查看详情</a>
+                    </article>
+                </li>
+                <li>
+                    <h1>押宝活动</h1>
+                    <article data-before="活动时间 : 10月1号-10月7号">
+                        <p>在系统给的5种物品内，选中其中三个，参加押宝活动，若全部押中， 即可获得这三种物品。 </p>
+                        <p>累计押中5次及以上即可获得额外的抽奖机会。 </p>
+                        <a href="javascript:;" target="_blank" class="btn-view-detail">查看详情</a>
+                    </article>
+                </li>
+                <li>
+                    <h1>精彩活动</h1>
+                    <article data-before="活动时间 : 10月1号-10月7号">
+                        <p>在系统给的5种物品内，选中其中三个，参加押宝活动，若全部押中， 即可获得这三种物品。 </p>
+                        <p>累计押中5次及以上即可获得额外的抽奖机会。 </p>
+                        <a href="javascript:;" target="_blank" class="btn-view-detail">查看详情</a>
+                    </article>
+                </li>
+                <li>
+                    <h1>祝福语</h1>
+                    <article data-before="活动时间 : 10月1号-10月7号">
+                        <p>在系统给的5种物品内，选中其中三个，参加押宝活动，若全部押中， 即可获得这三种物品。 </p>
+                        <p>累计押中5次及以上即可获得额外的抽奖机会。 </p>
+                        <a href="javascript:;" target="_blank" class="btn-view-detail">查看详情</a>
+                    </article>
+                </li>
+            </ul>
+            <ol>
+                <li><a href="javascript:;" class="prev">left</a></li>
+                <li><a href="javascript:;" class="next">right</a></li>
+            </ol>
+        </section>
+        <div class="national-qrcode">
+            <a href="javascript:;" data-after="扫码关注微信">
+                <img src="images/qrcode.jpg" alt="二维码"/>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+
+        var current = 0;
+        var len = $(".national-nav li").length;
+        function tab(index){
+            if(isNaN(index) || index < 0) {
+                index = 0;
+            }
+            index = $(".national-nav li").index(this);
+            $(".national-nav li").addClass('current').siblings().removeClass('current');
+            $(".national-lists ul li").eq(index).show().siblings().hide();
+        }
+        $(".national-nav li").click(function(){
+            var index = $(".national-nav li").index(this);
+            tab(index);
+        })
+        $(".prev").click(function(){
+            current--;
+            if(current == -1) {
+                current = len - 1;
+            }
+            tab(current);
+        })
+        $(".next").click(function(){
+            current++;
+            if(current == len) {
+                current = 0;
+            }
+            tab(current);
+        })
+
+    })
+</script>
+</body>
+</html>

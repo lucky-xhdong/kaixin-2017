@@ -1,0 +1,608 @@
+body {
+  margin: 0;
+  font-family: SimSun;
+  font-size: 14px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+header .userinfo-wrapper,
+header .header-navbar-wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+header .userinfo-wrapper {
+  background-color: #ededed;
+}
+header .userinfo-wrapper .userinfo {
+  text-align: right;
+  padding: 0 80px;
+}
+header .userinfo-wrapper .userinfo:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+header .userinfo-wrapper .userinfo a,
+header .userinfo-wrapper .userinfo span {
+  display: inline-block;
+  line-height: 30px;
+}
+header .userinfo-wrapper .userinfo a:before,
+header .userinfo-wrapper .userinfo span:before {
+  content: attr(data-before);
+}
+header .userinfo-wrapper .userinfo a {
+  color: #ff3a3a;
+}
+header .userinfo-wrapper .userinfo a:first-child {
+  color: #666;
+}
+header .userinfo-wrapper .userinfo span {
+  color: #666;
+}
+header .userinfo-wrapper .userinfo span:last-child {
+  color: #282828;
+}
+header .header-navbar-wrapper {
+  padding: 13px 18px 0;
+}
+nav {
+  background-color: #f13131;
+}
+nav .nav-wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+nav .nav-wrapper ul {
+  font-size: 0;
+  text-align: left;
+}
+nav .nav-wrapper ul li {
+  display: inline-block;
+}
+nav .nav-wrapper ul li a {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  padding: 16px 17px 15px;
+}
+nav .nav-wrapper ul li:hover,
+nav .nav-wrapper ul li.active {
+  background-color: #dd0303;
+}
+main section {
+  width: 1120px;
+  margin: 0 auto;
+}
+main section.lottery-info {
+  font-size: 0;
+}
+main section.lottery-info .lottery-info-left,
+main section.lottery-info .lottery-info-right {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fdf6e6;
+  border: 1px solid #f5e3c1;
+  width: 555px;
+  height: 140px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+main section.lottery-info .lottery-info-left:before,
+main section.lottery-info .lottery-info-right:before {
+  content: attr(data-before);
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  color: #2d2d2d;
+  line-height: 14px;
+}
+main section.lottery-info .lottery-info-left {
+  padding: 13px 25px 13px 32px;
+  margin-right: 10px;
+}
+main section.lottery-info .lottery-info-left p {
+  font-size: 14px;
+  color: #ffd800;
+  margin: 14px 0;
+  line-height: 16px;
+}
+main section.lottery-info .lottery-info-left p:before {
+  content: attr(data-before);
+}
+main section.lottery-info .lottery-info-left p:first-child:before {
+  color: #eb2020;
+  margin-right: 5px;
+}
+main section.lottery-info .lottery-info-left p:first-child + p {
+  color: #9d9d9d;
+}
+main section.lottery-info .lottery-info-left p:first-child + p:before {
+  display: block;
+  margin-bottom: 14px;
+}
+main section.lottery-info .lottery-info-right {
+  padding: 13px 25px 13px 32px;
+}
+main section.lottery-info .lottery-info-right p {
+  font-size: 14px;
+  color: #9d9d9d;
+  line-height: 16px;
+}
+main section.lottery-info .lottery-info-right p:before {
+  content: attr(data-before);
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul {
+  font-size: 0;
+  text-align: center;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  margin: 0 8px;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li a {
+  display: block;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 35px;
+  background: url("../images/lottery-balls.png") no-repeat;
+  z-index: -1;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li a:after {
+  content: attr(data-after);
+  display: block;
+  color: #000;
+  padding-top: 15px;
+  line-height: 16px;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  background: url("../images/lottery-balls.png") no-repeat;
+  background-position: 0 -105px;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li.blue-ball a:before {
+  background-position: 0 0;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li.green-ball a:before {
+  background-position: 0 -35px;
+}
+main section.lottery-info .lottery-info-right .lottery-balls ul li.red-ball a:before {
+  background-position: 0 -70px;
+}
+main section.dish-info:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+main section.dish-info .dish-info-left,
+main section.dish-info .dish-info-right {
+  float: left;
+}
+main section.dish-info .dish-info-left {
+  border: 2px solid #f13131;
+  width: 832px;
+  margin-right: 8px;
+}
+main section.dish-info .dish-info-left .dish-time,
+main section.dish-info .dish-info-left .sum-numbers,
+main section.dish-info .dish-info-left .special-number,
+main section.dish-info .dish-info-left .positive-code {
+  margin: 0 3px;
+  border-bottom: 2px solid #f13131;
+  font-size: 0;
+}
+main section.dish-info .dish-info-left .dish-time {
+  padding: 23px 0 21px 0;
+}
+main section.dish-info .dish-info-left .dish-time .main-dish,
+main section.dish-info .dish-info-left .dish-time time {
+  display: inline-block;
+  vertical-align: middle;
+}
+main section.dish-info .dish-info-left .dish-time .main-dish:before,
+main section.dish-info .dish-info-left .dish-time time:before {
+  content: attr(data-before);
+}
+main section.dish-info .dish-info-left .dish-time .main-dish {
+  padding: 0 30px;
+}
+main section.dish-info .dish-info-left .dish-time .main-dish:before {
+  font: 24px MicroSoft YaHei;
+  padding-right: 22px;
+  display: inline-block;
+  vertical-align: middle;
+}
+main section.dish-info .dish-info-left .dish-time .main-dish select {
+  vertical-align: middle;
+  width: 102px;
+  height: 26px;
+  border: 1px solid #aaa;
+  background-color: #fdf6e6;
+  color: #282828;
+  font-size: 14px;
+  border-radius: 2px;
+}
+main section.dish-info .dish-info-left .dish-time .main-dish select:focus {
+  outline: none;
+}
+main section.dish-info .dish-info-left .dish-time time {
+  font-size: 16px;
+}
+main section.dish-info .dish-info-left .dish-time time:before {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+main section.dish-info .dish-info-left .dish-time time:last-child {
+  padding-left: 50px;
+}
+main section.dish-info .dish-info-left .sum-numbers,
+main section.dish-info .dish-info-left .special-number,
+main section.dish-info .dish-info-left .positive-code {
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+main section.dish-info .dish-info-left .sum-numbers:before,
+main section.dish-info .dish-info-left .special-number:before,
+main section.dish-info .dish-info-left .positive-code:before {
+  content: attr(data-before);
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #282828;
+  padding-bottom: 20px;
+}
+main section.dish-info .dish-info-left .sum-numbers table,
+main section.dish-info .dish-info-left .special-number table {
+  margin: 0 auto;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td,
+main section.dish-info .dish-info-left .special-number table tr td {
+  background-color: #ebebeb;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td span,
+main section.dish-info .dish-info-left .special-number table tr td span,
+main section.dish-info .dish-info-left .sum-numbers table tr td input,
+main section.dish-info .dish-info-left .special-number table tr td input {
+  display: inline-block;
+  vertical-align: middle;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td span,
+main section.dish-info .dish-info-left .special-number table tr td span {
+  font-family: "MicroSoft YaHei";
+  font-size: 12px;
+  color: #09f;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td span:before,
+main section.dish-info .dish-info-left .special-number table tr td span:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e62f2f;
+  padding: 6px 10px;
+  margin-right: 4px;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td input,
+main section.dish-info .dish-info-left .special-number table tr td input {
+  width: 56px;
+  height: 20px;
+  border: 1px solid #929292;
+  font-family: "MicroSoft YaHei";
+  color: #282828;
+  text-align: right;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+main section.dish-info .dish-info-left .sum-numbers table tr td input:focus,
+main section.dish-info .dish-info-left .special-number table tr td input:focus {
+  outline: none;
+}
+main section.dish-info .dish-info-left .sum-numbers table {
+  width: 586px;
+}
+main section.dish-info .dish-info-left .special-number table {
+  width: 752px;
+}
+main section.dish-info .dish-info-left .positive-code table {
+  width: 656px;
+  margin: 0 auto;
+}
+main section.dish-info .dish-info-left .positive-code table thead tr td {
+  background-color: #ebebeb;
+}
+main section.dish-info .dish-info-left .positive-code table thead tr td span {
+  display: block;
+  width: 96px;
+  height: 28px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e62f2f;
+  padding: 6px 10px;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr th {
+  background-color: #ebebeb;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr th span {
+  display: block;
+  width: 50px;
+  height: 28px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e62f2f;
+  padding: 6px 10px;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr td {
+  background-color: #ebebeb;
+  text-align: center;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr td span {
+  font-family: "MicroSoft YaHei";
+  font-size: 12px;
+  color: #09f;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr td input {
+  width: 56px;
+  height: 20px;
+  border: 1px solid #929292;
+  font-family: "MicroSoft YaHei";
+  color: #282828;
+  text-align: right;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+main section.dish-info .dish-info-left .positive-code table tbody tr td input:focus {
+  outline: none;
+}
+main section.dish-info .dish-info-left .btn-group {
+  padding: 23px 0;
+}
+main section.dish-info .dish-info-left .btn-group span {
+  font-size: 26px;
+  color: #2d2d2d;
+  display: inline-block;
+  padding: 0 36px;
+}
+main section.dish-info .dish-info-left .btn-group span:before {
+  content: attr(data-before);
+}
+main section.dish-info .dish-info-left .btn-group .btn-lottery {
+  font-size: 26px;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  min-width: 180px;
+  margin: 0 35px;
+}
+main section.dish-info .dish-info-left .btn-group .btn-lottery:focus {
+  outline: none;
+}
+main section.dish-info .dish-info-left .btn-group .btn-lottery.btn-sure {
+  background-color: #f13131;
+}
+main section.dish-info .dish-info-left .btn-group .btn-lottery.btn-reset {
+  background-color: #f59c26;
+}
+main section.dish-info .dish-info-right {
+  width: 280px;
+}
+main section.dish-info .dish-info-right .today-notices {
+  position: relative;
+  min-height: 130px;
+  padding: 40px 20px 10px;
+  margin-bottom: 8px;
+  z-index: 11;
+  background: url("../images/bg-notice-m.jpg") repeat-y;
+}
+main section.dish-info .dish-info-right .today-notices:before,
+main section.dish-info .dish-info-right .today-notices:after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  left: 0;
+  z-index: -1;
+}
+main section.dish-info .dish-info-right .today-notices:before {
+  height: 120px;
+  top: 0;
+  background: url("../images/bg-notice-t.jpg") no-repeat;
+}
+main section.dish-info .dish-info-right .today-notices:after {
+  height: 10px;
+  bottom: 0;
+  background: url("../images/bg-notice-b.jpg") no-repeat;
+}
+main section.dish-info .dish-info-right .today-notices ul {
+  position: relative;
+  z-index: 11;
+}
+main section.dish-info .dish-info-right .today-notices ul li {
+  line-height: 30px;
+}
+main section.dish-info .dish-info-right .today-notices ul li a {
+  font-size: 14px;
+  color: #eb2020;
+}
+main section.dish-info .dish-info-right .today-notices ul li a:after {
+  content: attr(data-after);
+  float: right;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch {
+  border: 2px solid #ff9625;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav {
+  border: 1px solid #bba466;
+  margin: 2px;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav ul {
+  font-size: 0;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav ul li {
+  display: inline-block;
+  margin: 5px 0;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav ul li a {
+  font-size: 18px;
+  color: #ca8211;
+  display: block;
+  padding: 6px 10px;
+  border-right: 1px solid #ae9659;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav ul li.active a {
+  color: #fb2929;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-nav ul li:first-child + li + li a {
+  color: #282828;
+  border-right: none;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab {
+  margin: 7px 0;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-lottery li a,
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-unlottery li a {
+  display: block;
+  color: #005aa0;
+  text-align: center;
+  overflow: hidden;
+  line-height: 42px;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-lottery li a:after,
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-unlottery li a:after {
+  content: attr(data-after);
+  float: right;
+  border-left: 2px solid #fff;
+  padding: 0 20px;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-lottery li:nth-child(even) a,
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-unlottery li:nth-child(even) a {
+  background-color: #fff;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-lottery li:nth-child(odd) a,
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-unlottery li:nth-child(odd) a {
+  background-color: #ebebeb;
+}
+main section.dish-info .dish-info-right .serial-lottery-switch .serial-lottery-tab .serial-unlottery {
+  display: none;
+}
+.lottery-tip {
+  display: none;
+  width: 98px;
+  height: 110px;
+  border: 1px solid #ff9625;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 11;
+}
+.lottery-tip:before,
+.lottery-tip:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  left: 50%;
+  margin-left: -5px;
+}
+.lottery-tip:before {
+  bottom: -19px;
+  border-top-color: #fff;
+  z-index: 1;
+}
+.lottery-tip:after {
+  bottom: -20px;
+  border-top-color: #ff9625;
+  z-index: -1;
+}
+.lottery-tip ul {
+  position: relative;
+}
+.lottery-tip ul:before {
+  content: attr(data-before);
+  display: block;
+  text-align: right;
+  margin: 0 7px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff9625;
+}
+.lottery-tip ul:after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 10px;
+  background: url("../images/lottery-balls.png") no-repeat;
+  background-position: 0 -129px;
+}
+.lottery-tip ul li {
+  margin: 0 7px;
+  border-top: 1px solid #dedede;
+}
+.lottery-tip ul li a {
+  display: block;
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+}
+footer {
+  margin-top: 8px;
+  background-color: #ededed;
+  overflow: hidden;
+}
+footer .footer-wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .footer-wrapper p {
+  font-size: 12px;
+  color: #666;
+}
+footer .footer-wrapper p:before {
+  content: attr(data-before);
+  display: block;
+  color: #666;
+  padding: 20px 0;
+}
+footer .footer-wrapper p:after {
+  content: attr(data-after);
+  display: block;
+  color: #999;
+  padding: 20px 0;
+}

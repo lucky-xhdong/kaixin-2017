@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/gameplat-mmx.css"/>
+</head>
+<body>
+<div class="mmx-list-body">
+    <nav class="mmx-common-nav">
+        <ul>
+            <li class="home"><a href="index.html">首页</a></li>
+            <li class="information"><a href="list.html">相关资讯</a></li>
+            <li class="introduce current"><a href="introduce.html">玩法介绍</a></li>
+        </ul>
+    </nav>
+    <section class="mmx-introduce-section">
+        <article>
+            <h1>尚未开放，敬请期待！！！</h1>
+        </article>
+    </section>
+    <div class="top-wrapper" data-after="top">
+        <a href="javascript:;">top</a>
+    </div>
+    <footer>
+        <figcaption>&copy;Naoko Takeuchi/PNP/KODANSHA/TOEI ANIMATION</figcaption>
+        <figcaption>&copy;BANDAI NAMCO Entertainment Inc.</figcaption>
+        <ul>
+            <li>
+                <a href="javascript:;" class="kaixin">开心网</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="entertainment">Entertainment</a>
+            </li>
+        </ul>
+        <p>Copyright  2013 feidou.com All Rights Reserved</p>
+        <p><a href="javascript:;">飞豆游戏中心</a>&dot;<a href="javascript:;">北京开心人信息技术有限公司</a></p>
+        <p>京网文[2012]0830-273号&dot;京ICP证080482号&dot;京公网安备&nbsp;1100003号</p>
+    </footer>
+</div>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            $(window).scrollTop() >= 100 ?
+                    $(".top-wrapper").fadeIn(300).css({display: "block"}) :
+                    $(".top-wrapper").fadeOut(300).css({display: "none"})
+        });
+        $(".top-wrapper").click(function () {
+            $("html,body").animate({scrollTop: "0"}, 500)
+        })
+    });
+</script>
+</body>
+</html>

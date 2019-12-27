@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 720px) {
+  .longwen-body {
+    background: #04080b url("../images/bg-body.jpg") top center no-repeat;
+  }
+  .longwen-body .longwen-container {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .longwen-body .longwen-container .logo-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .longwen-container .logo-wrapper {
+    margin-bottom: 300px;
+  }
+  .longwen-container .logo-wrapper .binglinchengxia,
+  .longwen-container .logo-wrapper .longwensanguo {
+    font-size: 0;
+  }
+  .longwen-container .logo-wrapper .binglinchengxia {
+    float: left;
+    width: 174px;
+    height: 72px;
+  }
+  .longwen-container .logo-wrapper .longwensanguo {
+    float: right;
+    width: 170px;
+    height: 95px;
+  }
+  .longwen-container .describe-wrapper h2 {
+    font: 25px 'SimHei';
+    color: #e0b467;
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .longwen-container .describe-wrapper h2:before,
+  .longwen-container .describe-wrapper h2:after {
+    content: '';
+    position: absolute;
+    width: 154px;
+    height: 22px;
+    top: 50%;
+    margin-top: -11px;
+  }
+  .longwen-container .describe-wrapper h2:before {
+    left: 0;
+    background: url("../images/bg-before.png") no-repeat;
+  }
+  .longwen-container .describe-wrapper h2:after {
+    right: 0;
+    background: url("../images/bg-after.png") no-repeat;
+  }
+  .longwen-container .describe-wrapper .describe {
+    width: 565px;
+    margin: 0 auto;
+    position: relative;
+    padding: 28px 35px 24px;
+    background: url("../images/bg-line.jpg") center repeat-y;
+  }
+  .longwen-container .describe-wrapper .describe:before,
+  .longwen-container .describe-wrapper .describe:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .longwen-container .describe-wrapper .describe:before {
+    height: 7px;
+    top: -7px;
+    background: url("../images/bg-before.jpg") center no-repeat;
+  }
+  .longwen-container .describe-wrapper .describe:after {
+    bottom: 0;
+    height: 149px;
+    background: url("../images/bg-after.jpg") center no-repeat;
+  }
+  .longwen-container .describe-wrapper .describe p {
+    font: 18px 'SimHei';
+    line-height: 30px;
+    color: #e0b467;
+    text-indent: 30px;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+  }
+  .longwen-container .btn-group a {
+    display: block;
+    width: 307px;
+    height: 126px;
+    font-size: 0;
+    margin: 50px auto;
+    background: url("../images/btn-recieve.png") no-repeat;
+  }
+  .longwen-container .longwen-footer {
+    padding: 50px 80px;
+  }
+  .longwen-container .longwen-footer p {
+    font: 15px 'SimHei';
+    color: #e0b467;
+  }
+  .longwen-container .longwen-footer p a {
+    color: #e0b467;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    width: 369px;
+    height: 244px;
+    left: 50%;
+    top: 50%;
+    margin-top: -122px;
+    margin-left: -185px;
+    z-index: 12;
+    background: url("../images/bg-pop.png") no-repeat;
+  }
+  .popup .pop-body {
+    padding: 28px 44px;
+  }
+  .popup .pop-body:before {
+    content: '';
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url("../images/lingquchenggong.png") no-repeat;
+    margin: 0 auto;
+  }
+  .popup .pop-body .content {
+    font: 15px 'SimHei';
+    color: #321e13;
+    line-height: 26px;
+    text-indent: 30px;
+    margin: 5px 0;
+  }
+  .popup .pop-body .giftcode {
+    font: 18px 'SimHei';
+    color: #891414;
+    margin: 5px 0;
+  }
+  .popup .pop-body .btn-lg {
+    display: block;
+    width: 245px;
+    height: 36px;
+    font: 18px 'SimHei';
+    color: #321e13;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    background: url("../images/btn-lg.png") no-repeat;
+  }
+  .mask {
+    display: none;
+    position: fixed;
+    background-color: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+}
+@media (max-width: 720px) {
+  .longwen-body {
+    background: #04080b url("../images/bg-body.jpg") top center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-body .longwen-container {
+    width: auto;
+    margin: 0 auto;
+  }
+  .longwen-body .longwen-container .logo-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .longwen-container .logo-wrapper {
+    margin-bottom: 6.8rem;
+  }
+  .longwen-container .logo-wrapper .binglinchengxia,
+  .longwen-container .logo-wrapper .longwensanguo {
+    font-size: 0;
+  }
+  .longwen-container .logo-wrapper .binglinchengxia {
+    float: left;
+    width: 3.625rem;
+    height: 1.5rem;
+  }
+  .longwen-container .logo-wrapper .longwensanguo {
+    float: right;
+    width: 3.55rem;
+    height: 1.98rem;
+  }
+  .longwen-container .describe-wrapper h2 {
+    font: 0.72rem 'SimHei';
+    color: #e0b467;
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+  }
+  .longwen-container .describe-wrapper h2:before,
+  .longwen-container .describe-wrapper h2:after {
+    content: '';
+    position: absolute;
+    width: 3.22rem;
+    height: 0.46rem;
+    top: 50%;
+    margin-top: -0.23rem;
+  }
+  .longwen-container .describe-wrapper h2:before {
+    left: 0;
+    background: url("../images/bg-before.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .describe-wrapper h2:after {
+    right: 0;
+    background: url("../images/bg-after.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .describe-wrapper .describe {
+    width: 13rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0.58rem 0.72rem 0.5rem;
+    background: url("../images/bg-line.jpg") center repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .describe-wrapper .describe:before,
+  .longwen-container .describe-wrapper .describe:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .longwen-container .describe-wrapper .describe:before {
+    height: 0.15rem;
+    top: -0.145rem;
+    background: url("../images/bg-before.jpg") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .describe-wrapper .describe:after {
+    bottom: 0;
+    height: 3.1rem;
+    background: url("../images/bg-after.jpg") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .describe-wrapper .describe p {
+    font: 0.6rem 'SimHei';
+    line-height: 1rem;
+    color: #e0b467;
+    text-indent: 0.625rem;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+  }
+  .longwen-container .btn-group a {
+    display: block;
+    width: 6.4rem;
+    height: 2.625rem;
+    font-size: 0;
+    margin: 1.04rem auto;
+    background: url("../images/btn-recieve.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .longwen-container .longwen-footer {
+    padding: 1.04rem 1.67rem;
+  }
+  .longwen-container .longwen-footer p {
+    font: 0.6rem 'SimHei';
+    line-height: 1rem;
+    color: #e0b467;
+  }
+  .longwen-container .longwen-footer p a {
+    color: #e0b467;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    width: 10rem;
+    height: 8rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -4rem;
+    margin-left: -5rem;
+    z-index: 12;
+    background: url("../images/bg-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup .pop-body {
+    padding: 0.58rem 0.92rem;
+  }
+  .popup .pop-body:before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.8rem;
+    background: url("../images/lingquchenggong.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+  .popup .pop-body .content {
+    font: 0.54rem 'SimHei';
+    color: #321e13;
+    line-height: 0.6rem;
+    text-indent: 0.625rem;
+    margin: 0.104rem 0;
+  }
+  .popup .pop-body .giftcode {
+    font: 0.6rem 'SimHei';
+    color: #891414;
+    margin: 0.104rem 0;
+  }
+  .popup .pop-body .btn-lg {
+    display: block;
+    width: 5.12rem;
+    height: 0.75rem;
+    font: 0.54rem 'SimHei';
+    color: #321e13;
+    line-height: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    background: url("../images/btn-lg.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .mask {
+    display: none;
+    position: fixed;
+    background-color: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+}

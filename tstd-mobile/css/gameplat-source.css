@@ -1,0 +1,523 @@
+.tstd-source-body {
+  width: 10rem;
+  margin: 0 auto;
+  padding-top: 1.65rem;
+  background-color: #5d380c;
+}
+.tstd-source-body .tstd-source-main {
+  min-height: 14.7rem;
+  background-color: #e2d0a4;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav {
+  border-bottom: 1px solid #6e6e1e;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: .317rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li a {
+  display: block;
+  padding-top: .317rem;
+  padding-bottom: .167rem;
+  color: #322116;
+  font-family: SimHei;
+  font-size: 16px;
+  position: relative;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li a:before {
+  content: '';
+  width: .472rem;
+  height: .472rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .264rem;
+  background: url("../images/bg-tstd-04.png") no-repeat;
+  -webkit-background-size: 10rem;
+  background-size: 10rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .083rem;
+  background-color: #b67533;
+  left: 0;
+  bottom: 0;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li:first-child a:before {
+  background-position: -2.13rem -2.486rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch nav ul li:first-child + li a:before {
+  background-position: -2.667rem -2.486rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk {
+  text-align: justify;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists {
+  display: inline-block;
+  width: 32%;
+  margin-top: .111rem;
+  position: relative;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists .tstd-source-type {
+  color: #322116;
+  font-family: SimHei;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding-top: .317rem;
+  padding-bottom: .167rem;
+  background-color: #c7b790;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists .tstd-source-type:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: .292rem;
+  height: .194rem;
+  margin-left: .292rem;
+  background: url("../images/bg-tstd-04.png") no-repeat;
+  -webkit-background-size: 10rem;
+  background-size: 10rem;
+  background-position: -3.18rem -2.5rem;
+  -webkit-transition: all .2s ease .1s;
+  -moz-transition: all .2s ease .1s;
+  -ms-transition: all .2s ease .1s;
+  -o-transition: all .2s ease .1s;
+  transition: all .2s ease .1s;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul {
+  display: none;
+  position: absolute;
+  background-color: #c7b790;
+  width: 100%;
+  z-index: 1;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul li {
+  text-align: center;
+  border-top: 1px solid #4c1c06;
+  border-bottom: 1px solid #f3dbab;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul li a,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul li a,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul li a,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul li a,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul li a,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul li a {
+  color: #322116;
+  font-family: SimHei;
+  font-size: 16px;
+  display: block;
+  padding-top: .317rem;
+  padding-bottom: .167rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul li:hover,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul li:hover,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul li:hover,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul li:hover,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul li:hover,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul li:hover {
+  background-color: #d2b56f;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists:hover .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists:hover .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists:hover .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists:hover .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists:hover .tstd-source-type,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists:hover .tstd-source-type {
+  background-color: #d2b56f;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists:hover .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists:hover .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists:hover .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists:hover .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists:hover .tstd-source-type:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists:hover .tstd-source-type:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists:hover ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists:hover ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists:hover ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists:hover ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists:hover ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists:hover ul {
+  display: block;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists {
+  display: inline-block;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul {
+  font-size: 0;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul li,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul li {
+  display: inline-block;
+  width: 1.694rem;
+  height: 2.1rem;
+  padding: .138rem .1rem;
+  margin: .138rem;
+  background: url("../images/bg-source-list.png") no-repeat;
+  -webkit-background-size: 1.694rem 2.1rem;
+  background-size: 1.694rem 2.1rem;
+  text-align: left;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul li img,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul li img {
+  display: block;
+  width: 1.38rem;
+  margin-bottom: .05rem;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul li a:after,
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul li a:after {
+  content: attr(data-after);
+  display: block;
+  text-align: center;
+  color: #a19477;
+  font-size: 12px;
+}
+.tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk {
+  display: none;
+}
+.tstd-source-body .tstd-source-main article {
+  width: 10rem;
+  min-height: 25rem;
+  padding: 0 .417rem;
+  position: relative;
+  overflow: hidden;
+  background: url("../images/bg-source.png") no-repeat;
+  -webkit-background-size: 10rem;
+  background-size: 10rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-avatar {
+  margin-top: .138rem;
+  margin-bottom: .278rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-avatar figure {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  width: 1.56rem;
+  position: relative;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-avatar figure:after {
+  content: attr(data-after);
+  position: absolute;
+  left: 1.6rem;
+  top: 50%;
+  margin-top: -0.38rem;
+  margin-left: .138rem;
+  font: 22px 'MicroSoft YaHei';
+  color: #f2d482;
+  display: block;
+  width: 6.4rem;
+  height: .778rem;
+  line-height: .778rem;
+  padding: .069rem .9rem;
+  white-space: nowrap;
+  background: url("../images/bg-attr-01.png") left center no-repeat;
+  -webkit-background-size: 6.4rem .778rem;
+  background-size: 6.4rem .778rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists.col-3 ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists.col-3 ul li {
+  display: inline-block;
+  width: 32.6%;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists.col-2 ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists.col-2 ul li {
+  display: inline-block;
+  width: 49.4%;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists.col-1 ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists.col-1 ul li {
+  display: block;
+  width: 100%;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul {
+  position: relative;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li {
+  background-color: #7f5a3c;
+  margin-bottom: .208rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  font: 14px 'MicroSoft YaHei';
+  color: #e2d0a4;
+  overflow: hidden;
+  margin: 0;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists {
+  margin-bottom: .347rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists:before {
+  content: attr(data-before);
+  color: #e1d973;
+  display: block;
+  padding: .069rem .153rem;
+  margin-bottom: .208rem;
+  font: 18px 'MicroSoft YaHei';
+  background: url("../images/bg-attr-02.png") left center no-repeat;
+  -webkit-background-size: 7.35rem .667rem;
+  background-size: 7.35rem .667rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li {
+  padding: .069rem .153rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p {
+  white-space: nowrap;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p:before {
+  content: attr(data-before);
+  display: inline-block;
+  padding-right: .083rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public:before {
+  content: attr(data-before);
+  color: #e1d973;
+  display: block;
+  padding: .069rem .153rem;
+  margin-bottom: .208rem;
+  font: 18px 'MicroSoft YaHei';
+  background: url("../images/bg-attr-02.png") left center no-repeat;
+  -webkit-background-size: 7.35rem .667rem;
+  background-size: 7.35rem .667rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists {
+  margin-bottom: .069rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain {
+  position: relative;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger h2,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common h2,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto h2,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain h2 {
+  font: 16px 'MicroSoft YaHei';
+  color: #563204;
+  display: block;
+  padding: .069rem .153rem .069rem .545rem;
+  margin: .2778rem 0;
+  position: relative;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger h2:before,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common h2:before,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto h2:before,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain h2:before {
+  content: '';
+  position: absolute;
+  width: .5rem;
+  height: .5rem;
+  left: 0;
+  top: 50%;
+  margin-top: -0.25rem;
+  background: url("../images/bg-tstd-04.png") no-repeat;
+  -webkit-background-size: 10rem;
+  background-size: 10rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li {
+  min-height: .48rem;
+  padding: .069rem .153rem;
+  overflow: hidden;
+  position: relative;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li p {
+  line-height: .33rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label {
+  font-size: 14px;
+  color: #e2d0a4;
+  position: absolute;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li p,
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li p {
+  float: left;
+  margin-left: 1.94rem;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger h2:before {
+  background-position: -3.54rem -2.514rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common h2:before {
+  background-position: -4.028rem -2.514rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto h2:before {
+  background-position: -4.528rem -2.514rem;
+}
+.tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain h2:before {
+  background-position: -5.028rem -2.514rem;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul li a:after,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul li a:after {
+  font-size: 24px;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  font-size: 28px;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public:before,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists:before {
+  font-size: 36px;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-avatar figure:after {
+  font-size: 44px;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger h2,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common h2,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto h2,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain h2,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists .tstd-source-type,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul li a,
+[data-dpr="2"] .tstd-source-body .tstd-source-main .tstd-source-switch nav ul li a {
+  font-size: 32px;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists ul li p,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  font-size: 42px;
+  line-height: .44rem;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .tstd-source-figure-lists ul li a:after,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .tstd-source-figure-lists ul li a:after {
+  font-size: 36px;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger h2,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common h2,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto h2,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain h2,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists .tstd-source-type,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .first-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .first-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .second-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .second-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-wjk .third-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch .tstd-source-content .tstd-source-zbk .third-lists ul li a,
+[data-dpr="3"] .tstd-source-body .tstd-source-main .tstd-source-switch nav ul li a {
+  font-size: 48px;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public:before,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-private .tstd-attr-lists:before {
+  font-size: 54px;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-avatar figure:after {
+  font-size: 66px;
+}
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li {
+  min-height: .68rem;
+}
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label,
+[data-dpr="1"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  line-height: .56rem;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li {
+  min-height: .68rem;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li label,
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  line-height: .56rem;
+}
+[data-dpr="2"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  margin-left: 2rem;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-anger ul li,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-common ul li,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-auto ul li,
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-captain ul li {
+  min-height: .58rem;
+}
+[data-dpr="3"] .tstd-source-body .tstd-source-main article .tstd-source-attrs.tstd-attrs-public .tstd-attr-lists ul li p {
+  margin-left: 1.6rem;
+}

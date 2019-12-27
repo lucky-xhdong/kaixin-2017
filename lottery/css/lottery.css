@@ -1,0 +1,17 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .left {
+  float: left;
+  width: 200px;
+}
+.container .center {
+  float: left;
+  width: 560px;
+  margin: 0 20px;
+}
+.container .right {
+  float: right;
+  width: 200px;
+}

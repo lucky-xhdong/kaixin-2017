@@ -1,0 +1,24 @@
+.getting-started .lists,
+.system-introduction .lists,
+.master-advanced .lists,
+.characteristic-system .lists {
+    display: none \9;
+}
+
+.getting-started:hover figure,
+.system-introduction:hover figure,
+.master-advanced:hover figure,
+.characteristic-system:hover figure {
+    display: none \9;
+}
+
+.getting-started:hover .lists,
+.system-introduction:hover .lists,
+.master-advanced:hover .lists,
+.characteristic-system:hover .lists {
+    display: block \9;
+}
+
+.bg-carousel-wrapper .carousel .bx-wrapper .bx-viewport {
+    height: 780px \9;
+}

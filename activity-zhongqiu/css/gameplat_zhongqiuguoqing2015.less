@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.national-body {
+  background: url(../images/bg-body.jpg) top center no-repeat;
+  .national-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(../images/bg-container.jpg) top center no-repeat;
+    .national-header {
+      .national-logo {
+        display: inline-block;
+        text-indent: -9999px;
+        width: 204px;
+        height: 233px;
+        background: url(../images/logo.png) no-repeat;
+      }
+      ul {
+        float: right;
+        font-size: 0;
+        position: relative;
+        width: 310px;
+        margin: 30px 300px 40px 0;
+        li {
+          position: absolute;
+          a {
+            font: 18px "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+            color: #b67e14;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, .75);
+          }
+          &:first-child {
+            top: 5px;
+            left: 0;
+          }
+          &:first-child + li {
+            top: 6px;
+            left: 115px;
+          }
+          &:first-child + li + li {
+            top: 18px;
+            left: 225px;
+          }
+        }
+      }
+    }
+    .national-nav {
+      ul {
+        margin: 60px 0 15px 0;
+        font-size: 0;
+        li {
+          display: inline-block;
+          text-align: center;
+          width: 170px;
+          margin: 0 8px;
+          background: url(../images/sprite.png) no-repeat;
+          background-position: 0 0;
+          a {
+            display: block;
+            font: 20px "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+            color: #9a1314;
+            font-weight: bold;
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .national-lists {
+      min-height: 440px;
+      position: relative;
+      background: url("../images/bg-content.png") no-repeat;
+      ul {
+        max-width: 745px;
+        padding: 70px 65px 60px 65px;
+        li {
+          display: none;
+          &:first-child {
+            display: block;
+          }
+          h1 {
+            font: 50px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+            font-weight: bold;
+            color: #8f0404;
+            margin: 0;
+          }
+          article {
+            &:before {
+              content: attr(data-before);
+              display: block;
+              font: 18px "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+              color: #d11e1f;
+              padding: 30px 0 10px 0;
+            }
+            p {
+              font: 18px "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+              line-height: 30px;
+              color: #825a0d;
+              text-indent: 30px;
+            }
+            .btn-view-detail {
+              float: right;
+              width: 98px;
+              height: 35px;
+              padding: 10px;
+              text-indent: -9999px;
+              background: url(../images/sprite.png) no-repeat;
+              background-position: 0 -66px;
+              &:hover {
+                background-position: 0 -102px;
+              }
+            }
+          }
+        }
+      }
+      ol {
+        position: absolute;
+        width: 745px;
+        padding: 0 10px;
+        left: 0;
+        top: 50%;
+        margin-top: -30px;
+        li {
+          &:first-child {
+            float: left;
+            a {
+              background-position: 0 -140px;
+            }
+          }
+          &:first-child + li {
+            float: right;
+            a {
+              background-position: -50px -140px;
+            }
+          }
+          a {
+            display: block;
+            width: 52px;
+            height: 62px;
+            text-indent: -9999px;
+            background: url(../images/sprite.png) no-repeat;
+          }
+        }
+      }
+    }
+    .national-qrcode {
+      overflow: hidden;
+      padding-right: 125px;
+      padding-bottom: 58px;
+      a {
+        float: right;
+        &:after {
+          content: attr(data-after);
+          display: block;
+          color: #edc879;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <TITLE>多玩拼图，变聪明！</TITLE>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        #div1 {
+            width: 250px;
+            height: 250px;
+
+            background-image: url(../images/ku.jpg);
+        }
+
+        #div2 {
+            width: 384px;
+            height: 384px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -192px;
+            margin-top: -220px;
+        }
+
+        #div3 {
+            width: 110px;
+            height: 24px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -55px;
+            margin-top: 180px;
+
+        }
+
+        #div3 button {
+            width: 110px;
+            height: 24px;
+            background-image: url(../images/standard.gif);
+            border: none;
+            font-weight: bold;
+            padding-top: 3px;
+        }
+
+        /*为td设宽高*/
+        #table1 {
+            border-collapse: collapse;
+        }
+
+        #table1 td {
+            width: 127px;
+            height: 127px;
+            border: 1px solid #999999;
+        }
+    </style>
+    <SCRIPT LANGUAGE="JavaScript">
+        //定义数组，按顺序记录图片名(全局变量)
+        var aImageName = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8);
+        //定义变量记录第一次点的索引位置
+        var dian1 = -1;//作用:1，用于记录第一下所点击的td位置  2，表示是否为第一次点击
+
+        //表示表格中的全部td
+        var aTd;
+
+        window.onload = function () {
+            //取出全部td
+            aTd = document.getElementById("table1").cells;
+            showTable();
+        }
+
+
+        /**
+         根据数组显示设置表格中的图片
+         */
+        function showTable() {
+
+            //抓到table对象
+            var oTable = document.getElementById("table1");
+            var aTr = oTable.rows;
+            //利用oTable的集合的到表格中所有的td
+            var aTd = oTable.getElementsByTagName('td');
+            //遍历aTd 为每个td设置背景图
+            for (var i = 0; i < aTd.length; i++) {
+                //得到相应的td
+                var oTd = aTd[i];
+                //设置oTd的背景图
+                oTd.style.backgroundImage = "url(../images/ku_" + aImageName[i] + ".jpg)";
+            }
+        }
+
+        /**
+         打乱显示
+         */
+        function daLuan() {
+            //抓到table对象
+            var oTable = document.getElementById("table1");
+            var aTr = oTable.rows;
+            //利用oTable的集合的到表格中所有的td
+            var aTd = oTable.getElementsByTagName('td');
+            //将数组中的内容打乱
+            for (var i = 0; i < 30; i++) {
+                //随机从[0,8]之间得到随机整数(随机的索引位置)
+                var index1 = Math.floor(Math.random() * aImageName.length);
+
+                var index2 = Math.floor(Math.random() * aImageName.length);
+                //交换
+                var temp = aImageName[index1];
+                aImageName[index1] = aImageName[index2];
+                aImageName[index2] = temp;
+            }
+
+            //给表格中的每个td设置单击事件
+            for (var i = 0; i < aTd.length; i++) {
+                var oTd = aTd[i];
+                //给oTd的单击事件设置js
+                oTd.onclick = function () {
+                    //交换图片
+                    exChangeImage(this);//this表示当前事件的载体对象
+                }
+            }
+
+
+            //根据数组显示表格
+            showTable();
+        }
+
+
+        /**
+         交换图片
+         */
+        function exChangeImage(thisTd) {
+            //计算thisTd的索引
+            var col = thisTd.cellIndex;//得到该td在本行中的索引
+            //推导出(由子推父)oTd所在tr对象
+            var oTr = thisTd.parentElement;
+            //计算oTr在表格中的位置
+            var row = oTr.rowIndex;
+            //得到thidTd在整个表格中的索引位置
+            var curIndex = row * 3 + col;
+
+            if (dian1 == -1) {
+                //表示这次是第一下
+                dian1 = curIndex;
+            }
+            else {
+
+                //判断第二下的点击的位置是否为有效的
+                //得到有效位置集合
+                var arrayYX = getYouXiao();
+                //判断第二下点的位置是否在arrayYX中
+                var isExist = false;//(标识位)表示没在数组中
+                //遍历arrayYX
+                for (var i = 0; i < arrayYX.length; i++) {
+                    if (curIndex == arrayYX[i])//表示在数组中
+                    {
+                        isExist = true;
+                        break;//结束循环
+                    }
+                }
+                if (isExist == true) {
+                    //交换图片
+                    var tempBackGroundImage = aTd[dian1].style.backgroundImage;
+                    aTd[dian1].style.backgroundImage = aTd[curIndex].style.backgroundImage;
+                    aTd[curIndex].style.backgroundImage = tempBackGroundImage;
+
+                    //同时改变aImageName位置上的内容
+                    var temp = aImageName[dian1];
+                    aImageName[dian1] = aImageName[curIndex];
+                    aImageName[curIndex] = temp;
+                    //alert(aImageName);
+                    //判断数组中的内容是否从0连续到8
+                    var flag = isLx();
+                    if (flag == true) {
+                        alert("拼图成功了");
+                    }
+                    //重置dian1的值
+                    dian1 = -1;
+                }
+
+            }
+
+        }
+
+        /**
+         判断数组中的内容是否是从0到8连续的
+         */
+        function isLx() {
+            for (var i = 0; i < aImageName.length; i++) {
+                if (i != aImageName[i])//表示不连接
+                {
+                    return false;//结束方法并返回false;
+                }
+            }
+            //表示是连续的
+            return true;//表示连接
+
+        }
+
+        /**
+         根据第一个点计算出有效的位置集合
+         */
+        function getYouXiao() {
+            //声明数组用于保存有效点的位置
+            var aYX = new Array(-1, -1, -1, -1);
+            //推导出dian1推导出有效的位置
+            //得到第一下点的td对象
+            var oTd = aTd[dian1];
+            //得出所在的行和列
+            var col = oTd.cellIndex;
+            var row = oTd.parentElement.rowIndex;
+            //上
+            if (row - 1 != -1) {
+                //计算索引位置
+                var shangIndex = (row - 1) * 3 + col;
+                aYX[0] = shangIndex;
+            }
+            //下
+            if (row + 1 != 3) {
+                //计算索引位置
+                var xiaIndex = (row + 1) * 3 + col;
+                aYX[1] = xiaIndex;
+            }
+
+            //左
+            if (col - 1 != -1) {
+                var zuoIndex = row * 3 + (col - 1);
+                aYX[2] = zuoIndex;
+            }
+
+            //右
+            if (col + 1 != 3) {
+                var youIndex = row * 3 + (col + 1);
+                aYX[3] = youIndex;
+            }
+
+            //将有效的位置数组返回
+            return aYX;
+        }
+    </SCRIPT>
+
+</HEAD>
+
+<BODY>
+<div id='div1'></div>
+<div id='div2'>
+    <TABLE id='table1'>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+    </TABLE>
+</div>
+<div id='div3'>
+    <button onclick='daLuan();'>打&nbsp;乱</button>
+</div>
+</BODY>
+</HTML>

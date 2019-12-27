@@ -1,0 +1,65 @@
+1.头部新加入了引用文件
+<script src="js/jquery.lottery.js"></script> //开心cdn上有，可以直接用
+<script src="js/gameplat-christmas-tree.js"></script>//新添加文件，控制圣诞树的动画效果
+<script src="js/gameplat-christmas.js"></script>//页面常用点击事件
+<link rel="stylesheet" href="css/gameplat-christmas-yt.css">//样式文件可以直接替换
+<script src="js/rem.js"></script>//适配移动端用，上一个活动有用到这个文件，可以直接用之前的
+
+2.导航处添加class类名
+<!-- nav start -->
+<nav>
+    <ul>
+        <li class="anchor-list"><a class="anchor" href="#treasure-inside">Treasure Inside</a></li>
+        <li class="anchor-list"><a class="anchor" href="#decorating-xmas">Decorating Xmas Tree</a></li>
+        <li class="anchor-list"><a class="anchor" href="#go-and-spin">Go and Spin</a></li>
+        <li><a href="javascript:;"><em>+1</em>Share to FB</a></li>
+        <li class="btn-top"><a href="javascript:;" class="top">TOP</a></li>
+    </ul>
+</nav>
+<!-- nav end -->
+
+3.补充转盘
+<div class="lottery">
+    <ul>
+        <li class="lottery-unit-0"><a href="javascript:;" data-after="Food*660K"><img src="images/food.png" alt=""/></a></li>
+        <li class="lottery-unit-1"><a href="javascript:;" data-after="Gold*30"><img src="images/gold.png" alt=""/></a></li>
+        <li class="lottery-unit-2"><a href="javascript:;" data-after="Iron*100K"><img src="images/iron.png" alt=""/></a></li>
+        <li class="lottery-unit-3"><a href="javascript:;" data-after="A.Token*15"><img src="images/token.png" alt=""/></a></li>
+        <li class="lottery-unit-4"><a href="javascript:;" data-after="Starlight*1000"><img src="images/startlight.png" alt=""/></a></li>
+        <li class="lottery-unit-5"><a href="javascript:;" data-after="Wood*880K"><img src="images/wood.png" alt=""/></a></li>
+        <li class="lottery-unit-6"><a href="javascript:;" data-after="Lv5.Gem*1"><img src="images/gem.png" alt=""/></a></li>
+        <li class="lottery-unit-7"><a href="javascript:;" data-after="RO*60"><img src="images/ro.png" alt=""/></a></li>
+        <li class="btn-start"><a href="javascript:;">start</a></li>
+    </ul>
+</div>
+
+4.添加弹出框
+<!-- pop start -->
+<div class="pop-christmas">
+    <a href="javascript:;" class="btn-pop-close">&times;</a>
+    <!-- happy new year start -->
+    <div class="happy-new-year">
+        <h2>Happy New Year 2017！</h2>
+    </div>
+    <!-- happy new year end -->
+    <!-- gift-lists start -->
+    <div class="gift-lists">
+        <ul>
+            <li><span data-before="Your code：">12345678</span></li>
+            <li><span data-before="Your code：">12345678</span></li>
+            <li><span data-before="Your code：">12345678</span></li>
+        </ul>
+    </div>
+    <!-- gift-lists end -->
+    <!-- congratulations start -->
+    <div class="congratulations">
+        <h2 data-after="Thank you for your support to COTK.">Congratulations！</h2>
+
+        <div class="gift-code" data-before="Here is your gift code:">
+            <span data-before="Your code：">12345678</span>
+        </div>
+    </div>
+    <!-- congratulations end -->
+</div>
+<div class="christmas-mask"></div>
+<!-- pop end -->

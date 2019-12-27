@@ -1,0 +1,3465 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+.anniversary-celebrity article main ul > li.anniversary-celebrity article main ul > li.anniversary-celebrity article main ul > li}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  display: none;
+  visibility: hidden;
+}
+.collapse.in {
+  display: block;
+  visibility: visible;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.affix {
+  position: fixed;
+}
+@-ms-viewport {
+  width: device-width;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+  table.visible-xs {
+    display: table;
+  }
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+  table.visible-sm {
+    display: table;
+  }
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important;
+  }
+  table.visible-md {
+    display: table;
+  }
+  tr.visible-md {
+    display: table-row !important;
+  }
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+  table.visible-lg {
+    display: table;
+  }
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+.visible-print {
+  display: none !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+  }
+  table.visible-print {
+    display: table;
+  }
+  tr.visible-print {
+    display: table-row !important;
+  }
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+.visible-print-block {
+  display: none !important;
+}
+@media print {
+  .visible-print-block {
+    display: block !important;
+  }
+}
+.visible-print-inline {
+  display: none !important;
+}
+@media print {
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+.visible-print-inline-block {
+  display: none !important;
+}
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* CSS Document */
+li {
+  list-style: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-underline: none;
+}
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+.anniversary-home-body .anniversary-home-container {
+  padding: 10px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home {
+  position: relative;
+  min-height: 450px;
+  margin-top: 390px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li {
+  position: absolute;
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 244px;
+  height: 244px;
+  background: url("../images/sprite-index.png") no-repeat;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li a {
+  display: block;
+  text-indent: -9999px;
+  width: inherit;
+  height: inherit;
+  color: #be620e;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child {
+  left: 135px;
+  top: 0px;
+  background-position: 0 0;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child:hover,
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child.active {
+  background-position: 0 -244px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li {
+  left: 50%;
+  margin-left: -122px;
+  top: 200px;
+  background-position: 0 -488px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li:hover,
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li.active {
+  background-position: 0 -732px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li {
+  right: 135px;
+  top: 0px;
+  background-position: 0 -976px;
+}
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li:hover,
+.anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li.active {
+  background-position: 1px -1220px;
+}
+footer {
+  background-color: #060302;
+}
+html {
+  height: 100%;
+}
+
+.anniversary-header {
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 100%;
+}
+.anniversary-header .anniversary-header-left,
+.anniversary-header .anniversary-header-right {
+  display: table-cell;
+  *display: table-cell;
+  zoom: 1;
+}
+.anniversary-header .anniversary-header-left {
+  vertical-align: middle;
+  width: 100%;
+}
+.anniversary-header .anniversary-header-left a {
+  text-indent: -9999px;
+  display: inline-block;
+  *display: inline-block;
+  zoom: 1;
+  width: 168px;
+  height: 88px;
+  margin: 24px 12px;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -525px;
+}
+.anniversary-header .anniversary-header-right {
+  vertical-align: top;
+  width: 1%;
+  white-space: nowrap;
+  padding: 44px 20px;
+}
+.anniversary-header .anniversary-header-right ul {
+  font-size: 0;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+}
+.anniversary-header .anniversary-header-right ul li {
+  display: inline-block;
+  *display: inline-block;
+  zoom: 1;
+}
+.anniversary-header .anniversary-header-right ul li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 4px;
+  height: 18px;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -95px 0;
+}
+.anniversary-header .anniversary-header-right ul li:first-child:before {
+  background: none;
+}
+.anniversary-header .anniversary-header-right ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 90px;
+  height: 22px;
+  background: url("../images/sprite-texts.png") no-repeat;
+}
+.anniversary-header .anniversary-header-right ul li:first-child a {
+  background-position: 0 0;
+}
+.anniversary-header .anniversary-header-right ul li:first-child + li a {
+  background-position: 0 -78px;
+}
+.anniversary-header .anniversary-header-right ul li:first-child + li + li a {
+  background-position: 0 -130px;
+}
+.anniversary-header .anniversary-header-right ul li:first-child a:hover {
+  background-position: 0 -26px;
+}
+.anniversary-header .anniversary-header-right ul li:first-child + li a:hover {
+  background-position: 0 -53px;
+}
+.anniversary-header .anniversary-header-right ul li:first-child + li + li a:hover {
+  background-position: 0 -104px;
+}
+.bg-anniversary-body {
+  background-color: #280a1d;
+}
+.anniversary-home-body {
+  background: url("../images/bg-body-index.jpg") top center no-repeat;
+}
+.anniversary-body {
+  background: url("../images/bg-body.jpg") top center no-repeat;
+}
+.anniversary-home-body .anniversary-home-container,
+.anniversary-body .anniversary-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.anniversary-home-body .anniversary-home-container {
+  background: url("../images/bg-container-index.jpg") top center no-repeat;
+}
+.anniversary-body .anniversary-container {
+  overflow: hidden;
+  background: url("../images/bg-container.jpg") top center no-repeat;
+}
+.anniversary-common-navbar {
+  width: 1000px;
+  margin: 390px auto 10px auto;
+  min-height: 450px;
+}
+.anniversary-common-navbar ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.anniversary-common-navbar ul li {
+  width: 244px;
+  height: 244px;
+  position: absolute;
+  background: url("../images/sprite-index.png") no-repeat;
+}
+.anniversary-common-navbar ul li a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.anniversary-common-navbar ul li:first-child {
+  left: 135px;
+  top: 0px;
+  background-position: 0 0;
+}
+.anniversary-common-navbar ul li:first-child:hover,
+.anniversary-common-navbar ul li:first-child.active {
+  background-position: 0 -244px;
+}
+.anniversary-common-navbar ul li:first-child + li {
+  left: 50%;
+  margin-left: -122px;
+  top: 100px;
+  background-position: 0 -488px;
+}
+.anniversary-common-navbar ul li:first-child + li:hover,
+.anniversary-common-navbar ul li:first-child + li.active {
+  background-position: 0 -732px;
+}
+.anniversary-common-navbar ul li:first-child + li + li {
+  right: 135px;
+  top: 0px;
+  background-position: 0 -976px;
+}
+.anniversary-common-navbar ul li:first-child + li + li:hover,
+.anniversary-common-navbar ul li:first-child + li + li.active {
+  background-position: 0 -1220px;
+}
+.anniversary-popover {
+  height: auto;
+  background-color: #380b17;
+  position: fixed;
+  top: 50%;
+  border: 5px solid #86130c;
+  outline: 1px solid #ca1005;
+  z-index: 1111;
+}
+.anniversary-popover .anniversary-popover-close {
+  width: 54px;
+  height: 55px;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -625px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+}
+.anniversary-popover.anniversary-popover-code {
+  display: none;
+  *display: none;
+  zoom: 1;
+  padding: 50px;
+  width: 622px;
+  left: 50%;
+  margin-left: -311px;
+  margin-top: -177px;
+}
+.anniversary-popover.anniversary-popover-code:before {
+  content: '';
+  display: block;
+  width: 345px;
+  height: 46px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -105px 0;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-body menu {
+  padding: 20px 100px;
+  margin: 0;
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-body menu:before {
+  content: '';
+  display: block;
+  width: 174px;
+  height: 36px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -342px -184px;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li {
+  color: #607d87;
+  margin-bottom: 20px;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li:before {
+  content: attr(data-span);
+  display: block;
+  *display: block;
+  zoom: 1;
+  text-align: left;
+  font: 16px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  font-weight: bold;
+  line-height: 30px;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li span {
+  font: 20px SimHei;
+  color: #ff8cac;
+  display: block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #6c0320;
+  border: 1px solid #ae0333;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption:first-child {
+  font: 16px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  line-height: 25px;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption:first-child + figcaption {
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  line-height: 25px;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption {
+  color: #ad254a;
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption a {
+  color: #e58200;
+  text-decoration: underline;
+}
+.anniversary-popover.anniversary-popover-failed {
+  display: none;
+  *display: none;
+  zoom: 1;
+  text-align: center;
+  padding: 50px;
+  width: 622px;
+  left: 50%;
+  margin-left: -311px;
+  margin-top: -156px;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-header {
+  font-size: 0;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-header:after {
+  content: '';
+  display: block;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-header:after {
+  width: 367px;
+  height: 46px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -105px -48px;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-body .btn-popover-login {
+  display: block;
+  *display: block;
+  zoom: 1;
+  width: 171px;
+  height: 52px;
+  margin: 40px auto;
+  font-size: 0;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -185px;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-body .btn-popover-login:hover {
+  background-position: 0 -243px;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-footer figcaption {
+  font: 16px SimHei;
+  color: #ad254a;
+  line-height: 25px;
+}
+.anniversary-popover.anniversary-popover-failed .anniversary-popover-footer figcaption a {
+  color: #e58200;
+  text-decoration: underline;
+}
+.anniversary-popover.anniversary-popover-successed {
+  display: none;
+  *display: none;
+  zoom: 1;
+  text-align: center;
+  padding: 50px;
+  width: 668px;
+  left: 50%;
+  margin-left: -334px;
+  margin-top: -170px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-header {
+  font-size: 0;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-header:before,
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-header:after {
+  content: '';
+  display: block;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-header:before {
+  width: 384px;
+  height: 48px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -105px -95px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-header:after {
+  width: 561px;
+  height: 38px;
+  margin: 10px auto 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -363px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-body .btn-popover-lg {
+  display: block;
+  *display: block;
+  zoom: 1;
+  width: 381px;
+  height: 52px;
+  font-size: 0;
+  margin: 30px auto 40px auto;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -307px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-body .btn-popover-lg:hover {
+  background-position: 0 -364px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-footer figcaption {
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  color: #ad254a;
+  line-height: 25px;
+}
+.anniversary-popover.anniversary-popover-successed .anniversary-popover-footer figcaption a {
+  color: #ad254a;
+}
+.anniversary-popover.anniversary-popover-rewarded {
+  display: none;
+  *display: none;
+  zoom: 1;
+  padding: 20px 25px;
+  width: 622px;
+  left: 50%;
+  margin-left: -311px;
+  margin-top: -284px;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body:before {
+  content: '';
+  display: block;
+  width: 274px;
+  height: 47px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -105px -137px;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body h4 {
+  text-align: center;
+  font: 20px SimHei;
+  color: #fee078;
+  margin: 10px 0;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu {
+  padding: 0;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu:before {
+  content: attr(data-title);
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  color: #fee078;
+  display: block;
+  *display: block;
+  zoom: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:before,
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:after {
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  color: #fee078;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:before {
+  content: attr(data-before);
+  display: inline-block;
+  *display: inline-block;
+  zoom: 1;
+  width: 100px;
+  text-align: right;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:after {
+  content: attr(data-after);
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li input,
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li select {
+  border: 1px solid #d88368;
+  background-color: #4d0518;
+  color: #cd745b;
+  border-radius: 0;
+  padding: 2px 5px;
+  width: 223px;
+  height: 27px;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body .btn-popover-submit {
+  display: block;
+  *display: block;
+  zoom: 1;
+  width: 131px;
+  height: 52px;
+  border: none;
+  font-size: 0;
+  margin: 10px auto;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -251px 0;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body .btn-popover-submit:hover {
+  background-position: -251px -57px;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-footer figcaption {
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  color: #ad254a;
+  line-height: 25px;
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-rewarded .anniversary-popover-footer figcaption a {
+  color: #e58200;
+  text-decoration: underline;
+}
+
+.anniversary-popover.anniversary-popover-giftbox {
+  display: none;
+  *display: none;
+  zoom: 1;
+  padding: 20px 25px;
+  width: 666px;
+  left: 50%;
+  margin-left: -333px;
+  margin-top: -186px;
+}
+.anniversary-popover.anniversary-popover-giftbox:before {
+  content: '';
+  display: block;
+  width: 115px;
+  height: 45px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -380px -137px;
+}
+.anniversary-popover.anniversary-popover-giftbox .anniversary-popover-header {
+  text-align: center;
+}
+.anniversary-popover.anniversary-popover-giftbox menu {
+  padding: 0;
+  border-collapse: collapse;
+}
+.anniversary-popover.anniversary-popover-giftbox  menu li {
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -1px;
+}
+.anniversary-popover.anniversary-popover-giftbox  li.menu-head {
+  background-color: #c03932;
+}
+.anniversary-popover.anniversary-popover-giftbox  li.menu-head span {
+  font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  color: #f6dcaa;
+}
+.anniversary-popover.anniversary-popover-giftbox menu li.menu-body {
+  background-color: #4c0518;
+}
+.anniversary-popover.anniversary-popover-giftbox menu li.menu-body span {
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+}
+.anniversary-popover.anniversary-popover-giftbox menu li span {
+  display: table-cell;
+  *display: table-cell;
+  zoom: 1;
+  vertical-align: middle;
+  width: 25%;
+  color: #fee078;
+  padding: 10px;
+  border: 1px solid #d88368;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.anniversary-popover.anniversary-popover-giftbox menu li span a {
+  display: inline-block;
+  font: 14px SimHei;
+  color: #b41618;
+  background-color: #f9c102;
+  padding: 7px 11px;
+}
+
+.anniversary-popover.anniversary-popover-lottery {
+  display: none;
+  *display: none;
+  zoom: 1;
+  padding: 20px 25px;
+  width: 680px;
+  left: 50%;
+  margin-left: -340px;
+  margin-top: -213px;
+}
+
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body:before {
+  content: '';
+  display: block;
+  width: 245px;
+  height: 56px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -353px -300px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery {
+  width: 620px;
+  height: 320px;
+  margin: 10px auto;
+  background: url("../images/bg-lottery.png") no-repeat;
+  padding: 10px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 600px;
+  height: 300px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li {
+  position: absolute;
+  text-align: center;
+  display: table;
+  overflow: hidden;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li a:after {
+  content: attr(data-after);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+  background-color: #cf3f25;
+  color: #4a346c;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li img {
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: all .4s ease-in-out .1s;
+  -moz-transition: all .4s ease-in-out .1s;
+  -ms-transition: all .4s ease-in-out .1s;
+  -o-transition: all .4s ease-in-out .1s;
+  transition: all .4s ease-in-out .1s;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.active {
+
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-gray,
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red {
+  width: 200px;
+  height: 100px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-gray a:after,
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red a:after {
+  content: '';
+  background: transparent;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-gray {
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -422px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red {
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -203px -422px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red:hover {
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -203px -522px;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start a:after {
+  content: '';
+  background-color: transparent;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.active {
+  background-color: rgba(210, 70, 43, .6);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child {
+  width: 200px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  border-right: 1px solid rgba(246, 75, 61, .85);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li {
+  width: 200px;
+  height: 100px;
+  left: 200px;
+  top: 0;
+  border-left: 1px solid rgba(255, 255, 255, .73);
+  border-right: 1px solid rgba(246, 75, 61, .85);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li {
+  width: 198px;
+  height: 100px;
+  left: 400px;
+  top: 0;
+  border-left: 1px solid rgba(255, 255, 255, .73);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li {
+  width: 198px;
+  height: 100px;
+  left: 400px;
+  top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-left: 1px solid rgba(255, 255, 255, .73);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li {
+  width: 200px;
+  height: 100px;
+  left: 400px;
+  top: 200px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-left: 1px solid rgba(255, 255, 255, .73);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li {
+  width: 200px;
+  height: 100px;
+  left: 200px;
+  top: 200px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-left: 1px solid rgba(255, 255, 255, .73);
+  border-right: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li a:after {
+  border-radius: 0 0 8px 0;
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li {
+  width: 200px;
+  height: 100px;
+  left: 0;
+  top: 200px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-right: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li {
+  width: 200px;
+  height: 100px;
+  left: 0;
+  top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-right: 1px solid rgba(246, 75, 61, .85);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li + li {
+  width: 200px;
+  height: 100px;
+  font-size: 0;
+  left: 200px;
+  top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, .73);
+  border-left: 1px solid rgba(255, 255, 255, .73);
+  border-right: 1px solid rgba(246, 75, 61, .85);
+  border-bottom: 1px solid rgba(246, 75, 61, .85);
+}
+.anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li a:after {
+  border-radius: 0 0 0 8px;
+}
+.anniversary-mask {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 111;
+}
+.qr-code {
+  position: fixed;
+  width: 131px;
+  height: 165px;
+  padding: 2px;
+  top: 50%;
+  margin-top: -82px;
+  right: 0;
+  background-color: #32023d;
+  border: 1px solid #58016c;
+}
+.qr-code a {
+  display: block;
+  *display: block;
+  zoom: 1;
+}
+.qr-code a:after {
+  content: '';
+  display: block;
+  width: 91px;
+  height: 20px;
+  margin: 10px auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -159px;
+}
+.qr-code a img {
+  max-width: 100%;
+}
+.anniversary-msgboard {
+  min-height: 1000px;
+  padding: 0 36px;
+}
+.anniversary-msgboard hgroup {
+  text-align: right;
+  padding: 20px 0;
+}
+.anniversary-msgboard hgroup:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.anniversary-msgboard hgroup a {
+  line-height: 25px;
+  color: #d12408;
+  font: 14px SimHei;
+}
+.anniversary-msgboard hgroup .btn-view-box {
+  float: left;
+}
+.anniversary-msgboard hgroup .btn-return-tohome {
+  float: right;
+}
+.anniversary-msgboard .anniversary-msgboard-comment:before {
+  content: '';
+  display: block;
+  width: 350px;
+  height: 60px;
+  margin: 25px auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -300px;
+}
+.anniversary-msgboard .anniversary-msgboard-comment textarea {
+  width: 100%;
+  border: 2px solid #f8c501;
+  outline: 2px solid #a33c00;
+  background-color: #1f0817;
+  color: #d593be;
+  padding: 20px;
+  font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  resize: none;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar {
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 100%;
+  text-align: right;
+  padding: 15px 0;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left,
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right {
+  display: table-cell;
+  *display: table-cell;
+  zoom: 1;
+  vertical-align: middle;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left {
+  width: 100%;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left:before {
+  content: attr(data-before);
+  color: #d593be;
+  font: 12px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left input {
+  border: 1px solid #bd77a5;
+  background-color: #f2e0ec;
+  color: #d593be;
+  width: 105px;
+  padding: 2px 5px;
+  vertical-align: middle;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left a {
+  padding: 0 10px;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right button {
+  min-width: 82px;
+  margin-left: 10px;
+  color: #480a33;
+  padding: 5px 10px;
+  border: none;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -115px;
+}
+.anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right button:hover {
+  background-position: -96px -115px;
+  color: #fff;
+}
+.anniversary-msgboard {
+  padding-bottom: 100px;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul {
+  margin: 0;
+  padding: 0;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li {
+  display: table;
+  *display: table;
+  zoom: 1;
+  width: 100%;
+  margin: 20px 0;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left,
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right {
+  display: table-cell;
+  *display: table-cell;
+  zoom: 1;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left {
+  vertical-align: top;
+  width: 6%;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left a {
+  display: block;
+  border-radius: 2px;
+  border: 2px solid #a33c00;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left img {
+  width: 100px;
+  height: 100px;
+  background-color: #869da7;
+  outline: none;
+  border: 2px solid #f8c501;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right {
+  padding-left: 30px;
+  width: 94%;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody {
+  border: 2px solid #a33c00;
+  border-radius: 2px 6px 6px 6px;
+  -moz-border-radius: 2px 6px 6px 6px;
+  -webkit-border-radius: 2px 6px 6px 6px;
+  position: relative;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-border {
+  background-color: #1f0817;
+  border: 2px solid #f8c501;
+  border-radius: 2px 4px 4px 4px;
+  -moz-border-radius: 2px 4px 4px 4px;
+  -webkit-border-radius: 2px 4px 4px 4px;
+  position: relative;
+  padding: 10px 25px;
+  font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  min-height: 100px;
+  line-height: 20px;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody:before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 36px;
+  background: url("../images/sprite-buttons.png") -240px -110px no-repeat;
+  left: -22px;
+  top: -5px;
+  z-index: 11;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left {
+  float: left;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span {
+  display: inline-block;
+  *display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  margin-right: 20px;
+  font: 16px SimHei;
+  color: #edd888;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-right {
+  float: right;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-right a {
+  font: 16px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  color: #b25e96;
+  padding: 5px 10px 5px 30px;
+  margin-left: 20px;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left,
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-right {
+  padding-bottom: 14px;
+  color: #8fa1a8;
+}
+.anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-bottom {
+  border-top: 1px dotted #93a9b2;
+  padding-top: 15px;
+  color: #7a5f71;
+}
+.anniversary-msgboard .anniversary-msg-rule:before {
+  content: '';
+  display: block;
+  width: 483px;
+  height: 32px;
+  margin: 20px 0;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -263px;
+}
+.anniversary-msgboard .anniversary-msg-rule h1 {
+  font: 16px SimHei;
+  line-height: 24px;
+  color: #e58200;
+  margin: 15px 0;
+}
+.anniversary-msgboard .anniversary-msg-rule h1:before {
+  content: '';
+  display: block;
+  width: 117px;
+  height: 29px;
+  margin-bottom: 15px;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -202px -188px;
+}
+.anniversary-msgboard .anniversary-msg-rule ul {
+  padding: 0;
+}
+.anniversary-msgboard .anniversary-msg-rule ul:before {
+  content: attr(data-before);
+  display: block;
+  font: 16px SimHei;
+  color: #e58200;
+  margin-bottom: 10px;
+}
+.anniversary-msgboard .anniversary-msg-rule ul li span {
+  font: 12px SimHei;
+  color: #b83600;
+}
+.anniversary-msgboard .anniversary-msg-rule ul li span a {
+  font: 12px SimHei;
+  color: #e58200;
+  text-decoration: underline;
+}
+.anniversary-activity {
+  padding: 0 45px;
+}
+.anniversary-activity .backtohome {
+  text-align: right;
+}
+.anniversary-activity .backtohome a {
+  color: #d12408;
+}
+.anniversary-activity h3 {
+  font: 20px SimHei;
+  color: #edd888;
+}
+.anniversary-activity .anniversary-activity-signed {
+  display: table;
+  width: 100%;
+  padding: 15px 0;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-left,
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center,
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-left p {
+  font: 20px SimHei;
+  color: #edd888;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-left p mark {
+  background-color: transparent;
+  font: 20px SimHei;
+  color: #b25e96;
+  margin: 0 20px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center {
+  width: 24%;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups {
+  text-align: center;
+  padding: 0 10px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups button {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  width: 121px;
+  height: 52px;
+  margin: 10px 0;
+  text-indent: -9999px;
+  background: url("../images/sprite-buttons.png") no-repeat;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-lottery {
+  background-position: 0 0;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-lottery:hover {
+  background-position: -126px 0;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-sign {
+  background-position: 0 -57px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-sign:hover {
+  background-position: -126px -57px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right .btn-sign-lg {
+  display: block;
+  text-indent: -9999px;
+  width: 212px;
+  height: 78px;
+  margin: 0 auto 40px auto;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -171px -148px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right .btn-sign-lg:hover {
+  background-position: -171px -226px;
+}
+.anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right:after {
+  content: '';
+  display: block;
+  width: 483px;
+  height: 30px;
+  margin: 0 auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -263px;
+}
+.anniversary-activity .anniversary-activity-calendar menu {
+  padding: 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.anniversary-activity .anniversary-activity-calendar menu li {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span {
+  display: block;
+  text-indent: -9999px;
+  width: 130px;
+  height: 80px;
+  font-size: 0;
+  background-color: #170411;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+  content: '';
+  display: block;
+  text-align: center;
+  width: 88px;
+  height: 30px;
+  margin: 23px auto;
+  background: url("../images/sprite-texts.png") no-repeat;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child:after {
+  background-position: -527px 0;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span:after {
+  background-position: -527px -36px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span:after {
+  background-position: -527px -72px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span:after {
+  background-position: -527px -108px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span:after {
+  background-position: -527px -144px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span:after {
+  background-position: -527px -179px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span + span:after {
+  background-position: -527px -216px;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+  width: 130px;
+  height: 60px;
+  font: 26px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  position: relative;
+  background-color: #170411;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-currnet {
+  background-color: #f9e896;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-currnet a {
+  color: #e58200;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed:before,
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed:after {
+  content: '';
+  position: absolute;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed:before {
+  width: 38px;
+  height: 36px;
+  left: 50%;
+  top: 50%;
+  margin-left: -19px;
+  margin-top: -18px;
+  color: #696662;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -148px;
+  z-index: 111;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #31272e;
+  z-index: 2;
+}
+.anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed a {
+  color: #696662;
+}
+
+.anniversary-activity .anniversary-activity-calendar menu li span,
+.anniversary-activity .anniversary-activity-calendar menu li .menu-date-ceil {
+  float: left;
+  color: #7d97a0;
+  border: 2px solid #72054c;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.anniversary-activity .anniversary-activity-calendar menu li span a,
+.anniversary-activity .anniversary-activity-calendar menu li .menu-date-ceil a {
+  color: #e58200;
+  display: table-cell;
+  *display: table-cell;
+  zoom: 1;
+  vertical-align: middle;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  z-index: 11;
+}
+.anniversary-activity .anniversary-activity-award {
+  padding: 30px 60px;
+  border: 2px solid #72054c;
+  margin: 60px 0;
+}
+.anniversary-activity .anniversary-activity-award figcaption:before,
+.anniversary-activity .anniversary-activity-award figcaption:after {
+  content: '';
+}
+.anniversary-activity .anniversary-activity-award figcaption:before  {
+  float: left;
+  width: 197px;
+  height: 36px;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -184px;
+}
+.anniversary-activity .anniversary-activity-award figcaption:after {
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.anniversary-activity .anniversary-activity-award figcaption a {
+  float: right;
+  font: 14px SimHei;
+  color: #b83600;
+  margin: 10px 0;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists {
+  font: 12px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  margin: 24px auto 0 auto;
+  padding: 0 8px;
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul {
+  margin: 0;
+  padding: 0;
+  max-height: 395px;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li {
+  font: 20px SimHei;
+  line-height: 32px;
+  color: #e58200;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li:before {
+  content: attr(data-time);
+  width: 100px;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li:before,
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span,
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span em {
+  display: inline-block;
+  *display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child {
+  min-width: 330px;
+  text-align: center;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child,
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span em  {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span em {
+  font-style: normal;
+  max-width: 230px;
+  padding-left: 10px;
+  color: #b83600;
+}
+.anniversary-activity .anniversary-msg-rule:before {
+  content: '';
+  display: block;
+  width: 483px;
+  height: 32px;
+  margin: 20px 0;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -263px;
+}
+.anniversary-activity .anniversary-msg-rule h1 {
+  font: 16px SimHei;
+  line-height: 24px;
+  color: #e58200;
+  margin: 15px 0;
+}
+.anniversary-activity .anniversary-msg-rule h1:before {
+  content: '';
+  display: block;
+  width: 117px;
+  height: 29px;
+  margin-bottom: 15px;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -202px -188px;
+}
+.anniversary-activity .anniversary-msg-rule ul {
+  padding: 0;
+}
+.anniversary-activity .anniversary-msg-rule ul:before {
+  content: attr(data-before);
+  display: block;
+  font: 16px SimHei;
+  color: #e58200;
+  margin-bottom: 10px;
+}
+.anniversary-activity .anniversary-msg-rule ul li span {
+  font: 12px SimHei;
+  color: #b83600;
+}
+.anniversary-activity .anniversary-msg-rule ul li span a {
+  font: 12px SimHei;
+  color: #e58200;
+  text-decoration: underline;
+}
+
+.anniversary-celebrity {
+  min-height: 1000px;
+  padding: 0 36px;
+}
+.anniversary-celebrity hgroup {
+  text-align: right;
+  padding: 20px 0;
+}
+.anniversary-celebrity hgroup:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.anniversary-celebrity hgroup a {
+  line-height: 25px;
+  color: #d12408;
+  font: 14px SimHei;
+}
+.anniversary-celebrity hgroup .btn-return-tohome {
+  float: right;
+}
+
+.anniversary-celebrity article:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.anniversary-celebrity article aside {
+  float: left;
+}
+.anniversary-celebrity article aside ul {
+  padding: 0;
+}
+.anniversary-celebrity article aside ul > li {
+  border-radius: 2px;
+  border: 1px solid #a33c00;
+  position: relative;
+  background-color: #1f0817;
+  width: 314px;
+  height: 140px;
+  margin-bottom: 66px;
+  padding: 0 10px;
+}
+.anniversary-celebrity article aside ul > li img {
+  width: 104px;
+  height: 104px;
+  border: 1px solid #72054c;
+  margin: 17px;
+  float: left;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+  float: left;
+  margin: 10px 0;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person h3,
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person h3 {
+  font: 16px SimHei;
+  color: #b25e96;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person p {
+  font: 12px SimHei;
+  color: #7a5f71;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists {
+  overflow: hidden;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol {
+  padding: 0;
+  margin: 10px 0;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol li a {
+  font: 16px SimHei;
+  color: #480a33;
+  padding: 8px 14px;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -115px;
+}
+.anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol li a:hover {
+  background-position: -96px -115px;
+}
+.anniversary-celebrity article aside ul > li:before,
+.anniversary-celebrity article aside ul > li:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border: 20px solid;
+  border-color: transparent;
+  top: 0;
+}
+.anniversary-celebrity article aside ul > li:before {
+  border-left-color: #a33c00;
+  right: -41px;
+}
+.anniversary-celebrity article aside ul > li:after {
+  border-left-color: #1f0817;
+  right: -40px;
+}
+.anniversary-celebrity article main {
+  float: left;
+  margin-left: 45px;
+}
+.anniversary-celebrity article main ul {
+  padding: 0;
+}
+.anniversary-celebrity article main ul > li {
+  border: 1px solid #a33c00;
+  margin-bottom: 50px;
+  width: 526px;
+  height: 204px;
+  text-align: center;
+  overflow: hidden;
+}
+.anniversary-celebrity article main ul > li a {
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.anniversary-celebrity article main ul > li img {
+  max-width: 100%;
+}
+.anniversary-celebrity .anniversary-msg-rule:before {
+  content: '';
+  display: block;
+  width: 483px;
+  height: 32px;
+  margin: 20px 0;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: 0 -263px;
+}
+.anniversary-celebrity .anniversary-msg-rule h1 {
+  font: 16px SimHei;
+  line-height: 24px;
+  color: #e58200;
+  margin: 15px 0;
+}
+.anniversary-celebrity .anniversary-msg-rule h1:before {
+  content: '';
+  display: block;
+  width: 117px;
+  height: 29px;
+  margin-bottom: 15px;
+  background: url("../images/sprite-texts.png") no-repeat;
+  background-position: -202px -188px;
+}
+.anniversary-celebrity .anniversary-msg-rule ul {
+  padding: 0;
+}
+.anniversary-celebrity .anniversary-msg-rule ul:before {
+  content: attr(data-before);
+  display: block;
+  font: 16px SimHei;
+  color: #e58200;
+  margin-bottom: 10px;
+}
+.anniversary-celebrity .anniversary-msg-rule ul li span {
+  font: 12px SimHei;
+  color: #b83600;
+}
+.anniversary-celebrity .anniversary-msg-rule ul li span a {
+  font: 12px SimHei;
+  color: #e58200;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .anniversary-home-body .anniversary-home-container {
+    padding: 5px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    min-height: 225px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li {
+    width: 122px;
+    height: 122px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child {
+    left: 68px;
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child:hover,
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child.active {
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+    background-position: 0 -122px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li {
+    margin-left: -61px;
+    top: 100px;
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+    background-position: 0 -244px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li:hover,
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li.active {
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+    background-position: 0 -366px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li {
+    right: 68px;
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+    background-position: 0 -488px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li:hover,
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li.active {
+    -webkit-background-size: 122px 750px;
+    background-size: 122px 750px;
+    background-position: 1px -610px;
+  }
+  .anniversary-header .anniversary-header-left a {
+    width: 84px;
+    height: 44px;
+    margin: 12px 6px;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -262.5px;
+  }
+  .anniversary-header .anniversary-header-right {
+    padding: 22px 10px;
+  }
+  .anniversary-header .anniversary-header-right ul li:before {
+    width: 2px;
+    height: 9px;
+    background: url("../images/sprite-texts.png") no-repeat;
+    background-position: -95px 0;
+  }
+  .anniversary-header .anniversary-header-right ul li a {
+    margin: 0 5px;
+    width: 60px;
+    height: 15px;
+    -webkit-background-size: 413px 267px;
+    background-size: 413px 267px;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child a {
+    background-position: 0 0;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child + li a {
+    background-position: 0 -52px;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child + li + li a {
+    background-position: 0 -86px;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child a:hover {
+    background-position: 0 -17px;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child + li a:hover {
+    background-position: 0 -35px;
+  }
+  .anniversary-header .anniversary-header-right ul li:first-child + li + li a:hover {
+    background-position: 0 -69px;
+  }
+  .anniversary-home-body {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .anniversary-body {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .anniversary-home-body .anniversary-home-container,
+  .anniversary-body .anniversary-container {
+    width: 100%;
+  }
+  .anniversary-home-body .anniversary-home-container {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .anniversary-body .anniversary-container {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .anniversary-common-navbar {
+    width: 100%;
+    margin: 325px auto 5px auto;
+    min-height: 180px;
+  }
+  .anniversary-common-navbar ul li {
+    width: 122px;
+    height: 122px;
+    background-size: 122px 750px;
+  }
+  .anniversary-common-navbar ul li:first-child {
+    left: 68px;
+    background-position: 0 0;
+  }
+  .anniversary-common-navbar ul li:first-child:hover,
+  .anniversary-common-navbar ul li:first-child.active {
+    background-position: 0 -122px;
+  }
+  .anniversary-common-navbar ul li:first-child + li {
+    margin-left: -61px;
+    top: 50px;
+    background-position: 0 -244px;
+  }
+  .anniversary-common-navbar ul li:first-child + li:hover,
+  .anniversary-common-navbar ul li:first-child + li.active {
+    background-position: 0 -366px;
+  }
+  .anniversary-common-navbar ul li:first-child + li + li {
+    right: 68px;
+    background-position: 0 -488px;
+  }
+  .anniversary-common-navbar ul li:first-child + li + li:hover,
+  .anniversary-common-navbar ul li:first-child + li + li.active {
+    background-position: 0 -610px;
+  }
+  .anniversary-popover {
+    border: 3px solid #86130c;
+  }
+  .anniversary-popover .anniversary-popover-close {
+    width: 27px;
+    height: 26px;
+    background: url("../images/sprite-buttons.png") no-repeat;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -314px;
+  }
+  .anniversary-popover.anniversary-popover-code {
+    padding: 24px 12px;
+    width: 311px;
+    margin-left: -155.5px;
+    margin-top: -132px;
+  }
+  .anniversary-popover.anniversary-popover-code:before {
+    width: 172.5px;
+    height: 23px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -52px 0;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-body menu {
+    padding: 10px 20px;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-body menu:before {
+    width: 87px;
+    height: 18px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -171px -92px;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li {
+    margin: 10px 0;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li:before {
+    font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+    line-height: 30px;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-body menu li span {
+    font: 16px SimHei;
+    padding: 5px 10px;
+    margin: 5px 0;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption:first-child {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+    line-height: 25px;
+  }
+  .anniversary-popover.anniversary-popover-code .anniversary-popover-footer figcaption:first-child + figcaption {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+    line-height: 25px;
+  }
+  .anniversary-popover.anniversary-popover-failed {
+    padding: 24px 12px;
+    width: 311px;
+    margin-left: -155px;
+    margin-top: -86px;
+  }
+  .anniversary-popover.anniversary-popover-failed .anniversary-popover-header:after {
+    width: 183px;
+    height: 23px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -52px -24px;
+  }
+  .anniversary-popover.anniversary-popover-failed .anniversary-popover-body .btn-popover-login {
+    width: 85px;
+    height: 26px;
+    margin: 10px auto;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -92px;
+  }
+  .anniversary-popover.anniversary-popover-failed .anniversary-popover-body .btn-popover-login:hover {
+    background-position: -1px -121px;
+  }
+  .anniversary-popover.anniversary-popover-failed .anniversary-popover-footer figcaption {
+    font: 14px SimHei;
+    line-height: 25px;
+  }
+  .anniversary-popover.anniversary-popover-successed {
+    padding: 25px 5px;
+    width: 310px;
+    margin-left: -155px;
+    margin-top: -107px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-header:before {
+    width: 192px;
+    height: 24px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -52px -48px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-header:after {
+    width: 285px;
+    height: 19px;
+    margin: 5px auto 0 auto;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -181px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-body .btn-popover-lg {
+    width: 190px;
+    height: 26px;
+    margin: 15px auto 20px auto;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -153px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-body .btn-popover-lg:hover {
+    background-position: 0 -181px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-footer figcaption {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+    line-height: 25px;
+  }
+  .anniversary-popover.anniversary-popover-successed .anniversary-popover-footer figcaption a {
+    color: #e58200;
+    text-decoration: underline;
+  }
+  .anniversary-popover.anniversary-popover-rewarded {
+    padding: 10px 12px;
+    width: 311px;
+    left: 50%;
+    margin-left: -155.5px;
+    margin-top: -280px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body:before {
+    width: 137px;
+    height: 24px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -52px -68px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body h4 {
+    font: 16px SimHei;
+    margin: 5px 0;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu {
+    margin: 5px 0;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu:before {
+    margin-bottom: 5px;
+    line-height: 24px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li {
+    margin-bottom: 5px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:before {
+    width: 85px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:before,
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:after {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li:after {
+    content: attr(data-after);
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li input,
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body menu li select {
+    padding: 1px 3px;
+    width: 168px;
+    height: 27px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body .btn-popover-submit {
+    width: 65px;
+    height: 26px;
+    margin: 5px auto;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: -125px 0;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-body .btn-popover-submit:hover {
+    background-position: -125px -28px;
+  }
+  .anniversary-popover.anniversary-popover-rewarded .anniversary-popover-footer figcaption {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+    line-height: 25px;
+  }
+  .anniversary-popover.anniversary-popover-giftbox {
+    padding: 10px 2px;
+    width: 310px;
+    margin-left: -155px;
+    margin-top: -170px;
+  }
+  .anniversary-popover.anniversary-popover-giftbox:before {
+    width: 57px;
+    height: 22px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -190px -70px;
+  }
+  .anniversary-popover.anniversary-popover-giftbox  li.menu-head span {
+    font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  }
+  .anniversary-popover.anniversary-popover-giftbox menu li.menu-body span {
+    font: 14px simsun, Arial, Helvetica, sans-serif, "Microsoft YaHei";
+  }
+  .anniversary-popover.anniversary-popover-giftbox menu li span {
+    padding: 5px;
+  }
+  .anniversary-popover.anniversary-popover-giftbox menu li span a {
+    font: 14px SimHei;
+    padding: 3px 2px;
+  }
+
+  .anniversary-popover.anniversary-popover-lottery {
+    padding: 10px 5px;
+    width: 454px;
+    margin-left: -227px;
+    margin-top: -193px;
+  }
+
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body:before {
+    width: 122px;
+    height: 28px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -176px -150px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery {
+    width: 404px;
+    height: 322px;
+    margin: 5px auto;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding: 10px 7px 5px 7px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul {
+    width: 390px;
+    height: 300px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li a:after {
+    padding: 3px 0;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-gray {
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -211px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red {
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: -101px -211px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red:hover {
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: -101px -261px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child {
+    width: 130px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li {
+    width: 130px;
+    left: 130px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li {
+    width: 130px;
+    left: 260px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li {
+    width: 130px;
+    left: 260px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li {
+    width: 130px;
+    left: 260px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li {
+    width: 130px;
+    left: 130px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li a:after {
+    border-radius: 0 0 8px 0;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li {
+    width: 130px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li {
+    width: 130px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li + li {
+    width: 101px;
+    height: 50px;
+    top: 124px;
+    left: 144px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li a:after {
+    border-radius: 0 0 0 8px;
+  }
+  .qr-code {
+    width: 65px;
+    height: 83px;
+    padding: 1px;
+    margin-top: -41px;
+    z-index: 111;
+  }
+  .qr-code a:after {
+    width: 46px;
+    height: 10px;
+    margin: 5px auto;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -80px;
+  }
+  .anniversary-msgboard {
+    min-height: 500px;
+    padding: 0 18px;
+  }
+  .anniversary-msgboard hgroup {
+    padding: 10px 0;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment:before {
+    width: 175px;
+    height: 30px;
+    margin: 12px auto;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -150px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment textarea {
+    border: 1px solid #f8c501;
+    outline: 1px solid #a33c00;
+    padding: 10px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar {
+    padding: 8px 0;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left input {
+    width: 105px;
+    padding: 2px 5px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left a {
+    padding: 0 5px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right button {
+    margin-left: 5px;
+    padding: 2px 5px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right button:hover {
+    background-position: -96px -115px;
+  }
+  .anniversary-msgboard {
+    padding-bottom: 50px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li {
+    margin: 10px 0;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left a {
+    width: 80px;
+    border-radius: 1px;
+    border: 1px solid #a33c00;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f8c501;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right {
+    padding-left: 15px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody {
+    border: 1px solid #a33c00;
+    border-radius: 1px 3px 3px 3px;
+    -moz-border-radius: 1px 3px 3px 3px;
+    -webkit-border-radius: 1px 3px 3px 3px;
+    position: relative;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-border {
+    border: 1px solid #f8c501;
+    border-radius: 1px 2px 2px 2px;
+    -moz-border-radius: 1px 2px 2px 2px;
+    -webkit-border-radius: 1px 2px 2px 2px;
+    padding: 5px 12px;
+    min-height: 50px;
+    line-height: 20px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody:before {
+    width: 13px;
+    height: 18px;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: -120px -55px;
+    left: -11px;
+    top: -2px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span {
+    margin-right: 20px;
+    font: 16px SimHei;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+    max-width: 100px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-right a {
+    font: 16px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+    padding: 3px 5px 3px 15px;
+    margin-left: 10px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left,
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-right {
+    padding-bottom: 14px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-bottom {
+    padding-top: 8px;
+  }
+  .anniversary-msgboard .anniversary-msg-rule:before {
+    width: 248px;
+    height: 16px;
+    margin: 10px 0;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -131px;
+  }
+  .anniversary-msgboard .anniversary-msg-rule h1 {
+    font: 14px SimHei;
+    line-height: 24px;
+    margin: 8px 0;
+  }
+  .anniversary-msgboard .anniversary-msg-rule h1:before {
+    width: 58px;
+    height: 15px;
+    margin-bottom: 8px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -101px -94px;
+  }
+  .anniversary-msgboard .anniversary-msg-rule ul:before {
+    font: 14px SimHei;
+    margin-bottom: 3px;
+  }
+  .anniversary-activity {
+    padding: 0 25px;
+  }
+  .anniversary-activity h3 {
+    font: 16px SimHei;
+  }
+  .anniversary-activity .anniversary-activity-signed {
+    padding: 4px 0;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-left p {
+    font: 16px SimHei;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-left p mark {
+    font: 16px SimHei;
+    margin: 0 10px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups button {
+    width: 60px;
+    height: 26px;
+    margin: 5px 0;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-lottery {
+    background-position: 0 0;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-lottery:hover {
+    background-position: -63px 0;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-sign {
+    background-position: 0 -29px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-center .anniversary-activity-btngroups .btn-sign:hover {
+    background-position: -63px -29px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right .btn-sign-lg {
+    width: 106px;
+    height: 39px;
+    margin: 0 auto 10px auto;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: -86px -74px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right .btn-sign-lg:hover {
+    background-position: -86px -113px;
+  }
+  .anniversary-activity .anniversary-activity-signed .anniversary-activity-signed-right:after {
+    width: 241px;
+    height: 15px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -131px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 702px;
+    border: 1px solid #72054c;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span {
+    width: 100px;
+    height: 56px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    width: 44px;
+    height: 15px;
+    margin: 19px auto;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child:after {
+    background-position: -263px 0;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span:after {
+    background-position: -263px -18px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span:after {
+    background-position: -263px -36px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span:after {
+    background-position: -263px -54px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span:after {
+    background-position: -263px -72px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span:after {
+    background-position: -263px -90px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span + span:after {
+    background-position: -263px -108px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 100px;
+    height: 50px;
+    font: 18px "Microsoft YaHei", Arial, Helvetica, sans-serif, simsun;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil.activity-signed:before {
+    width: 19px;
+    height: 18px;
+    margin-left: -10px;
+    margin-top: -9px;
+    background: url("../images/sprite-buttons.png") no-repeat;
+    -webkit-background-size: 201px 340px;
+    background-size: 201px 340px;
+    background-position: 0 -73px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li span,
+  .anniversary-activity .anniversary-activity-calendar menu li .menu-date-ceil {
+    border: 1px solid #72054c;
+  }
+  .anniversary-activity .anniversary-activity-award {
+    padding: 15px 30px;
+    border: 1px solid #72054c;
+    margin: 30px 0;
+  }
+  .anniversary-activity .anniversary-activity-award figcaption:before  {
+    width: 99px;
+    height: 18px;
+    margin: 5px 0;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -92px;
+  }
+  .anniversary-activity .anniversary-activity-award figcaption a {
+    margin: 5px 0;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists {
+    margin-top: 1px;
+    padding: 10px 4px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li {
+    font: 16px SimHei;
+    line-height: 30px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li:before {
+    width: 80px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child {
+    min-width: 276px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span em {
+    max-width: 200px;
+    padding-left: 10px;
+  }
+  .anniversary-activity .anniversary-msg-rule:before {
+    width: 248px;
+    height: 16px;
+    margin: 10px 0;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -131px;
+  }
+  .anniversary-activity .anniversary-msg-rule h1 {
+    font: 14px SimHei;
+    line-height: 24px;
+    margin: 8px 0;
+  }
+  .anniversary-activity .anniversary-msg-rule h1:before {
+    width: 58px;
+    height: 15px;
+    margin-bottom: 8px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -101px -94px;
+  }
+  .anniversary-activity .anniversary-msg-rule ul:before {
+    font: 14px SimHei;
+    margin-bottom: 3px;
+  }
+
+  .anniversary-celebrity {
+    min-height: 500px;
+    padding: 0 18px;
+  }
+  .anniversary-celebrity hgroup {
+    padding: 10px 0;
+  }
+  .anniversary-celebrity hgroup a {
+    line-height: 25px;
+    font: 14px SimHei;
+  }
+  .anniversary-celebrity article aside ul > li {
+    border-radius: 1px;
+    margin-bottom: 33px;
+    padding: 0;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person h3 {
+    font: 14px SimHei;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol {
+    margin: 5px 0;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol li a {
+    font: 14px SimHei;
+    padding: 4px 10px;
+    background: url("../images/sprite-buttons.png") no-repeat;
+    background-position: 0 -115px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists ol li a:hover {
+    background-position: -96px -115px;
+  }
+  .anniversary-celebrity article aside ul > li:before,
+  .anniversary-celebrity article aside ul > li:after {
+    border: 10px solid transparent;
+  }
+  .anniversary-celebrity article aside ul > li:before {
+    border-left-color: #a33c00;
+    right: -21px;
+  }
+  .anniversary-celebrity article aside ul > li:after {
+    border-left-color: #1f0817;
+    right: -20px;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 350px;
+    height: 136px;
+    margin-bottom: 25px;
+  }
+  .anniversary-celebrity .anniversary-msg-rule:before {
+    width: 248px;
+    height: 16px;
+    margin: 10px 0;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: 0 -131px;
+  }
+  .anniversary-celebrity .anniversary-msg-rule h1 {
+    font: 14px SimHei;
+    line-height: 24px;
+    margin: 8px 0;
+  }
+  .anniversary-celebrity .anniversary-msg-rule h1:before {
+    width: 58px;
+    height: 15px;
+    margin-bottom: 8px;
+    -webkit-background-size: 310px 200px;
+    background-size: 310px 200px;
+    background-position: -101px -94px;
+  }
+  .anniversary-celebrity .anniversary-msg-rule ul:before {
+    font: 14px SimHei;
+    margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 720px) {
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    min-height: 300px;
+    margin-top: 320px;
+  }
+  .anniversary-common-navbar {
+    margin: 304px auto 5px auto;
+    min-height: 172px;
+  }
+  .anniversary-activity {
+    padding: 0 12px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span {
+    width: 96px;
+    height: 52px;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    margin: 17px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 96px;
+    height: 46px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 674px;
+    margin: 0 auto;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child {
+    min-width: 256px;
+  }
+  .anniversary-celebrity article aside ul > li {
+    width: 268px;
+    height: 122px;
+    margin-bottom: 33px;
+  }
+  .anniversary-celebrity article aside ul > li img {
+    margin: 8px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+    margin: 5px 0;
+    max-width: 130px;
+  }
+}
+@media (max-width: 640px) {
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    margin-top: 270px;
+  }
+  .anniversary-common-navbar {
+    margin: 260px auto 5px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 597px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span {
+    width: 85px;
+    height: 46px;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    margin: 14px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 85px;
+    height: 42px;
+  }
+
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child {
+    min-width: 176px;
+  }
+
+  .anniversary-celebrity article aside ul > li {
+    width: 236px;
+    height: 106px;
+  }
+  .anniversary-celebrity article aside ul > li img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+    max-width: 118px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person h3,
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person p {
+    margin: 10px 0;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 304px;
+    height: 136px;
+  }
+}
+@media (max-width: 600px) {
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span,
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 82px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 576px;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 264px;
+  }
+}
+@media (max-width: 569px) {
+  .anniversary-common-navbar {
+    margin: 224px auto 5px auto;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 527px;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span {
+    width: 75px;
+    height: 40px;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 75px;
+    height: 38px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span:first-child {
+    min-width: inherit;
+  }
+  .anniversary-celebrity {
+    padding: 0 10px;
+  }
+
+  .anniversary-celebrity article main ul > li {
+    width: 250px;
+    height: 124px;
+  }
+}
+@media (max-width: 540px) {
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 506px;
+  }
+
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span,
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 72px;
+  }
+
+  .anniversary-celebrity article main ul > li {
+    width: 208px;
+  }
+}
+@media (max-width: 480px) {
+  .anniversary-home-body .anniversary-home-container {
+    -webkit-background-size: 140%;
+    background-size: 140%;
+  }
+  .anniversary-common-navbar {
+    margin: 176px auto 5px auto;
+  }
+  .anniversary-common-navbar ul li:first-child {
+    left: 34px;
+  }
+  .anniversary-common-navbar ul li:first-child + li + li {
+    right: 34px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span,
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 63px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    margin: 12px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 443px;
+  }
+  .anniversary-activity .anniversary-activity-signed {
+    padding: 4px 0 20px 0;
+    text-align: center;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font: 14px SimHei;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+    max-width: 68px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+    margin: 5px 10px;
+  }
+  .anniversary-celebrity article aside ul > li {
+    width: 140px;
+    height: 206px;
+  }
+  .anniversary-celebrity article aside ul > li img {
+    float: none;
+    display: block;
+    margin: 8px auto 0 auto;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person .label-lists {
+    text-align: center;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 258px;
+    height: 226px;
+  }
+}
+@media (max-width: 424px) {
+  .anniversary-home-body .anniversary-home-container {
+    -webkit-background-size: 180%;
+    background-size: 180%;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    margin-top: 360px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child {
+    left: 34px;
+  }
+
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li {
+    right: 34px;
+  }
+  .anniversary-common-navbar {
+    margin: 146px auto 5px auto;
+  }
+  .anniversary-activity {
+    padding: 0 5px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span, .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 57px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    margin: 11px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 401px;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+    max-width: 160px;
+    display: block;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-left a {
+    padding: 8px 0;
+    display: block;
+  }
+  .anniversary-msgboard .anniversary-msgboard-comment .anniversary-msgboard-toolbar .anniversary-msgboard-toolbar-right button {
+    margin: 0 0 5px 5px;
+    padding: 2px 5px;
+    display: block;
+  }
+  .anniversary-celebrity article aside ul > li {
+    height: 198px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+    margin: 0 10px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person h3, .anniversary-celebrity article aside ul > li .anniversary-celebrity-person p {
+    margin: 8px 0;
+  }
+  .anniversary-celebrity article main {
+    margin-left: 22px;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 222px;
+    height: 202px;
+  }
+  .anniversary-msgboard {
+    padding: 0 5px;
+  }
+
+
+  .anniversary-popover.anniversary-popover-lottery {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -193px;
+  }
+
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery {
+    width: 285px;
+    height: 276px;
+    padding: 10px 5px 5px 5px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul {
+    width: 275px;
+    height: 256px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li a:after {
+    padding: 3px 0;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-gray {
+    -webkit-background-size: 183px 355px;
+    background-size: 183px 355px;
+    background-position: 0 -223px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red {
+    -webkit-background-size: 183px 355px;
+    background-size: 183px 355px;
+    background-position: -92px -223px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li.btn-start-red:hover {
+    -webkit-background-size: 183px 355px;
+    background-size: 183px 355px;
+    background-position: -92px -275px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child {
+    width: 92px;
+    height: 85px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li {
+    width: 92px;
+    height: 85px;
+    left: 92px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li {
+    width: 92px;
+    height: 85px;
+    left: 184px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li {
+    width: 92px;
+    height: 85px;
+    top: 85px;
+    left: 184px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li {
+    width: 92px;
+    left: 184px;
+    height: 85px;
+    top: 170px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li {
+    width: 92px;
+    height: 85px;
+    left: 92px;
+    top: 170px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li a:after {
+    border-radius: 0 0 8px 0;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li {
+    width: 92px;
+    height: 85px;
+    top: 170px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li {
+    width: 92px;
+    height: 85px;
+    top: 85px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li + li + li {
+    width: 92px;
+    height: 48px;
+    top: 102px;
+    left: 92px;
+  }
+  .anniversary-popover.anniversary-popover-lottery .anniversary-popover-body .anniversary-lottery ul li:first-child + li + li + li + li + li + li a:after {
+    border-radius: 0 0 0 8px;
+  }
+}
+@media (max-width: 414px) {
+
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+    max-width: 145px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span, .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 50px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 352px;
+  }
+  .anniversary-celebrity {
+    padding: 0 5px;
+  }
+  .anniversary-celebrity article aside ul > li {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .anniversary-celebrity article main ul > li {
+    width: 212px;
+  }
+}
+
+@media (max-width: 384px) {
+
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    margin-top: 326px;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    min-height: 270px;
+  }
+  .anniversary-common-navbar ul li:first-child {
+    left: 0
+  }
+  .anniversary-common-navbar ul li:first-child + li + li {
+    right: 0
+  }
+
+  .anniversary-celebrity article main ul > li img {
+    width: 185px;
+  }
+}
+
+@media (max-width: 375px) {
+  .anniversary-celebrity article main ul > li {
+    width: 200px;
+  }
+}
+@media (max-width: 360px) {
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    margin-top: 275px;
+  }
+  .anniversary-common-navbar {
+    margin: 112px auto 5px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 338px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span, .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 48px;
+  }
+
+  .anniversary-celebrity article main ul > li {
+    width: 168px;
+  }
+}
+
+@media (max-width: 320px) {
+  .anniversary-home-body .anniversary-home-container {
+    -webkit-background-size: 180%;
+    background-size: 180%;
+  }
+  .anniversary-home-body .anniversary-home-container .anniversary-home {
+    min-height: 262px;
+    margin-top: 235px;
+  }
+
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child {
+    left: 0;
+  }
+
+  .anniversary-home-body .anniversary-home-container .anniversary-home ul li:first-child + li + li {
+    right: 0;
+  }
+  .anniversary-header .anniversary-header-left a {
+    margin: 12px 0;
+  }
+  .anniversary-header .anniversary-header-right {
+    padding: 22px 0;
+  }
+  .anniversary-common-navbar {
+    margin: 92px auto 5px auto;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu {
+    width: 296px;
+  }
+
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child {
+    max-width: 125px;
+  }
+
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-right .anniversary-msgbody .anniversary-msgbody-left span:first-child + span {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span, .anniversary-activity .anniversary-activity-calendar menu li.menu-body .menu-date-ceil {
+    width: 42px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:after {
+    width: 35px;
+    height: 13px;
+    -webkit-background-size: 248px 160px;
+    background-size: 248px 160px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child:after {
+    background-position: -210px 0;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span:after {
+    background-position: -210px -14.4px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span:after {
+    background-position: -210px -28.8px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span:after {
+    background-position: -210px -43.2px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span:after {
+    background-position: -210px -57.6px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span:after {
+    background-position: -210px -71.6px;
+  }
+  .anniversary-activity .anniversary-activity-calendar menu li.menu-head span:first-child + span + span + span + span + span + span:after {
+    background-position: -210px -86.4px;
+  }
+  .anniversary-activity .anniversary-activity-award {
+    padding: 10px 5px;
+    margin: 15px 0;
+  }
+  .anniversary-msgboard .anniversary-msgboard-lists ul li .anniversary-msgboard-lists-left img {
+    width: 60px;
+    height: 60px;
+  }
+  .anniversary-activity .anniversary-activity-award .anniversary-award-lists ul li span em {
+    max-width: 180px;
+  }
+  .anniversary-celebrity article aside ul > li .anniversary-celebrity-person {
+    margin: 0 5px;
+  }
+  .anniversary-celebrity article aside ul > li {
+    width: 126px;
+    height: 210px;
+  }
+  .anniversary-celebrity article main ul > li {
+    width: 160px;
+    height: 214px;
+  }
+
+}

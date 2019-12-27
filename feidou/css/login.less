@@ -1,0 +1,323 @@
+.login-container {
+  width: 1024px;
+  min-height: 735px;
+  margin: 0 auto;
+  padding-top: 19px;
+  background-color: #fff;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .lc-left, .lc-right {
+    min-height: 365px;
+  }
+  .lc-left {
+    float: left;
+    width: 368px;
+    padding-left: 54px;
+  }
+  .lc-right {
+    float: right;
+    width: 656px;
+    border-left:2px solid #cda842;
+    padding: 34px 44px;
+  }
+}
+.login-ways {
+  &:before {
+    content: attr(data-before);
+    display: block;
+    font-size: 22px;
+    color: #000;
+    padding-top: 34px;
+    padding-left: 12px;
+  }
+  ul {
+    font-size: 0;
+    &:before {
+      content: attr(data-before);
+      display: block;
+      font-size: 13px;
+      color: #838282;
+      padding-top: 20px;
+      padding-left: 12px;
+    }
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 11px;
+      margin-right: 12px;
+      padding:55px 0;
+      position: relative;
+      &:after {
+        content: attr(data-after);
+        display: block;
+        font-size: 16px;
+        color: #838282;
+        text-align: center;
+        margin-top: 18px;
+      }
+      a {
+        position: relative;
+        width: 75px;
+        height: 75px;
+        display: block;
+        overflow: hidden;
+        border: 2px solid;
+        border-radius: 50%;
+        &:before {
+          content: '';
+          position: absolute;
+          left:50%;
+          top:50%;
+          z-index: 1;
+          background: url("../images/sprite-button.png") no-repeat;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          width: 71px;
+          height: 71px;
+          left: 0;
+          top: 0;
+          background-color: #fff;
+          border-radius: 50%;
+          transition: background 0.3s ease 0s, color 0.3s ease 0s, border 0.3s ease 0s;
+        }
+        &:hover {
+          &:before, &:after {
+            animation: 0.3s ease 0s normal forwards 1 running toBottomFromTop;
+          }
+        }
+      }
+      &.qq {
+        a {
+          border-color: rgb(26, 169, 241);
+          &:before {
+            width: 36px;
+            height: 39px;
+            margin-top: -20px;
+            margin-left: -18px;
+            background-position: -264px 0;
+          }
+          &:hover {
+            border-color: rgba(26, 169, 241, .3);
+            &:before {
+              background-position: -264px -40px;
+            }
+            &:after {
+              background-color: rgb(26, 169, 241);
+            }
+          }
+        }
+      }
+      &.wechat {
+        a {
+          border-color: rgb(0, 187, 0);
+          &:before {
+            width: 46px;
+            height: 39px;
+            margin-top: -20px;
+            margin-left: -23px;
+            background-position: -254px -80px;
+          }
+          &:hover {
+            border-color: rgba(0, 187, 0, .3);
+            &:before {
+              background-position: -254px -120px;
+            }
+            &:after {
+              background-color: rgb(0, 187, 0);
+            }
+          }
+        }
+      }
+      &.weibo {
+        a {
+          border-color: rgb(237, 43, 47);
+          &:before {
+            width: 49px;
+            height: 40px;
+            margin-top: -20px;
+            margin-left: -25px;
+            background-position: -251px -160px;
+          }
+          &:hover {
+            border-color: rgba(237, 43, 47, .3);
+            &:before {
+              background-position: -251px -203px;
+            }
+            &:after {
+              background-color: rgb(237, 43, 47);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.lc-right {
+  .login-wrapper {
+    width: 308px;
+    .form-group {
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font-size: 22px;
+        color: #000;
+      }
+      ul {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 13px;
+          color: #838282;
+          padding-top: 20px;
+          padding-bottom:30px;
+        }
+        li {
+          position: relative;
+          margin-bottom: 19px;
+          input[type=text], input[type=password], select {
+            width: 100%;
+            height: 32px;
+            padding:0 10px;
+            background-color: #fff;
+            border:1px solid #b6b6b6;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #a9a9a9;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            &:focus {
+              outline: none;
+              border-color: #66afe9;
+              box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+            }
+          }
+          .error-tip {
+            position: absolute;
+            font-size: 12px;
+            color: #f00;
+            left: 0;
+            top: 33px;
+          }
+        }
+      }
+    }
+    .toolbar {
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .auto-login, .forget {
+        font-size: 12px;
+      }
+      .auto-login {
+        float: left;
+        color: #706f6f;
+        input[type=checkbox] {
+          padding-right: 6px;
+        }
+      }
+      .forget {
+        float: right;
+        color: #5798b6;
+      }
+    }
+    .btn-group {
+      .btn-login {
+        display: block;
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        font: 22px/40px 'LiSu';
+        margin: 30px auto 26px;
+        color: #000;
+        background: url("../images/sprite-button.png") no-repeat;
+        background-position: 0 -312px;
+        &:hover {
+          background-position: 0 -355px;
+        }
+      }
+      .span-register {
+        display: block;
+        text-align: center;
+        &:before {
+          content: attr(data-before);
+          font-size: 12px;
+          color: #706f6f;
+        }
+        .btn-register {
+          display: inline-block;
+          text-align: center;
+          background-color: #f1b328;
+          width: 80px;
+          height: 24px;
+          font-size: 12px;
+          line-height: 25px;
+          margin-left: 13px;
+          position: relative;
+          color: #fff;
+          &:hover {
+            background-color: #ec971f;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 24px;
+            top: 0;
+            right: -12px;
+            background: url("../images/sprite-icon.png") no-repeat;
+            background-position: -14px -98px;
+          }
+          &:hover {
+            &:after {
+              background-position: -14px -191px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,590 @@
+.tstd-home-body {
+  background: #2f1c04 url("../images/bg-body-home.jpg") top center no-repeat;
+  .tstd-home-container {
+    width: 1180px;
+    margin: 0 auto;
+    background: url("../images/bg-container-home.jpg") no-repeat;
+    .tstd-home-toolbar {
+      padding: 10px 0;
+      .tstd-toolbar-left,
+      .tstd-toolbar-center ,
+      .tstd-toolbar-right {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 0;
+      }
+      .tstd-toolbar-left {
+        img, a {
+          display: inline-block;
+        }
+        img {
+          vertical-align: middle;
+        }
+        a {
+          vertical-align: bottom;
+          font-family: 'SimHei';
+          font-size: 14px;
+          color: #e9e6b4;
+          margin-left: 20px;
+          text-indent: 28px;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: -2px;
+            background: url("../images/bg-tstd-pc.png") no-repeat;
+            background-position: -149px -59px;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 282px;
+            height: 28px;
+            margin-top: 9px;
+            background: url("../images/Qmeng.png") no-repeat;
+          }
+        }
+      }
+      .tstd-toolbar-center {
+        padding: 0 15px;
+        .btn-download-iphone ,
+        .btn-download-android {
+          display: inline-block;
+          vertical-align: middle;
+          width: 188px;
+          height: 57px;
+          margin: 0 15px;
+          background: url("../images/bg-tstd-pc.png") no-repeat;
+          &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .btn-download-iphone {
+          background-position: 0 -189px;
+          &:hover {
+            background-position: 0 -251px;
+          }
+        }
+        .btn-download-android {
+          background-position: 0 -313px;
+          &:hover {
+            background-position: 0 -375px;
+          }
+        }
+      }
+      .tstd-toolbar-right {
+        .form-wrapper, .btn-receive, .official-QQ {
+          display: inline-block;
+          vertical-align: bottom;
+        }
+        .form-wrapper {
+          .form-control, .btn-send {
+            vertical-align: middle;
+          }
+          .form-control {
+            border: none;
+            width: 170px;
+            height: 28px;
+            color: #666;
+            padding: 5px;
+            font-family: SimHei;
+            background: url("../images/bg-input-01.jpg") no-repeat;
+            &:focus {
+              outline: none;
+            }
+          }
+          .btn-send {
+            background-color: #c23423;
+            color: #fff;
+            padding: 7px 18px 6px;
+          }
+        }
+        .official-QQ {
+          font-family: 'SimHei';
+          font-size: 20px;
+          color: #f4caad;
+          position: relative;
+          padding-left: 40px;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            font-family: 'SimHei';
+            font-size: 20px;
+            color: #f4caad;
+            margin-bottom: 7px;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            left: 0;
+            top: 50%;
+            margin-top: -16px;
+            background: url("../images/bg-tstd-pc.png") no-repeat;
+            background-position: -188px -181px;
+          }
+        }
+        .btn-receive {
+          width: 104px;
+          height: 115px;
+          font-size: 0;
+          margin-left: 44px;
+          background: url("../images/icon-gift-package.png") no-repeat;
+        }
+      }
+    }
+    .tstd-home-main {
+      overflow: hidden;
+      background-color: #763e23;
+      .tstd-home-main-top, .tstd-home-main-bottom {
+        margin-bottom: 25px;
+        &:after {
+          content: '';
+          display: table;
+          width: 100%;
+          clear: both;
+        }
+        .tstd-home-main-left, .tstd-home-main-right {
+          background-color: #5e2f19;
+        }
+        .tstd-home-main-left {
+          float: left;
+          width: 578px;
+          height: 295px;
+          overflow: hidden;
+          position: relative;
+          .bx-has-pager {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            .bx-default-pager {
+              font-size: 0;
+              text-align: center;
+              .bx-pager-item {
+                display: inline-block;
+                vertical-align: middle;
+                a {
+                  display: block;
+                  width: 11px;
+                  height: 11px;
+                  border: 1px solid #fbe0d0;
+                  border-radius: 50%;
+                  margin-right: 5px;
+                  -webkit-transition: all .3s ease .2s;
+                  -moz-transition: all .3s ease .2s;
+                  -ms-transition: all .3s ease .2s;
+                  -o-transition: all .3s ease .2s;
+                  transition: all .3s ease .2s;
+                  &:hover,
+                  &.active {
+                    background-color: #fbe0d0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tstd-home-main-right {
+          float: right;
+        }
+      }
+      .tstd-home-main-top {
+        .tstd-home-main-right {
+          padding-top: 10px;
+          padding-left: 33px;
+          padding-right: 24px;
+          padding-bottom: 10px;
+          width: 585px;
+          nav {
+            border-bottom: 1px solid #b28850;
+            &:after {
+              content: '';
+              display: table;
+              width: 100%;
+              clear: both;
+            }
+            .more {
+              float: right;
+              width: 17px;
+              height: 17px;
+              font-size: 0;
+              margin: 14px 0;
+              background: url("../images/bg-tstd-pc.png") no-repeat;
+              background-position: -127px -59px;
+            }
+            ul {
+              li {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                height: 42px;
+                a {
+                  font: 14px SimHei;
+                  color: #bda65d;
+                  display: block;
+                  padding: 14px 12px;
+                }
+                &:first-child {
+                  a {
+                    padding-left: 0;
+                  }
+                }
+                &:hover,
+                &.active {
+                  &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    left: 0;
+                    bottom: -4px;
+                    background-color: #fbe0d0;
+                  }
+                  a {
+                    color: #fff5ae;
+                  }
+                }
+              }
+            }
+          }
+          .con {
+            .latest-wrapper,
+            .new-wrapper,
+            .notice-wrapper,
+            .gonglue-wrapper {
+              padding: 15px 0;
+              ul {
+                li {
+                  &:after {
+                    content: attr(data-after);
+                    font: 14px SimHei;
+                    color: #bda65d;
+                    float: right;
+                    line-height: 33px;
+                  }
+                  a {
+                    font: 14px SimHei;
+                    color: #bda65d;
+                    line-height: 33px;
+                  }
+                }
+              }
+            }
+            .new-wrapper,
+            .notice-wrapper,
+            .gonglue-wrapper {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .tstd-home-main-bottom {
+        .tstd-home-main-left ,
+        .tstd-home-main-right {
+          width: 580px;
+          padding: 0 37px 12px;
+          nav {
+            &:after {
+              content: '';
+              display: table;
+              width: 100%;
+              clear: both;
+            }
+            .caption {
+              font: 16px SimHei;
+              color: #fff5ae;
+              position: relative;
+              padding-left: 36px;
+              padding-top: 6px;
+              float: left;
+              margin: 8px 0;
+              &:before {
+                content: '';
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                left: 0;
+                top: 0;
+              }
+            }
+            ul {
+              float: right;
+              li {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                a {
+                  font: 14px SimHei;
+                  color: #bda65d;
+                  display: block;
+                  padding: 14px 12px;
+                  position: relative;
+                  &:before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid #fbe0d0;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    -webkit-transition: all .2s ease .2s;
+                    -moz-transition: all .2s ease .2s;
+                    -ms-transition: all .2s ease .2s;
+                    -o-transition: all .2s ease .2s;
+                    transition: all .2s ease .2s;
+                  }
+                }
+                &:hover,
+                &.active {
+                  a {
+                    &:before {
+                      background-color: #fbe0d0;
+                    }
+                  }
+                }
+                &:first-child {
+                  a {
+                    padding-left: 0;
+                  }
+                }
+              }
+            }
+          }
+          .con {
+            .all-wrapper,
+            .second-wrapper,
+            .third-wrapper,
+            .forth-wrapper,
+            .fifth-wrapper {
+              ul {
+                font-size: 0;
+                li {
+                  display: inline-block;
+                  vertical-align: middle;
+                  position: relative;
+                  text-align: center;
+                  width: 81px;
+                  height: 80px;
+                  border: 2px solid #b28850;
+                  margin: 10px 10px 30px;
+                  &:after {
+                    content: attr(data-after);
+                    position: absolute;
+                    text-align: center;
+                    font: 14px SimHei;
+                    color: #bda65d;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    bottom: -30px;
+                    left: 5px;
+                    right: 5px;
+                    padding: 5px 0;
+                    border-bottom: 1px solid #5e2f19;
+                  }
+                  &:hover {
+                    &:after {
+                      border-bottom-color: #fbe0d0;
+                    }
+                  }
+                  a {
+                    display: block;
+                    line-height: 80px;
+                    img {
+                      max-width: 100%;
+                    }
+                    font-size: 16px;
+                    color: #fff5ae;
+                  }
+                  &.last-child {
+                    &:after {
+                      border-bottom-color: transparent;
+                    }
+                    &:hover {
+                      &:after {
+                        border-bottom-color: transparent;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .second-wrapper,
+            .third-wrapper,
+            .forth-wrapper,
+            .fifth-wrapper {
+              display: none;
+            }
+          }
+        }
+
+        .tstd-home-main-left {
+          nav {
+            .caption {
+              &:before {
+                background: url("../images/bg-tstd-pc.png") no-repeat;
+                background-position: -127px -81px;
+              }
+            }
+          }
+          .con {
+            .all-wrapper,
+            .second-wrapper,
+            .third-wrapper,
+            .forth-wrapper,
+            .fifth-wrapper {
+              ul {
+                li {
+                  &:not(:last-child) {
+                    cursor: url("../images/cursor.ico"), auto;
+                    a {
+                      cursor: url("../images/cursor.ico"), auto;
+                      &:before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        -webkit-transform: scale(0);
+                        -moz-transform: scale(0);
+                        -ms-transform: scale(0);
+                        -o-transform: scale(0);
+                        transform: scale(0);
+                        -webkit-transition: all .2s ease .1s;
+                        -moz-transition: all .2s ease .1s;
+                        -ms-transition: all .2s ease .1s;
+                        -o-transition: all .2s ease .1s;
+                        transition: all .2s ease .1s;
+                        left: 0;
+                        top: 0;
+                        background-color: rgba(76, 26, 2, .67);
+                      }
+                      &:hover {
+                        &:before {
+                          opacity: 1;
+                          filter: alpha(opacity=100);
+                          -webkit-transform: scale(1);
+                          -moz-transform: scale(1);
+                          -ms-transform: scale(1);
+                          -o-transform: scale(1);
+                          transform: scale(1);
+                        }
+                      }
+                    }
+                  }
+                  &.last-child {
+                    a {
+                      &:after {
+                        width: 0;
+                        height: 0;
+                      }
+                      &:hover {
+                        &:after {
+                          width: 0;
+                          height: 0;
+                          opacity: 0;
+                          filter: alpha(opacity=0);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tstd-home-main-right {
+          nav {
+            .caption {
+              &:before {
+                background: url("../images/bg-tstd-pc.png") no-repeat;
+                background-position: -158px -81px;
+              }
+            }
+          }
+        }
+      }
+
+      .tstd-home-main-carousel {
+        background-color: #5e2f19;
+        padding-top: 48px;
+        margin-bottom: 34px;
+        margin-top: 25px;
+        position: relative;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 16px SimHei;
+          color: #e1d973;
+          padding: 0 17px;
+          position: absolute;
+          top: 16px;
+        }
+        .img-wrapper {
+          height: 240px;
+          overflow: hidden;
+          position: relative;
+          .bx-viewport {
+            z-index: 111;
+            img {
+              display: block;
+              max-width: 100%;
+              margin: 0 auto;
+            }
+          }
+          .bx-controls {
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 74px;
+            top: 50%;
+            margin-top: -37px;
+            z-index: 111;
+            .bx-controls-direction {
+              .bx-prev, .bx-next {
+                width: 52px;
+                height: 74px;
+                text-indent: -99999px;
+                position: relative;
+                background: url("../images/bg-tstd-pc.png") no-repeat;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: -83px;
+                  width: 100px;
+                  height: 240px;
+                  background-color: #f00;
+                  z-index: 1;
+                }
+              }
+              .bx-prev {
+                float: left;
+                background-position: 0 -437px;
+                &:after {
+                  left: 0;
+                }
+              }
+              .bx-next {
+                float: right;
+                background-position: -57px -437px;
+                &:after {
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

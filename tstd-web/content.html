@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/gameplat_tstd.css"/>
+    <link rel="stylesheet" href="css/lightbox.css"/>
+</head>
+<body>
+<div class="tstd-list-body">
+    <div class="tstd-list-container">
+        <header class="tstd-list-header">
+            <div class="logo-wrapper">
+                <p>武将最萌动作卡牌游戏</p>
+                <div class="tstd-game-introduce">
+                    <a href="javascript:;">游戏介绍</a>
+                    <div class="tstd-common-tip">
+                        <span>搭载着超经典IP,《吞食天地》正版手游炫酷来袭!颠覆传统三国世界,打造一个属于您的Q萌国度!那些值得怀念的剧情,风格迥异的武将造型,酣畅淋漓的单挑战役,精良的装备系统,这些都将在《吞食天地》中完美呈现！</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="tstd-common-nav">
+                <ul>
+                    <li class="active"><a  href="javascript:;" target="_blank">官网首页</a></li>
+                    <li><a href="javascript:;" target="_blank">游戏公告</a></li>
+                    <li><a  href="javascript:;" target="_blank">游戏特色</a></li>
+                    <li><a  href="javascript:;" target="_blank">资料站</a></li>
+                    <li><a  href="javascript:;" target="_blank">武将库</a></li>
+                    <li><a  href="javascript:;" target="_blank">攻略心得</a></li>
+                    <li><a  href="javascript:;">微信</a>
+                        <div class="wechat-wrapper" data-before="微信公众号" data-after="扫描左侧二维码关注公众号">
+                            <img src="images/qrcode.jpg" alt=""/>
+                        </div>
+                    </li>
+                    <li><a  href="javascript:;">微博</a>
+                        <div class="webo-wrapper" data-before="微博扫一扫" data-after="扫描左侧二维码关注官方微博">
+                            <img src="images/qrcode.jpg" alt=""/>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="tstd-list-main">
+            <div class="tstd-list-main-left" data-before="新闻中心">
+                <hgroup>
+                    <h1>最新资料最新资料最新资料最新资料最新资料</h1>
+                    <p>发布时间：2016.04.15</p>
+                </hgroup>
+                <article>
+                    <p>吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地。</p>
+                    <img src="images/detail.jpg" alt=""/>
+                    <p>吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地吞食天地。</p>
+                </article>
+            </div>
+            <div class="tstd-list-main-right">
+                <div class="tstd-list-toolbar">
+                    <div class="tstd-toolbar-top" data-before="扫一扫下载游戏">
+                        <img src="images/qrcode-big.jpg" alt="qrcode"/>
+                    </div>
+                    <div class="tstd-toolbar-center">
+                        <a class="btn-download-iphone" href="javascript:;">APP Store下载</a>
+                        <a class="btn-download-android" href="javascript:;">安卓下载</a>
+                    </div>
+                    <div class="tstd-toolbar-bottom">
+                        <div class="form-wrapper" data-before="短信免费下载">
+                            <form action="">
+                                <input type="text" placeholder="输入手机免费下载游戏" class="form-control"/>
+                                <button type="submit" class="btn-send">发送</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tstd-list-toolbar">
+                    <img src="images/qrcode-small.png" class="tstd-toolbar-qrcode" width="80" alt="qrcode"/>
+                    <div class="tstd-toolbar-follow">
+                        <p>吞食天地</p>
+                        <p>微信公众号</p>
+                        <p>tstd3d</p>
+                        <p>扫描立即关注</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function tabSwitchEvent(nav, con){
+            nav.click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var index = $(this).index();
+                con.eq(index).show().siblings().hide();
+            })
+        }
+
+        tabSwitchEvent($(".news-lists nav li"),$(".news-lists .con > div"));
+    });
+</script>
+</body>
+</html>

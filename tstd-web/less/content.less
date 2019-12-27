@@ -1,0 +1,181 @@
+.tstd-list-body {
+  background: #2f1c04 url("../images/bg-list-body.jpg") top center no-repeat;
+  .tstd-list-container {
+    width: 1180px;
+    margin: 0 auto;
+    background: url("../images/bg-list-container.jpg") no-repeat;
+
+    .tstd-list-main {
+      padding-bottom: 86px;
+      overflow: hidden;
+      .tstd-list-main-left {
+        float: left;
+        width: 916px;
+        background-color: #e2d0a4;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 32px 'SimHei';
+          font-weight: bold;
+          color: #e2d0a4;
+          background-color: #763e23;
+          border: 1px solid #8d4f31;
+          padding: 25px 20px;
+        }
+        hgroup {
+          padding-top: 47px;
+          margin: 0 50px;
+          border-bottom: 1px solid #a6814a;
+          h1 {
+            font: 28px SimHei;
+            color: #322116;
+            line-height: 25px;
+          }
+          p {
+            text-align: right;
+            font: 14px SimHei;
+            color: #322116;
+            margin: 38px 0 8px 0;
+          }
+        }
+        article {
+          padding: 13px 50px;
+          min-height: 370px;
+          font: 16px SimHei;
+          color: #322116;
+          text-indent: 30px;
+          line-height: 24px;
+          img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+          }
+          p {
+            font: 16px SimHei;
+            color: #322116;
+            text-indent: 30px;
+            line-height: 24px;
+          }
+        }
+      }
+      .tstd-list-main-right {
+        float: right;
+        width: 230px;
+        .tstd-list-toolbar {
+          padding: 20px;
+          margin-bottom: 10px;
+          background-color: #763e23;
+          border: 1px solid #8d4f31;
+          overflow: hidden;
+          .tstd-toolbar-top {
+            position: relative;
+            margin-bottom: 10px;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              font-family: SimHei;
+              font-size: 14px;
+              color: #e9e6b4;
+              padding-left: 32px;
+              padding-bottom: 10px;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              left: 0;
+              top: 0;
+              background: url("../images/bg-tstd-pc.png") no-repeat;
+              background-position: -149px -59px;
+            }
+            img {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .tstd-toolbar-center {
+            font-size: 0;
+            .btn-download-iphone ,
+            .btn-download-android {
+              display: inline-block;
+              vertical-align: middle;
+              width: 188px;
+              height: 57px;
+              margin-bottom: 5px;
+              background: url("../images/bg-tstd-pc.png") no-repeat;
+              &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+            .btn-download-iphone {
+              background-position: 0 -189px;
+              &:hover {
+                background-position: 0 -251px;
+              }
+            }
+            .btn-download-android {
+              background-position: 0 -313px;
+              &:hover {
+                background-position: 0 -375px;
+              }
+            }
+          }
+          .tstd-toolbar-bottom {
+            .form-wrapper {
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .form-wrapper {
+              white-space: nowrap;
+              font-size: 0;
+              margin-top: 7px;
+              .form-control, .btn-send {
+                vertical-align: middle;
+              }
+              .form-control {
+                border: none;
+                width: 130px;
+                height: 28px;
+                color: #666;
+                padding: 5px;
+                font-family: SimHei;
+                background: url("../images/bg-input-01.jpg") no-repeat;
+                &:focus {
+                  outline: none;
+                }
+              }
+              .btn-send {
+                background-color: #c23423;
+                color: #fff;
+                padding: 7px 18px 6px;
+              }
+            }
+          }
+          .tstd-toolbar-follow {
+            float: right;
+            p {
+              font-size: 12px;
+              color: #e1d973;
+              margin: 5px 0;
+              &:first-child + p + p + p {
+                &:before {
+                  content: '';
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 18px;
+                  height: 18px;
+                  margin-right: 5px;
+                  background: url("../images/bg-tstd-pc.png") no-repeat;
+                  background-position: -149px -59px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

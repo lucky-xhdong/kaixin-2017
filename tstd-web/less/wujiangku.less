@@ -1,0 +1,223 @@
+.tstd-wjk-body {
+  background: #2f1c04 url("../images/bg-source-body.jpg") top center no-repeat;
+  .tstd-wjk-container {
+    width: 1180px;
+    margin: 0 auto;
+    background: url("../images/bg-source-container.jpg") top center no-repeat;
+
+    .tstd-wjk-main {
+      min-height: 1000px;
+      height: 1000px \9;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+      aside {
+        float: left;
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          vertical-align: top;
+        }
+        .form-wrapper {
+          font-size: 0;
+          margin-bottom: 12px;
+          .form-control, .btn-send {
+            vertical-align: middle;
+          }
+          .form-control {
+            border: none;
+            width: 286px;
+            height: 55px;
+            color: #666;
+            padding: 5px;
+            font: 18px 'SimHei';
+            background-color: #e7d9ad;
+            &:focus {
+              outline: none;
+            }
+          }
+          .btn-send {
+            background-color: #c23423;
+            color: #fff;
+            width: 64px;
+            height: 55px;
+            vertical-align: middle;
+            padding: 7px 18px 6px;
+            position: relative;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              width: 24px;
+              height: 24px;
+              left: 50%;
+              top: 50%;
+              margin-top: -12px;
+              margin-left: -12px;
+              background: url("../images/bg-tstd-pc.png") no-repeat;
+              background-position: -127px -115px;
+            }
+          }
+        }
+        .weapon-lists,
+        .equipment-lists,
+        .trait-lists {
+          display: inline-block;
+          vertical-align: top;
+          width: 113px;
+          min-height: 297px;
+          background-color: #763e23;
+          text-align: justify;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            text-align: center;
+            padding: 14px 10px;
+            font: 16px 'px MicroSoft YaHei';
+            color: #e1d973;
+          }
+          &:hover {
+            &:before {
+              background-color: #875712;
+            }
+          }
+          ul {
+            li {
+              &:hover {
+                background-color: #875712;
+              }
+              a {
+                display: block;
+                text-align: center;
+                padding: 14px 10px;
+                font: 16px 'px MicroSoft YaHei';
+                color: #e2d0a4;
+                border-top: 1px solid #4c1c06;
+                border-bottom: 1px solid #b95626;
+              }
+            }
+          }
+        }
+      }
+      main {
+        float: right;
+        width: 790px;
+        nav {
+          ul {
+            text-align: right;
+            font-size: 0;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              background-color: #763e23;
+              a {
+                display: block;
+                padding: 9px 26px;
+                color: #e7d9ad;
+                font: 16px 'MicroSoft YaHei';
+              }
+              &:hover,
+              &.active {
+                background-color: #e7d9ad;
+                a {
+                  color: #763e23;
+                }
+              }
+              &.active {
+                &:after {
+                  content: '';
+                  position: absolute;
+                  width: 0;
+                  left: 50%;
+                  margin-left: -2px;
+                  bottom: -10px;
+                  border: 5px solid transparent;
+                  border-top-color: #e7d9ad;
+                }
+              }
+            }
+          }
+        }
+        .figure-lists {
+          background-color: #763e23;
+          width: 790px;
+          margin: 10px 0;
+          ul {
+            display: inline;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              width: 122px;
+              height: 142px;
+              margin: 5px 3px;
+              background: url("../images/bg-sourselists-light.jpg") no-repeat;
+              figure {
+                margin: 0;
+                text-align: center;
+                a {
+                  position: relative;
+                  display: block;
+                  height: 142px;
+                  z-index: 11;
+                  &:before {
+                    display: none;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: url("../images/bg-sourcelists-hover.jpg") no-repeat;
+                    z-index: 1;
+                  }
+                  &:after {
+                    content: attr(data-after);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 10px;
+                    font-size: 16px;
+                    color: #e2d0a4;
+                    z-index: 11;
+                  }
+                  img {
+                    max-width: 100%;
+                    margin: 12px 0;
+                  }
+                  &:hover {
+                    &:before {
+                      display: block;
+                    }
+                    &:after {
+                      color: #a19477;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .btn-more-wjk {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width: 122px;
+            height: 142px;
+            padding: 60px 0;
+            margin: 5px 3px;
+            font-size: 16px;
+            color: #e2d0a4;
+            text-decoration: underline;
+            background: url("../images/bg-sourselists-light.jpg") no-repeat;
+          }
+        }
+
+      }
+    }
+  }
+}

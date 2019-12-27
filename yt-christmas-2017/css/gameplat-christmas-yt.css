@@ -1,0 +1,1772 @@
+body {
+  font-family: Arial, "Microsoft YaHei", "微软雅黑", "Lantinghei SC", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  background: url("../images/bg-body-repeat.jpg") center top repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+}
+@media (min-width: 1000px) {
+  .christmas-body {
+    background: url("../images/bg-body.png") center top no-repeat;
+    position: relative;
+  }
+  .christmas-body:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../images/bg-snow-body.png") center 50px no-repeat;
+  }
+  .christmas-container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .christmas-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../images/bg-snow-container.png") center top no-repeat;
+  }
+  .christmas-container header {
+    overflow: hidden;
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container header .logo {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    font-size: 0;
+    margin-left: 30px;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+  .christmas-container header ul {
+    font-size: 0;
+    float: right;
+  }
+  .christmas-container header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #05560d;
+    margin: 18px 0;
+  }
+  .christmas-container header ul li:first-child {
+    border-left: 0;
+  }
+  .christmas-container header ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #05560d;
+    display: block;
+    padding: 0 10px;
+  }
+  .christmas-container header ul li:hover a,
+  .christmas-container header ul li.active a {
+    color: #de3903;
+  }
+  .christmas-container nav {
+    position: fixed;
+    width: 219px;
+    height: 332px;
+    right: 0;
+    top: 50%;
+    z-index: 11;
+    margin-top: -166px;
+    background: url("../images/bg-float-nav.png") no-repeat;
+  }
+  .christmas-container nav ul {
+    padding-top: 120px;
+    padding-bottom: 10px;
+  }
+  .christmas-container nav ul li {
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+    border-top: 1px dashed #8f3537;
+  }
+  .christmas-container nav ul li a {
+    font-size: 18px;
+    color: #f29f25;
+    display: inline-block;
+    padding: 5px;
+    margin: 4px 0;
+  }
+  .christmas-container nav ul li a em {
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    margin-right: 12px;
+    text-align: right;
+  }
+  .christmas-container nav ul li a em:before {
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 32px;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    top: -5px;
+  }
+  .christmas-container nav ul li:first-child + li + li + li + li a {
+    font-weight: bold;
+  }
+  .christmas-container nav ul li:first-child {
+    border-top: 0;
+  }
+  .christmas-container nav ul li:hover a,
+  .christmas-container nav ul li.active a {
+    background-color: #f29f25;
+    border-radius: 15px;
+    color: #4f0708;
+  }
+  .christmas-container .icon-gift {
+    position: absolute;
+    width: 120px;
+    height: 145px;
+    font-size: 0;
+    left: -169px;
+    top: 209px;
+    background: url("../images/sprite-christmas.png") no-repeat;
+    background-position: -226px -215px;
+    animation: shake 1s infinite;
+    -webkit-animation: shake 1s ease-in-out 5s infinite;
+    -moz-animation: shake 1s ease-in-out 5s infinite;
+    -ms-animation: shake 1s ease-in-out 5s infinite;
+  }
+  .christmas-container .icon-gift:hover {
+    background-position: -226px -367px;
+  }
+  .christmas-container .activity-content {
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .activity-content:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 19px;
+  }
+  .christmas-container .activity-content ul {
+    position: relative;
+    background-color: #0c3436;
+  }
+  .christmas-container .activity-content ul:before,
+  .christmas-container .activity-content ul:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    left: 0;
+    background: url("../images/bg-denim.png") repeat-x;
+  }
+  .christmas-container .activity-content ul:before {
+    top: 0;
+  }
+  .christmas-container .activity-content ul:after {
+    bottom: 0;
+  }
+  .christmas-container .activity-content ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 100px;
+    color: #a3cbca;
+    line-height: 26px;
+    margin: 0 25px 9px;
+  }
+  .christmas-container .activity-content ul li:before {
+    content: attr(data-before);
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5c915;
+    position: absolute;
+    left: 0;
+  }
+  .christmas-container .activity-content ul li span {
+    font-size: 18px;
+    display: block;
+  }
+  .christmas-container .activity-content ul li ol li {
+    padding-left: 0;
+    margin: 0;
+    list-style: decimal;
+  }
+  .christmas-container .treasure-inside {
+    margin-top: 560px;
+    padding-bottom: 175px;
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .treasure-inside:before,
+  .christmas-container .treasure-inside:after {
+    content: '';
+    position: absolute;
+  }
+  .christmas-container .treasure-inside:before {
+    width: 52px;
+    height: 756px;
+    background: url("../images/light-01.png") no-repeat;
+    left: -22px;
+    top: 10px;
+  }
+  .christmas-container .treasure-inside:after {
+    width: 1024px;
+    height: 184px;
+    background: url("../images/light-02.png") no-repeat;
+    left: 0;
+    bottom: 0;
+  }
+  .christmas-container .treasure-inside .socks-lists:before {
+    content: '';
+    display: block;
+    width: 690px;
+    height: 97px;
+    margin: 0 auto;
+    background: url("../images/treasure-inside.png") no-repeat;
+  }
+  .christmas-container .treasure-inside .socks-lists ul {
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 23px;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 184px;
+    height: 233px;
+    margin: 0 62px;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 0;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li.claim-gray {
+    background: url("../images/socks-gray.png") no-repeat;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li.claim-light {
+    background: url("../images/socks-light.png") no-repeat;
+  }
+  .christmas-container .treasure-inside .activity-content {
+    width: 890px;
+    margin: 0 auto;
+  }
+  .christmas-container .treasure-inside .activity-content:before {
+    content: '';
+    display: block;
+    background: url("../images/snow-01.png") center right no-repeat;
+  }
+  .christmas-container .treasure-inside .activity-content ul {
+    padding: 46px 0;
+    margin-bottom: 25px;
+    min-height: 230px;
+  }
+  .christmas-container .decorating-xmas {
+    position: relative;
+    z-index: 11;
+    min-height: 706px;
+    padding-bottom: 146px;
+    margin-top: -45px;
+  }
+  .christmas-container .decorating-xmas:before,
+  .christmas-container .decorating-xmas:after {
+    content: '';
+    position: absolute;
+  }
+  .christmas-container .decorating-xmas:before {
+    width: 52px;
+    height: 652px;
+    background: url("../images/light-03.png") no-repeat;
+    right: -24px;
+    top: 42px;
+  }
+  .christmas-container .decorating-xmas:after {
+    width: 1024px;
+    height: 160px;
+    background: url("../images/light-04.png") no-repeat;
+    right: -3px;
+    bottom: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper {
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .decorating-xmas-wrapper:before {
+    content: '';
+    display: block;
+    width: 850px;
+    height: 102px;
+    margin: 0 auto 44px auto;
+    background: url("../images/decorating-xmas-tree.png") no-repeat;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper {
+    float: left;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree {
+    width: 385px;
+    height: 476px;
+    position: relative;
+    background: url("../images/christmas-tree.png") no-repeat;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift {
+    position: absolute;
+    opacity: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star {
+    background: url("../images/star.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon {
+    width: 27px;
+    height: 36px;
+    background: url("../images/balloon.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf {
+    width: 52px;
+    height: 56px;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-11,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-12,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-13,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-14 {
+    width: 35px;
+    height: 48px;
+    background: url("../images/gift-01.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-21,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-22,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-23 {
+    width: 28px;
+    height: 39px;
+    background: url("../images/gift-02.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-01 {
+    width: 35px;
+    height: 36px;
+    left: 160px;
+    top: 106px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-02 {
+    width: 24px;
+    height: 24px;
+    left: 88px;
+    top: 188px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-03 {
+    width: 35px;
+    height: 36px;
+    left: 176px;
+    top: 170px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-04 {
+    width: 24px;
+    height: 24px;
+    left: 260px;
+    top: 176px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-05 {
+    left: 53px;
+    top: 273px;
+    width: 32px;
+    height: 32px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-06 {
+    width: 35px;
+    height: 36px;
+    left: 130px;
+    top: 258px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-07 {
+    width: 35px;
+    height: 36px;
+    left: 222px;
+    top: 262px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-08 {
+    left: 310px;
+    top: 276px;
+    width: 32px;
+    height: 32px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-01 {
+    left: 82px;
+    top: 228px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-02 {
+    left: 179px;
+    top: 217px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-03 {
+    left: 278px;
+    top: 229px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-04 {
+    left: 130px;
+    top: 307px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-05 {
+    left: 229px;
+    top: 305px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-01 {
+    left: 122px;
+    top: 200px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-02 {
+    left: 214px;
+    top: 198px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-03 {
+    left: 78px;
+    top: 291px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-04 {
+    left: 164px;
+    top: 294px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-05 {
+    left: 264px;
+    top: 291px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift {
+    top: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-11 {
+    left: 206px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-12 {
+    left: 185px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-13 {
+    left: 50px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-14 {
+    left: 305px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-21 {
+    left: 138px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-22 {
+    left: 124px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-23 {
+    left: 248px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group {
+    overflow: hidden;
+    margin-top: 15px;
+    font-size: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 12px;
+    background: url("../images/sprite-christmas.png") no-repeat;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate {
+    width: 174px;
+    height: 67px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-gray {
+    cursor: default;
+    background-position: 0 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-light {
+    background-position: 0 -71px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-light:hover {
+    background-position: 0 -142px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim {
+    width: 145px;
+    height: 60px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-gray {
+    cursor: default;
+    background-position: -177px -7px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-light {
+    background-position: -177px -79px;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-light:hover {
+    background-position: -177px -150px;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content {
+    float: right;
+    width: 495px;
+    min-height: 552px;
+    margin: 0 40px;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content:before {
+    background: url("../images/snow-02.png") no-repeat;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content ul {
+    padding: 42px 0;
+  }
+  .christmas-container .go-and-spin {
+    position: relative;
+    z-index: 11;
+    clear: both;
+    padding-bottom: 232px;
+    margin-bottom: 100px;
+  }
+  .christmas-container .go-and-spin:before,
+  .christmas-container .go-and-spin:after {
+    content: '';
+    position: absolute;
+  }
+  .christmas-container .go-and-spin:before {
+    width: 53px;
+    height: 830px;
+    background: url("../images/light-05.png") no-repeat;
+    left: -23px;
+    top: 8px;
+  }
+  .christmas-container .go-and-spin:after {
+    width: 562px;
+    height: 357px;
+    background: url("../images/light-06.png") no-repeat;
+    left: -23px;
+    bottom: 0;
+  }
+  .christmas-container .go-and-spin .lottery-box {
+    text-align: center;
+    position: relative;
+    width: 686px;
+    height: 511px;
+    margin: -10px auto 0 auto;
+    padding-top: 110px;
+    overflow: hidden;
+    background: url("../images/lottery-box.png") center bottom no-repeat;
+  }
+  .christmas-container .go-and-spin .lottery-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 647px;
+    height: 106px;
+    margin-left: -320px;
+    background: url("../images/goandspin.png") no-repeat;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 {
+    position: absolute;
+    right: 35px;
+    top: 150px;
+    color: #6cf5f7;
+    font-size: 18px;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 span {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    text-align: right;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 span:before {
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 32px;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    top: -8px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery {
+    width: 650px;
+    height: 388px;
+    margin: 102px auto 18px auto;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul {
+    position: relative;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li {
+    width: 215px;
+    display: table;
+    position: absolute;
+    list-style: none;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:hover:not(:last-child):before,
+  .christmas-container .go-and-spin .lottery-box .lottery ul li.active:not(:last-child):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: 2px solid #faf359;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li a {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li a:after {
+    content: attr(data-after);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #05560d;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li img {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:nth-child(odd) {
+    background-color: #e2e2e2;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child {
+    left: 0;
+    top: 0;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li {
+    left: 215px;
+    top: 0;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li {
+    left: 430px;
+    top: 0;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li {
+    left: 430px;
+    top: 125px;
+    height: 140px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li {
+    left: 430px;
+    top: 265px;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li {
+    left: 215px;
+    top: 265px;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li {
+    left: 0;
+    top: 265px;
+    height: 125px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li {
+    left: 0;
+    top: 125px;
+    height: 140px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li {
+    left: 213px;
+    top: 125px;
+    width: 220px;
+    height: 140px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li a {
+    font-size: 0;
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: url("../images/sprite-christmas.png") no-repeat;
+    background-position: 0 -215px;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li a:hover {
+    background-position: 0 -360px;
+  }
+  .christmas-container .go-and-spin .activity-content {
+    width: 890px;
+    margin: 15px auto;
+  }
+  .christmas-container .go-and-spin .activity-content:before {
+    background: url("../images/snow-03.png") center right no-repeat;
+  }
+  .christmas-container .go-and-spin .activity-content ul {
+    padding: 42px 0;
+    margin-bottom: 36px;
+    min-height: 188px;
+  }
+  .pop-christmas {
+    display: none;
+    position: fixed;
+    width: 686px;
+    height: 405px;
+    left: 50%;
+    top: 50%;
+    margin-left: -343px;
+    margin-top: -255px;
+    z-index: 111;
+    background: url("../images/lottery-box.png") center top no-repeat;
+    padding-top: 103px;
+  }
+  .pop-christmas .btn-pop-close {
+    position: absolute;
+    font-size: 0;
+    width: 55px;
+    height: 55px;
+    right: 18px;
+    top: 103px;
+    background: url("../images/bg-close.jpg") no-repeat;
+  }
+  .pop-christmas .happy-new-year {
+    display: none;
+    margin: 172px 0;
+  }
+  .pop-christmas .happy-new-year h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #de3025;
+    text-align: center;
+  }
+  .pop-christmas .gift-lists {
+    display: none;
+    margin-top: 75px;
+  }
+  .pop-christmas .gift-lists ul {
+    width: 410px;
+    max-height: 272px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .pop-christmas .gift-lists ul li {
+    margin-bottom: 19px;
+  }
+  .pop-christmas .gift-lists ul li span {
+    display: block;
+    text-align: center;
+    width: 410px;
+    height: 71px;
+    line-height: 71px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #05560d;
+    background: url("../images/bg-gift.jpg") no-repeat;
+  }
+  .pop-christmas .gift-lists ul li span:before {
+    content: attr(data-before);
+  }
+  .pop-christmas .congratulations {
+    display: none;
+    margin: 80px 0;
+  }
+  .pop-christmas .congratulations h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #de3025;
+  }
+  .pop-christmas .congratulations h2:after {
+    content: attr(data-after);
+    display: block;
+    font-size: 30px;
+    margin-top: 12px;
+  }
+  .pop-christmas .congratulations .gift-code:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #05560d;
+    margin-bottom: 12px;
+  }
+  .pop-christmas .congratulations .gift-code span {
+    display: block;
+    text-align: center;
+    width: 410px;
+    height: 71px;
+    line-height: 71px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #05560d;
+    background: url("../images/bg-gift.jpg") no-repeat;
+  }
+  .pop-christmas .congratulations .gift-code span:before {
+    content: attr(data-before);
+  }
+  .christmas-mask {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    -webkit-background-size: 1.152rem;
+    background-size: 1.152rem;
+  }
+  .christmas-body {
+    background: url("../images/bg-body-m.png") center 0.8rem no-repeat;
+    -webkit-background-size: 30.72rem 9.936rem;
+    background-size: 30.72rem 9.936rem;
+    position: relative;
+  }
+  .christmas-body:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../images/bg-snow-body.png") center top no-repeat;
+    -webkit-background-size: 30.72rem;
+    background-size: 30.72rem;
+  }
+  .christmas-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .christmas-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../images/bg-snow-container.png") center top no-repeat;
+    -webkit-background-size: 16rem;
+    background-size: 16rem;
+  }
+  .christmas-container header {
+    overflow: hidden;
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container header .logo {
+    display: inline-block;
+    width: 3.2rem;
+    height: 1.6rem;
+    font-size: 0;
+    margin-left: 0.48rem;
+    vertical-align: top;
+    margin-top: 0.32rem;
+  }
+  .christmas-container header ul {
+    font-size: 0;
+    float: right;
+    margin-right: 1.5rem;
+  }
+  .christmas-container header ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px dashed #05560d;
+    padding: 0.2rem 0;
+  }
+  .christmas-container header ul li:first-child {
+    border-top: 0;
+  }
+  .christmas-container header ul li a {
+    font-size: 0.5625rem;
+    font-weight: bold;
+    color: #05560d;
+    display: block;
+    padding: 0 0.16rem;
+  }
+  .christmas-container header ul li:hover a,
+  .christmas-container header ul li.active a {
+    color: #de3903;
+  }
+  .christmas-container nav {
+    background-color: #4f0708;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 11rem;
+    z-index: 111;
+  }
+  .christmas-container nav:after {
+    content: '';
+    position: absolute;
+    top: 0.032rem;
+    right: 0.032rem;
+    bottom: 0.032rem;
+    left: 0.032rem;
+    border: 2px solid #f29f25;
+  }
+  .christmas-container nav ul {
+    position: relative;
+    z-index: 11;
+    padding: 0.16rem 0;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -moz-box-align: justify;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .christmas-container nav ul li {
+    list-style: none;
+    text-align: center;
+    margin: 0 0.16rem;
+  }
+  .christmas-container nav ul li a {
+    font-size: 0.5625rem;
+    color: #f29f25;
+    display: inline-block;
+  }
+  .christmas-container nav ul li a em {
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    width: 1.7rem;
+    margin-right: 0.192rem;
+    text-align: right;
+  }
+  .christmas-container nav ul li a em:before {
+    content: '';
+    position: absolute;
+    width: 0.8rem;
+    height: 0.9rem;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    top: -0.08rem;
+  }
+  .christmas-container nav ul li:first-child,
+  .christmas-container nav ul li:first-child + li,
+  .christmas-container nav ul li:first-child + li + li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .christmas-container nav ul li:first-child a,
+  .christmas-container nav ul li:first-child + li a,
+  .christmas-container nav ul li:first-child + li + li a {
+    padding: 0.2rem 0.16rem;
+  }
+  .christmas-container nav ul li:first-child:hover a,
+  .christmas-container nav ul li:first-child + li:hover a,
+  .christmas-container nav ul li:first-child + li + li:hover a,
+  .christmas-container nav ul li:first-child.active a,
+  .christmas-container nav ul li:first-child + li.active a,
+  .christmas-container nav ul li:first-child + li + li.active a {
+    background-color: #f29f25;
+    color: #4f0708;
+  }
+  .christmas-container nav ul li:first-child + li,
+  .christmas-container nav ul li:first-child + li + li {
+    border-left: 1px dashed #8f3537;
+  }
+  .christmas-container nav ul li:first-child + li + li + li {
+    position: absolute;
+    background-color: #4f0708;
+    white-space: nowrap;
+    padding: 0.2rem 0.16rem;
+    right: 0;
+    top: 2rem;
+    margin: 0;
+  }
+  .christmas-container nav ul li:first-child + li + li + li a {
+    margin: 0.064rem 0;
+  }
+  .christmas-container nav ul li:first-child + li + li + li + li {
+    display: none;
+    position: fixed;
+    background-color: #4f0708;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 50%;
+    right: 0.16rem;
+    bottom: 0.16rem;
+  }
+  .christmas-container nav ul li:first-child + li + li + li + li a {
+    margin: 0.064rem 0;
+  }
+  .christmas-container .icon-gift {
+    position: absolute;
+    width: 1.92rem;
+    height: 2.32rem;
+    font-size: 0;
+    left: 0;
+    top: 3.344rem;
+    background: url("../images/sprite-christmas.png") no-repeat;
+    -webkit-background-size: 5.6rem 8.8rem;
+    background-size: 5.6rem 8.8rem;
+    background-position: -3.616rem -3.44rem;
+    animation: shake 1s infinite;
+    -webkit-animation: shake 1s ease-in-out 5s infinite;
+    -moz-animation: shake 1s ease-in-out 5s infinite;
+    -ms-animation: shake 1s ease-in-out 5s infinite;
+  }
+  .christmas-container .icon-gift:hover {
+    background-position: -3.616rem -5.872rem;
+  }
+  .christmas-container .activity-content {
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .activity-content:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.304rem;
+  }
+  .christmas-container .activity-content ul {
+    position: relative;
+    background-color: #0c3436;
+  }
+  .christmas-container .activity-content ul:before,
+  .christmas-container .activity-content ul:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.256rem;
+    left: 0;
+    background: url("../images/bg-denim.png") repeat-x;
+  }
+  .christmas-container .activity-content ul:before {
+    top: 0;
+  }
+  .christmas-container .activity-content ul:after {
+    bottom: 0;
+  }
+  .christmas-container .activity-content ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 3rem;
+    line-height: 1.2rem;
+    color: #a3cbca;
+    margin: 0 0.4rem 0.144rem;
+  }
+  .christmas-container .activity-content ul li:before {
+    content: attr(data-before);
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #e5c915;
+    position: absolute;
+    left: 0;
+  }
+  .christmas-container .activity-content ul li span {
+    font-size: 0.5625rem;
+    display: block;
+  }
+  .christmas-container .activity-content ul li ol li {
+    padding-left: 0;
+    margin: 0;
+    list-style: decimal;
+    font-size: .5625rem;
+  }
+  .christmas-container .treasure-inside {
+    margin-top: 11rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .treasure-inside .socks-lists:before {
+    content: '';
+    display: block;
+    width: 11.04rem;
+    height: 1.552rem;
+    margin: 0 auto;
+    background: url("../images/treasure-inside.png") no-repeat;
+    -webkit-background-size: 11.04rem 1.552rem;
+    background-size: 11.04rem 1.552rem;
+  }
+  .christmas-container .treasure-inside .socks-lists ul {
+    text-align: center;
+    margin-top: 0.864rem;
+    margin-bottom: 1rem;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.944rem;
+    height: 3.728rem;
+    margin: 0 0.992rem;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 0;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li.claim-gray {
+    background: url("../images/socks-gray.png") no-repeat;
+    -webkit-background-size: 2.944rem 3.728rem;
+    background-size: 2.944rem 3.728rem;
+  }
+  .christmas-container .treasure-inside .socks-lists ul li.claim-light {
+    background: url("../images/socks-light.png") no-repeat;
+    -webkit-background-size: 2.944rem 3.728rem;
+    background-size: 2.944rem 3.728rem;
+  }
+  .christmas-container .treasure-inside .activity-content {
+    width: auto;
+    margin: 0 .24rem;
+  }
+  .christmas-container .treasure-inside .activity-content:before {
+    content: '';
+    display: block;
+    background: url("../images/snow-01.png") center right no-repeat;
+    -webkit-background-size: 7.856rem .304rem;
+    background-size: 7.856rem .304rem;
+  }
+  .christmas-container .treasure-inside .activity-content ul {
+    padding: 0.736rem 0;
+    margin-bottom: 0.4rem;
+  }
+  .christmas-container .decorating-xmas {
+    position: relative;
+    z-index: 11;
+    padding-bottom: 1rem;
+  }
+  .christmas-container .decorating-xmas-wrapper {
+    position: relative;
+    z-index: 11;
+  }
+  .christmas-container .decorating-xmas-wrapper:before {
+    content: '';
+    display: block;
+    width: 13.6rem;
+    height: 1.632rem;
+    margin: 0 auto 0.704rem auto;
+    background: url("../images/decorating-xmas-tree.png") no-repeat;
+    -webkit-background-size: 13.6rem 1.632rem;
+    background-size: 13.6rem 1.632rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper {
+    padding-bottom: 1rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree {
+    width: 15rem;
+    height: 18rem;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/christmas-tree.png") no-repeat;
+    -webkit-background-size: 15rem 18rem;
+    background-size: 15rem 18rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift {
+    position: absolute;
+    opacity: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star {
+    background: url("../images/star.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon {
+    width: .864rem;
+    height: 1.152rem;
+    background: url("../images/balloon.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf {
+    width: 1.6rem;
+    height: 1.8rem;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-11,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-12,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-13,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-14 {
+    width: 1.12rem;
+    height: 1.536rem;
+    background: url("../images/gift-01.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-21,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-22,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-23 {
+    width: .896rem;
+    height: 1.248rem;
+    background: url("../images/gift-02.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-01 {
+    width: 1.12rem;
+    height: 1.152rem;
+    left: 6.4rem;
+    top: 4rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-02 {
+    width: 0.768rem;
+    height: 0.768rem;
+    left: 3.5rem;
+    top: 7.25rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-03 {
+    width: 1.12rem;
+    height: 1.152rem;
+    left: 6.96rem;
+    top: 6.4rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-04 {
+    left: 10.2rem;
+    top: 7rem;
+    width: 0.768rem;
+    height: 0.768rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-05 {
+    left: 2.2rem;
+    top: 10.4rem;
+    width: 1.024rem;
+    height: 1.024rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-06 {
+    width: 1.12rem;
+    height: 1.152rem;
+    left: 5.2rem;
+    top: 9.9rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-07 {
+    width: 1.12rem;
+    height: 1.152rem;
+    left: 8.8rem;
+    top: 10rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .star-08 {
+    left: 12.2rem;
+    top: 10.5rem;
+    width: 1.024rem;
+    height: 1.024rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-01 {
+    left: 3.2rem;
+    top: 8.7rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-02 {
+    left: 7.08rem;
+    top: 8.28rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-03 {
+    left: 10.9rem;
+    top: 8.7rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-04 {
+    left: 5.16rem;
+    top: 11.8rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .balloon-05 {
+    left: 9rem;
+    top: 11.6rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-01 {
+    left: 5rem;
+    top: 7.68rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-02 {
+    left: 8.4rem;
+    top: 7.7rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-03 {
+    left: 3.06rem;
+    top: 11.2rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-04 {
+    left: 6.6rem;
+    top: 11.2rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .dwarf-05 {
+    left: 10.7rem;
+    top: 11rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift {
+    top: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-11 {
+    left: 8.2rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-12 {
+    left: 7.2rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-13 {
+    left: 2.1rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-14 {
+    left: 11.88rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-21 {
+    left: 5.8rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-22 {
+    left: 4.8rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .christmas-tree .gift-23 {
+    left: 9.66rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group {
+    overflow: hidden;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate,
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 0.192rem;
+    background: url("../images/sprite-christmas.png") no-repeat;
+    -webkit-background-size: 7rem 11rem;
+    background-size: 7rem 11rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate {
+    width: 3.5rem;
+    height: 1.35rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-gray {
+    cursor: default;
+    background-position: 0 0;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-light {
+    background-position: 0 -1.4rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-decorate.btn-light:hover {
+    background-position: 0 -2.83rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim {
+    width: 3rem;
+    height: 1.2rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-gray {
+    cursor: default;
+    background-position: -3.5rem -0.15rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-light {
+    background-position: -3.5rem -1.56rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .christmas-tree-wrapper .btn-group .btn-claim.btn-light:hover {
+    background-position: -3.5rem -2.98rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content {
+    width: auto;
+    margin: 0 .24rem;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content:before {
+    background: url("../images/snow-02.png") no-repeat;
+  }
+  .christmas-container .decorating-xmas-wrapper .activity-content ul {
+    padding: 0.672rem 0;
+  }
+  .christmas-container .go-and-spin {
+    position: relative;
+    z-index: 11;
+    clear: both;
+    padding-bottom: 1rem;
+    margin-bottom: 1.6rem;
+  }
+  .christmas-container .go-and-spin .lottery-box {
+    text-align: center;
+    position: relative;
+    width: 15rem;
+    height: 12.208rem;
+    margin: -0.16rem auto 0 auto;
+    padding-top: 1.76rem;
+    overflow: hidden;
+    background: url("../images/lottery-box.png") center bottom no-repeat;
+    -webkit-background-size: 15rem 12.208rem;
+    background-size: 15rem 12.208rem;
+  }
+  .christmas-container .go-and-spin .lottery-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10.352rem;
+    height: 1.696rem;
+    margin-left: -5.12rem;
+    background: url("../images/goandspin.png") no-repeat;
+    -webkit-background-size: 10.352rem 1.696rem;
+    background-size: 10.352rem 1.696rem;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 {
+    position: absolute;
+    right: 0.4rem;
+    top: 2.8rem;
+    color: #6cf5f7;
+    font-size: 0.288rem;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 span {
+    position: relative;
+    display: inline-block;
+    width: 1.7rem;
+    text-align: right;
+  }
+  .christmas-container .go-and-spin .lottery-box h2 span:before {
+    content: '';
+    position: absolute;
+    width: 0.8rem;
+    height: 0.9rem;
+    background: url("../images/dwarf.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    top: -0.24rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery {
+    width: 14rem;
+    height: 9.28rem;
+    margin: 2.5rem auto 0.4rem auto;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul {
+    position: relative;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li {
+    width: 4.7rem;
+    height: 3.1rem;
+    display: table;
+    position: absolute;
+    list-style: none;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:hover:not(:last-child):before,
+  .christmas-container .go-and-spin .lottery-box .lottery ul li.active:not(:last-child):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: 2px solid #faf359;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li a {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li a:after {
+    content: attr(data-after);
+    display: block;
+    font-size: 0.5625rem;
+    font-weight: bold;
+    color: #05560d;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li img {
+    width: 1.6rem;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:nth-child(odd) {
+    background-color: #e2e2e2;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child {
+    left: 0;
+    top: 0;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li {
+    left: 4.7rem;
+    top: 0;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li {
+    left: 9.4rem;
+    top: 0;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li {
+    left: 9.4rem;
+    top: 3.1rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li {
+    left: 9.4rem;
+    top: 6.2rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li {
+    left: 4.7rem;
+    top: 6.2rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li {
+    left: 0;
+    top: 6.2rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li {
+    left: 0;
+    top: 3.1rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li {
+    left: 4.7rem;
+    top: 3.1rem;
+    width: 4.7rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li a {
+    font-size: 0;
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: url("../images/sprite-christmas.png") no-repeat;
+    -webkit-background-size: 7.4rem 11.6rem;
+    background-size: 7.4rem 11.6rem;
+    background-position: 0 -4.44rem;
+  }
+  .christmas-container .go-and-spin .lottery-box .lottery ul li:first-child + li + li + li + li + li + li + li + li a:hover {
+    background-position: 0 -7.5rem;
+  }
+  .christmas-container .go-and-spin .activity-content {
+    width: auto;
+    margin: 1rem .24rem 0.24rem .24rem;
+  }
+  .christmas-container .go-and-spin .activity-content:before {
+    background: url("../images/snow-03.png") center right no-repeat;
+    -webkit-background-size: 14.24rem .352rem;
+    background-size: 14.24rem .352rem;
+  }
+  .christmas-container .go-and-spin .activity-content ul {
+    padding: 0.672rem 0;
+    margin-bottom: 0.576rem;
+  }
+  .pop-christmas {
+    display: none;
+    width: 15rem;
+    height: 12.208rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -7.5rem;
+    margin-top: -6.104rem;
+    z-index: 11111;
+    background: url("../images/lottery-box.png") center top no-repeat;
+    -webkit-background-size: 15rem 12.208rem;
+    background-size: 15rem 12.208rem;
+    padding-top: 1.648rem;
+  }
+  .pop-christmas .btn-pop-close {
+    position: absolute;
+    font-size: 0;
+    width: 1rem;
+    height: 1rem;
+    right: 0.38rem;
+    top: 2.47rem;
+    background: url("../images/bg-close.jpg") no-repeat;
+    -webkit-background-size: 1rem 1rem;
+    background-size: 1rem 1rem;
+  }
+  .pop-christmas .happy-new-year {
+    display: none;
+    margin: 2.752rem 0;
+  }
+  .pop-christmas .happy-new-year h2 {
+    font-size: 0.64rem;
+    font-weight: bold;
+    color: #de3025;
+    text-align: center;
+  }
+  .pop-christmas .gift-lists {
+    display: none;
+    margin-top: 2.7rem;
+  }
+  .pop-christmas .gift-lists ul {
+    width: 10rem;
+    max-height: 6rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .pop-christmas .gift-lists ul li {
+    margin-bottom: 0.304rem;
+  }
+  .pop-christmas .gift-lists ul li span {
+    display: block;
+    text-align: center;
+    width: 10rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.5625rem;
+    color: #05560d;
+    background: url("../images/bg-gift.jpg") no-repeat;
+    -webkit-background-size: 10rem 1.7rem;
+    background-size: 10rem 1.7rem;
+  }
+  .pop-christmas .gift-lists ul li span:before {
+    content: attr(data-before);
+  }
+  .pop-christmas .congratulations {
+    display: none;
+    margin: 3rem 0;
+  }
+  .pop-christmas .congratulations h2 {
+    text-align: center;
+    font-size: 0.64rem;
+    font-weight: bold;
+    color: #de3025;
+  }
+  .pop-christmas .congratulations h2:after {
+    content: attr(data-after);
+    display: block;
+    font-size: 0.48rem;
+    margin-top: 0.192rem;
+  }
+  .pop-christmas .congratulations .gift-code:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.5625rem;
+    color: #05560d;
+    margin-bottom: 0.192rem;
+  }
+  .pop-christmas .congratulations .gift-code span {
+    display: block;
+    text-align: center;
+    width: 10rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.5625rem;
+    color: #05560d;
+    background: url("../images/bg-gift.jpg") no-repeat;
+    -webkit-background-size: 10rem 1.7rem;
+    background-size: 10rem 1.7rem;
+  }
+  .pop-christmas .congratulations .gift-code span:before {
+    content: attr(data-before);
+  }
+  .christmas-mask {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1111;
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  66% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes shake {
+  /* Safari and Chrome */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  66% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes shake {
+  /* Safari and Chrome */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  66% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@media all and (orientation: landscape) {
+  .pop-christmas {
+    position: absolute;
+  }
+}
+@media all and (orientation: portrait) {
+  .pop-christmas {
+    position: fixed;
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>充值记录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+    <link rel="stylesheet" href="css/gameplat_global.css">
+    <link rel="stylesheet" href="http://cdn.feidou.com/css/gameplat_center.css?30">
+    <link rel="stylesheet" href="css/gameplat-sgqyz.css"/>
+    <script src="js/html5.js"></script><!--IE8支持html5标签-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC"><div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div><div class="line"></div><div class="fdLogo"><a href="/">飞豆网_开心网</a></div></h1>
+        <!-- BEGIN logout_menu -->
+        <div class="fr">
+            <a class="qqLogin dev_qqlogin" href="javascript:void(0);" onclick="return false;" data-goto="http://feidou.com/">QQ登录</a>
+            <a class="weiboLogin dev_sinalogin" href="javascript:void(0);" onclick="return false;" data-goto="http://feidou.com/">微博登录</a>
+            <ul class="funList">
+                <li><a href="/login.php">登录</a></li>
+                <li><a href="/reg.php">注册</a></li>
+            </ul>
+        </div>
+        <!-- END logout_menu -->
+    </div>
+</div>
+<!-- header start -->
+<header class="sgqyz-common-header">
+    <nav class="sgqyz-common-nav">
+        <ul class="nav">
+            <li class="active"><a href="javascript:;" target="_blank">官网首页</a></li>
+            <li><a href="javascript:;" target="_blank">新闻资讯</a></li>
+            <li><a href="javascript:;" target="_blank">游戏资料</a></li>
+            <li><a href="javascript:;" target="_blank">武将库</a></li>
+            <li><a href="javascript:;" target="_blank">官方论坛</a></li>
+            <li><a href="javascript:;" target="_blank">充值</a></li>
+            <li><a href="javascript:;" target="_blank">关注公众号赢大奖</a></li>
+        </ul>
+        <ul class="subscription">
+            <li>
+                <a href="javascript:;"><i class="icon icon-wechat"></i></a>
+                <div class="wechat-wrapper" data-before="微信公众号" data-after="扫描左侧二维码关注公众号">
+                    <div class="mask">
+                        <img src="images/weixin.jpg" alt="微信" width="67"/>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="icon icon-weibo"></i></a>
+                <div class="webo-wrapper" data-before="微博扫一扫" data-after="扫描左侧二维码关注官方微博">
+                    <div class="mask">
+                        <img src="images/weibo.jpg" alt="微博" width="66"/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- 背景轮播图 start -->
+<div class="bg-carousel-wrapper">
+    <!-- logo start -->
+    <div class="logo-wrapper">
+        <a href="javascript:;" class="logo">logo</a>
+    </div>
+    <!-- logo end -->
+    <div class="bxslider carousel bg-carousel">
+        <ul>
+            <li><a href="javascript:;"><img src="images/bg-carousel-01.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/bg-carousel-02.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 背景轮播图 end -->
+
+<div class="sgqyz-recharge-body">
+    <div class="sgqyz-recharge-container">
+        <!--背景图分页按钮 start-->
+        <div class="bg-carousel-pager"></div>
+        <!--背景图分页按钮 end-->
+        <div class="payBox-wrapper">
+            <div class="sgqyz-payBox">
+                <!--标签 start-->
+                <div class="sgqyz-payTabs">
+                    <ul>
+                        <li><a href="recharge.html">立即充值</a></li>
+                        <li class="cur"><a href="records.html">充值记录</a></li>
+                    </ul>
+                </div>
+                <!--标签 end-->
+                <div class="sgqyz-payItem">
+                    <div class="payMenu-wrapper">
+                        <!--左侧菜单 start-->
+                        <div class="sgqyz-payMenu">
+                            <ul>
+                                <li id="li_alipay" class="dev_paymenu cur"><a href="javascript:;"><img src="images/icon-zhifubao.png" alt="支付宝">支付宝</a></li>
+                                <li id="li_tenpay" class="dev_paymenu"><a href="javascript:;"><img src="images/icon-caifutong.png" alt="财付通">财付通</a></li>
+                                <li id="li_unionpay" class="dev_paymenu"><a href="javascript:;"><img src="images/icon-yinlian.png" alt="银联">银联</a></li>
+                                <li id="li_yeepaybanking" class="dev_paymenu"><a href="javascript:;"><img src="images/icon-yibao.png" alt="易宝">易宝</a></li>
+                                <li id="li_wxpay" class="dev_paymenu"><a href="javascript:;"><img src="images/icon-weixin.png" alt="微信">微信</a></li>
+                                <li id="li_feidou" class="dev_paymenu"><a href="javascript:;"><img src="images/icon-feidou.png" alt="飞豆转换">飞豆转换</a></li>
+                            </ul>
+                        </div>
+                        <!--左侧菜单 end-->
+                    </div>
+                    <div class="payCon-wrapper">
+                        <div id="payPage" class="sgqyz-payCon">
+                            <!--充值记录 start-->
+                            <div class="sgqyz-content">
+                                <div class="content-item areas" data-before="选择区域：">
+                                    <ul>
+                                        <li>
+                                            <select name="" id="1">
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                            </select>
+                                            年
+                                        </li>
+                                        <li>
+                                            <select name="" id="2">
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                                <option value="all">all</option>
+                                            </select>
+                                            月
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:;">搜索</a>
+                                </div>
+                                <div class="record-table">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>充值金额</th>
+                                            <th>充值方式</th>
+                                            <th>订单号</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>2016-08-26  10:56</td>
+                                            <td>50</td>
+                                            <td>WXPAY</td>
+                                            <td>1827598423</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-08-26  10:56</td>
+                                            <td>50</td>
+                                            <td>WXPAY</td>
+                                            <td>1827598423</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-08-26  10:56</td>
+                                            <td>50</td>
+                                            <td>WXPAY</td>
+                                            <td>1827598423</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-08-26  10:56</td>
+                                            <td>50</td>
+                                            <td>WXPAY</td>
+                                            <td>1827598423</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="errorTip">暂无充值记录！</p>
+                                    <div class="record-page">
+                                        <ul>
+                                            <li><a href="javascript:;">上一页</a></li>
+                                            <li class="active"><a href="javascript:;">1</a></li>
+                                            <li><a href="javascript:;">2</a></li>
+                                            <li><a href="javascript:;">3</a></li>
+                                            <li><a href="javascript:;">下一页</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--充值记录 end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--公共尾 start-->
+<div style="width: 980px;margin: 20px auto -30px;">
+    <h3 class="mb f14">友情链接</h3>
+    <p>
+        <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+        <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+        <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+        <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+        <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+        <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+        <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+        <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+        <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+    </p>
+</div>
+<div class="footer cfix">
+    <div class="fl">
+        <a href="" target="_blank">
+            <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+        </a>
+    </div>
+    <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+    <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+</div>
+<!--公共尾 end-->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.bg-carousel.js"></script><!--背景图轮播特效-->
+<script>
+    $(document).ready(function () {
+        //背景图轮播
+        $('.bg-carousel').bgCarousel({
+            items: '.bg-carousel li',
+            pageWrapper: '.bg-carousel-pager',
+            pager: true
+        });
+    })
+</script>
+</body>
+</html>

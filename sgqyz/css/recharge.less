@@ -1,0 +1,507 @@
+.sgqyz-recharge-body {
+  background: #000 url("../images/bg-body-01.jpg") no-repeat;
+  background-position: center 718px;
+  .sgqyz-recharge-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 504px 0;
+    position: relative;
+    z-index: 11;
+    .payBox-wrapper {
+      position: relative;
+      width: 866px;
+      min-height: 654px;
+      margin: 0 auto;
+      border: 8px solid rgba(0, 0, 0, .5);
+      border-radius: 8px;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top:1px;
+        z-index:1;
+        background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+      }
+      &:before {
+        left:1px;
+        background-position: -130px -1070px;
+      }
+      &:after {
+        right:1px;
+        background-position: -163px -1070px;
+      }
+    }
+    .sgqyz-payBox {
+      width: 850px;
+      min-height: 654px;
+      padding: 15px 17px;
+      position: relative;
+      border: 1px solid #515050;
+      background-color: #2e2e2e;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        bottom:1px;
+        background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+      }
+      &:before {
+        left:1px;
+        background-position: -130px -1105px;
+      }
+      &:after {
+        right:1px;
+        background-position: -163px -1105px;
+      }
+      .sgqyz-payTabs {
+        position: relative;
+        z-index: 1;
+        ul {
+          font-size: 0;
+          padding: 0 194px;
+          margin-bottom: 17px;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 20px;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            background-position: 0 -1070px;
+            a {
+              display: block;
+              width: 129px;
+              height: 34px;
+              text-align: center;
+              font: 14px 'SimHei';
+              line-height: 34px;
+              color: #9d9ea2;
+            }
+            &:hover,
+            &.cur {
+              background-position: 0 -1105px;
+              a {
+                color: #d4a75f;
+              }
+            }
+          }
+        }
+      }
+
+      .sgqyz-payItem {
+        position: relative;
+        &:after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+        .payMenu-wrapper {
+          float: left;
+          background-color: #373737;
+          border: 1px solid #57585b;
+          position: relative;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 6px;
+            top: 0;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+          }
+          &:before {
+            left: 1px;
+            background-position: -175px -52px;
+          }
+          &:after {
+            right: 1px;
+            background-position: -181px -52px;
+          }
+          .sgqyz-payMenu {
+            position: relative;
+            height: 548px;
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              width: 5px;
+              height: 6px;
+              bottom: 0;
+              background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            }
+            &:before {
+              left: 1px;
+              background-position: -175px -59px;
+            }
+            &:after {
+              right: 1px;
+              background-position: -181px -59px;
+            }
+            ul {
+              padding:7px 0;
+              li {
+                width: 167px;
+                height: 42px;
+                background-color: #2f2d2d;
+                border: 1px solid #57585b;
+                margin: 6px 5px;
+                position: relative;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  width: 38px;
+                  height: 19px;
+                  right:0;
+                  top:50%;
+                  margin-top: -10px;;
+                  background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                  background-position: -270px -381px;
+                }
+                a {
+                  display: block;
+                  text-align: center;
+                  font: 13px 'SimHei';
+                  line-height: 40px;
+                  padding-right:20px;
+                  color: #cacaca;
+                  text-indent: 22px;
+                }
+                img {
+                  position: absolute;
+                  left: 22px;
+                  top: 10px;
+                }
+                &:hover,
+                &.cur {
+                  background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                  background-position: 0 -1141px;
+                  &:after {
+                    background: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .payCon-wrapper {
+          float: right;
+          width: 623px;
+          background-color: #373737;
+          border: 1px solid #57585b;
+          position: relative;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 6px;
+            top: 0;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+          }
+          &:before {
+            left: 1px;
+            background-position: -175px -52px;
+          }
+          &:after {
+            right: 1px;
+            background-position: -181px -52px;
+          }
+          .sgqyz-payCon {
+            padding: 15px 20px;
+            position: relative;
+            min-height: 548px;
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              width: 5px;
+              height: 6px;
+              bottom: 0;
+              background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            }
+            &:before {
+              left: 1px;
+              background-position: -175px -59px;
+            }
+            &:after {
+              right: 1px;
+              background-position: -181px -59px;
+            }
+            .sgqyz-title {
+              h3 {
+                font: 23px 'SimHei';
+                color: #cacaca;
+              }
+            }
+            .sgqyz-content {
+              height: 518px;
+              position: relative;
+              &:after {
+                content: '';
+                position: absolute;
+                width: 308px;
+                height: 74px;
+                background: url("../images/bg-recharge-shading.jpg") no-repeat;
+                bottom: -15px;
+                left:50%;
+                margin-left: -154px;
+              }
+              .errorTip {
+                display: none;
+                background: none;
+                font: 12px 'Microsoft YaHei';
+                color: #ed2a2a;
+                padding-left: 0;
+                margin-bottom:30px;
+              }
+              .content-item {
+                padding: 20px 0;
+                position: relative;
+                &:before {
+                  content: attr(data-before);
+                  font: 14px 'Microsoft YaHei';
+                  color: #cacaca;
+                  line-height: 27px;
+                }
+                span {
+                  font: 14px 'SimHei';
+                  color: #cacaca;
+                }
+                ul {
+                  width: 505px;
+                  display: inline-block;
+                  vertical-align: top;
+                  font-size: 0;
+                  li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font: 14px 'Microsoft YaHei';
+                    color: #000;
+                  }
+                }
+                &.areas {
+                  ul {
+                    width: 205px;
+                    li {
+                      margin-right: 20px;
+                      color: #cacaca;
+                      &:before {
+                        line-height: 27px;;
+                      }
+                      select {
+                        width: 59px;
+                        height: 27px;
+                        background-color: #fff;
+                        &:focus {
+                          outline: none;
+                        }
+                      }
+                    }
+                  }
+                  a {
+                    display: inline-block;
+                    width: 78px;
+                    height: 28px;
+                    text-align: center;
+                    font: 14px 'Microsoft YaHei';
+                    color: #fff;
+                    line-height: 28px;
+                    border: 1px solid #478309;
+                    border-radius: 2px;
+                    background: -moz-linear-gradient(top, #8ad14d, #54b83a);
+                    background: -webkit-gradient(linear,top,from(#8ad14d),to(#54b83a));
+                    background: -webkit-linear-gradient(top, #8ad14d, #54b83a);
+                    background: -o-linear-gradient(top, #8ad14d, #54b83a);
+                    &:hover {
+                      background: -moz-linear-gradient(top, #54b83a, #54b83a);
+                      background: -webkit-gradient(linear,top,from(#54b83a),to(#54b83a));
+                      background: -webkit-linear-gradient(top, #54b83a, #54b83a);
+                      background: -o-linear-gradient(top, #54b83a, #54b83a);
+                    }
+                  }
+                }
+                &.servers {
+                  ul {
+                    li {
+                      margin-right: 20px;
+                      select {
+                        width: 120px;
+                        height: 27px;
+                        background-color: #fff;
+                        &:focus {
+                          outline: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                &.money {
+                  padding-bottom: 0;
+                  ul {
+                    li {
+                      border: 1px solid #d7d7d7;
+                      background-color: #f1f1f1;
+                      margin-right: 10px;
+                      margin-bottom: 16px;
+                      width: 108px;
+                      height: 29px;
+                      text-align: center;
+                      position: relative;
+                      a {
+                        display: block;
+                        line-height: 25px;
+                        color: #000;
+                        border: 1px solid #f1f1f1;
+                      }
+                      input {
+                        width: 50px;
+                        height: 19px;
+                        margin: 4px 3px;
+                        text-align: center;
+                        font: 12px 'Microsoft YaHei';
+                        line-height: 19px;
+                        background-color: #d2cdcd;
+                        border: 1px solid #98999d;
+                        &:focus {
+                          outline: none;
+                        }
+                      }
+                      &.selected {
+                        border-color: #078807;
+                        a {
+                          border-color: #078807;
+                        }
+                        &:after {
+                          content: '';
+                          position: absolute;
+                          width: 11px;
+                          height: 8px;
+                          right:0;
+                          bottom:0;
+                          background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                          background-position: -270px -400px;
+                        }
+                      }
+                      &.err-selected {
+                        border: 2px solid #961d08;
+                        &:after {
+                          content: '';
+                          position: absolute;
+                          width: 11px;
+                          height: 8px;
+                          right:0;
+                          bottom:0;
+                          background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                          background-position: -283px -400px;
+                        }
+                      }
+                    }
+                  }
+                }
+                .errorTip {
+                  position: absolute;
+                  padding-left: 74px;
+                  bottom: -8px;
+                  margin:0;
+                }
+              }
+              .sgqyz-RechargeBtn {
+                display: block;
+                margin: 0 auto;
+                width: 141px;
+                height: 43px;
+                text-align: center;
+                font: 25px 'Microsoft YaHei';
+                color: #fff;
+                line-height: 43px;
+                border: 1px solid #478309;
+                border-radius: 2px;
+                background: -moz-linear-gradient(top, #8ad14d, #54b83a);
+                background: -webkit-gradient(linear,top,from(#8ad14d),to(#54b83a));
+                background: -webkit-linear-gradient(top, #8ad14d, #54b83a);
+                background: -o-linear-gradient(top, #8ad14d, #54b83a);
+                &:hover {
+                  background: -moz-linear-gradient(top, #54b83a, #54b83a);
+                  background: -webkit-gradient(linear,top,from(#54b83a),to(#54b83a));
+                  background: -webkit-linear-gradient(top, #54b83a, #54b83a);
+                  background: -o-linear-gradient(top, #54b83a, #54b83a);
+                }
+              }
+
+              .record-table {
+                position: relative;
+                width: 580px;
+                height: 474px;
+                &:before {
+                  content: '';
+                  display: block;
+                  width:100%;
+                  height: 2px;
+                  background: url("../images/bg-line.png") no-repeat;
+                  margin-bottom: 2px;
+                }
+                table {
+                  width:100%;
+                  text-align: center;
+                  thead {
+                    background-color: #3d3d3d;
+                    tr {
+                      th {
+                        text-align: center;
+                        font: 15px 'SimHei';
+                        color: #cacaca;
+                        line-height:30px;
+                      }
+                    }
+                  }
+                  tbody {
+                    tr {
+                      border-bottom:1px dashed #6f6f6f;
+                      td {
+                        font: 13px 'SimHei';
+                        color: #cacaca;
+                        line-height:20px;
+                      }
+                    }
+                  }
+                }
+                .errorTip {
+                  display: none;
+                  text-align: center;
+                  font: 16px 'SimHei';
+                  color: #cacaca;
+                  margin:150px 0;
+                }
+              }
+              .record-page {
+                position: absolute;
+                width:100%;
+                left:0;
+                bottom:100px;
+                ul {
+                  font-size: 0;
+                  text-align: center;
+                  li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin:0 5px;
+                    a {
+                      display: block;
+                      padding: 2px 5px;
+                      background-color: #cacaca;
+                      font: 14px 'SimHei';
+                      color: #000;
+                    }
+                    &.active {
+                      a {
+                        background-color: transparent;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <script src="js/jquery.lottery.js"></script>
+    <link rel="stylesheet" href="css/gameplat-national-cn2017.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+    <script src="js/gameplat-national.js"></script>
+    <script src="js/gameplat-richman.js"></script>
+</head>
+<body>
+
+<div class="national-cn2017">
+    <div class="national-container">
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="national-richman-wrapper">
+                <div class="national-richman">
+                    <span class="nr-gird nr-gird-0 current" data-index="0">0</span>
+                    <span class="nr-gird nr-gird-1" data-index="1">1</span>
+                    <span class="nr-gird nr-gird-2" data-index="2">2</span>
+                    <span class="nr-gird nr-gird-3" data-index="3">3</span>
+                    <span class="nr-gird nr-gird-4" data-index="4">前进6</span>
+                    <span class="nr-gird nr-gird-5" data-index="5">5</span>
+                    <span class="nr-gird nr-gird-6" data-index="6" >前进到10</span>
+                    <span class="nr-gird nr-gird-7" data-index="7">7</span>
+                    <span class="nr-gird nr-gird-8" data-index="8">选择步数</span>
+                    <span class="nr-gird nr-gird-9" data-index="9">9</span>
+                    <span class="nr-gird nr-gird-10" data-index="10">10</span>
+                    <span class="nr-gird nr-gird-11" data-index="11">11</span>
+                    <span class="nr-gird nr-gird-12" data-index="12">后退到6</span>
+                    <span class="nr-gird nr-gird-13" data-index="13">13</span>
+                    <span class="nr-gird nr-gird-14" data-index="14">后退2</span>
+                    <span class="nr-gird nr-gird-15" data-index="15">15</span>
+                    <span class="nr-gird nr-gird-16" data-index="16">16</span>
+                    <span class="nr-gird nr-gird-17" data-index="17">答题惩罚</span>
+                    <span class="nr-gird nr-gird-18" data-index="18">18</span>
+                    <span class="nr-gird nr-gird-19" data-index="19">随机奖励</span>
+                    <span class="nr-gird nr-gird-20" data-index="20">20</span>
+                    <span class="nr-gird nr-gird-21" data-index="21">21</span>
+                </div>
+                <div class="national-richman-panel">
+                    <div class="toolbar">
+                        <div class="dice-wrapper"><a href="javascript:;" class="dice">色子</a></div>
+                        <div class="btn-group">
+                            <a href="javascript:;" class="btn-signin">签&emsp;到</a>
+                            <a href="javascript:;" class="btn-roll">掷&emsp;骰</a>
+                            <a href="javascript:;" class="btn-answer">答&emsp;题</a>
+                            <a href="javascript:;" class="btn-compeleted">已完成</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹框 start-->
+<!--1 签到 start -->
+<div class="popup pop-signin">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body" data-before="恭喜您，签到成功！">
+        <p class="p1" data-after="可用于激活幸运转盘">获得钥匙*<span>1</span></p>
+        <p class="p2" data-after="可点击下方开始按钮进行掷骰参与大富翁游戏">获得骰子*<span>1</span></p>
+        <a href="javascript:;" class="btn-start">开始</a>
+    </div>
+</div>
+<!--1 签到 end -->
+<!--2 小问题 start-->
+<div class="popup pop-questions">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <p>以下是您的今日问题，答对可活的一次翻牌机会。收集武将，大奖就在眼前！</p>
+        <div class="question wrong" data-right="&radic;" data-wrong="&times;">
+            <a href="javascript:;" id="ask" class="caption">三国中谁被称为鬼才？</a>
+            <ul>
+                <li class="active"><a href="javascript:;" id="answa" data-before="A.">郭嘉 </a></li>
+                <li><a href="javascript:;" data-before="B.">甘宁</a></li>
+                <li><a href="javascript:;" data-before="C.">甘宁</a></li>
+                <li><a href="javascript:;" data-before="D.">甘宁</a></li>
+                <li><a href="javascript:;" data-before="E.">甘宁</a></li>
+            </ul>
+            <a href="javascript:;" class="btn-submit">确定</a>
+        </div>
+    </div>
+</div>
+<!--2 小问题 end-->
+<!--3 答错提示 start-->
+<div class="popup pop-wrong">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2>很遗憾您没有回答对哦~</h2>
+        <a href="javascript:;" class="btn-submit">确定</a>
+    </div>
+</div>
+<!--3 答错提示 end-->
+<!--4 答对提示 获得翻牌机会 start-->
+<div class="popup pop-right">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="恭喜您，答对了！">
+        <p data-after="可点击下方开始按钮进行掷骰参与大富翁游戏">获得骰子*<span>1</span></p>
+        <a href="javascript:;" class="btn-start">开始</a>
+    </div>
+</div>
+<!--4 答对提示 获得翻牌机会 end-->
+<!--5 选择步数 start-->
+<div class="popup pop-steps">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="请选择您要移动的步数">
+        <div class="steps">
+            <ul>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+                <li><a href="javascript:;">6</a></li>
+            </ul>
+        </div>
+        <div class="btn-group btn-mask">
+            <a href="javascript:;" class="btn-start">开始</a>
+        </div>
+    </div>
+</div>
+<!--5 选择步数 end-->
+<!--6 激活幸运转盘 start-->
+<div class="popup pop-turntable pop-turntable-lucky">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="恭喜您！">
+        <p class="p1">您已激活<a href="javascript:;" class="caption">幸运转盘</a>,可点击转盘进行抽奖</p>
+        <p class="p2">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+        <p class="p3">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>中查询领取记录。</p>
+    </div>
+</div>
+<!--6 激活幸运转盘 end-->
+<!--7 激活资源转盘 start-->
+<div class="popup pop-turntable pop-turntable-source">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="恭喜您！">
+        <p class="p1">您已激活<a href="javascript:;" class="caption">资源转盘</a>,可点击转盘进行抽奖</p>
+        <p class="p2">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+        <p class="p3">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>中查询领取记录。</p>
+    </div>
+</div>
+<!--7 激活资源转盘 end-->
+<!--8 获得随机奖励机会 start-->
+<div class="popup pop-prize">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2>获得<span>1</span>次随机奖励机会!</h2>
+        <div class="cards">
+            <ul>
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+            </ul>
+        </div>
+        <div class="btn-group btn-mask">
+            <a href="javascript:;" class="btn-start">开始</a>
+        </div>
+    </div>
+</div>
+<!--8 获得随机奖励机会 end-->
+<!--9 实物奖 start-->
+<div class="popup pop-goods">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <div class="form-group">
+            <h3 id="loeetrys" data-before="恭喜您，您获得：">实物奖励1</h3>
+            <ul data-before="请认真填写以下个人信息，因信息有误无法寄达的，视为自动放弃获奖机会。">
+                <li data-before="姓名：">
+                    <input id="name" type="text"/>
+                </li>
+                <li data-before="电话：">
+                    <input id="phone" type="text"/>
+                </li>
+                <li data-before="地址：">
+                    <input id="address" type="text"/>
+                </li>
+                <li data-before="邮编：">
+                    <input id="zipcode" type="text"/>
+                </li>
+                <li data-before="服务器名称：">
+                    <select name="" id="server">
+                        <!--option value="服务器1"></option>
+                        <option value="服务器2"></option>
+                        <option value="服务器3"></option>
+                        <option value="服务器4"></option>
+                        <option value="服务器5"></option-->
+                    </select>
+                </li>
+                <li data-before="角色名：">
+                    <select name="" id="role">
+                        <!--option value="角色名1"></option>
+                        <option value="角色名2"></option>
+                        <option value="角色名3"></option-->
+                    </select>
+                </li>
+                <li data-before="备注：" data-after="(手机壳分iphone4/4S/5/5S,尽量按需发货)">
+                    <input id="msg" type="text"/>
+                </li>
+            </ul>
+            <button type="submit" class="btn-submit">提交</button>
+            <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+            <p class="p2">活动期间可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>对实物奖品邮寄地址修改一次，活动结束后将无法提交或修改。</p>
+        </div>
+    </div>
+</div>
+<!--9 实物奖 end-->
+<!--10 信息提交成功 start-->
+<div class="popup pop-success">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h3 data-before="恭喜您，信息提交成功！">我们将于活动结束后为您派发奖品，请注意查收！</h3>
+        <a href="http://www.feidou.com/yttx/" class="btn-lg">请主公前往游戏体验更多精彩</a>
+        <p class="p1">活动期间可在<a href="javascript:;">礼品箱</a>对实物奖品邮寄地址修改一次，活动结束后将无法提交或修改。</p>
+    </div>
+</div>
+<!--10 信息提交成功 end-->
+<!--11 礼品箱 start-->
+<div class="popup pop-giftbox">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="礼品箱" data-after="提示：请移步至游戏内使用礼品码，每种奖励每个游戏账号只能使用一次。">
+        <div class="gift-table-wrapper">
+            <div class="gift-table">
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th><span>日期</span></th>
+                        <th><span>奖励</span></th>
+                        <th><span>礼品码</span></th>
+                        <th><span>操作</span></th>
+                    </tr>
+                    </thead>
+                    <tbody id="gifts_list">
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div></div>
+    </div>
+</div>
+<!--11 礼品箱 end-->
+<div class="mask"></div>
+<!-- 弹出框 end -->
+<!---->
+</body>
+</html>

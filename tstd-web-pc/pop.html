@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>吞食天地移动端弹窗</title>
+    <script src="http://cdn.feidou.com/js/flexible_css.js"></script>
+    <script src="http://cdn.feidou.com/js/flexible.js"></script>
+</head>
+<body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .pop-tstd-giftpackage {
+        display: none;
+        position: fixed;
+        width: 9rem;
+        height: 8.33rem;
+        left: 50%;
+        top: 50%;
+        margin-top: -4.16rem;
+        margin-left: -4.5rem;
+        background-color: #e7d9ad;
+        z-index: 111;
+    }
+    .pop-tstd-giftpackage .pop-tstd-top {
+        background-color: #773f23;
+        text-align: center;
+        height: 1.11rem;
+        position: relative;
+        box-shadow: 0 0 .138rem rgba(0, 0, 0, 0.39);
+    }
+    .pop-tstd-giftpackage .pop-tstd-top span {
+        position: absolute;
+        background-color: #bf1317;
+        color: #fff000;
+        padding: .347rem 0;
+        width: 2.68rem;
+        left: 50%;
+        margin-left: -1.34rem;
+        bottom: 0;
+    }
+    .pop-tstd-giftpackage .pop-tstd-top .pop-tstd-close {
+        border-left: 1px solid #f6f7f8;
+        position: absolute;
+        padding-left: .055rem;
+        color: #f6f7f8;
+        right: .069rem;
+        bottom: .1667rem;
+        top: .2778rem;
+        line-height: .667rem;
+        text-decoration: none;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists {
+        padding-bottom: .416rem;
+        border-bottom: 1px dashed #b49875;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists:before {
+        content: attr(data-before);
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'SimHei';
+        color: #da0409;
+        padding: .569rem 0 .2778rem;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists ul {
+        font-size: 0;
+        text-align: center;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists ul li {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.68rem;
+        background-color: #be4231;
+        position: relative;
+        margin: 0 .198rem;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists ul li img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists ul li a {
+        position: relative;
+        display: block;
+        height: 2.027rem;
+        text-align: center;
+        padding: .25rem .167rem;
+        background-color: #be4231;
+    }
+    .pop-tstd-giftpackage .pop-gift-lists ul li a:after {
+        content: attr(data-after);
+        position: absolute;
+        font-family: SimHei;
+        text-align: center;
+        color: #fff5ae;
+        bottom: .138rem;
+        left: .138rem;
+        right: .138rem;
+    }
+    .pop-tstd-giftpackage .pop-gift-rules {
+        padding: 0 .556rem;
+    }
+    .pop-tstd-giftpackage .pop-gift-rules ul li span {
+        font-family: SimHei;
+        color: #773f23;
+        position: relative;
+        padding-left: .65rem;
+        line-height: .458rem;
+        display: block;
+        margin: .208rem 0;
+    }
+    .pop-tstd-giftpackage .pop-gift-rules ul li span:before {
+        content: attr(data-before);
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        padding: 0 6px;
+        background-color: #773f23;
+    }
+    [data-dpr="1"] .pop-tstd-giftpackage .pop-tstd-top .pop-tstd-close {
+        font-size: 28px;
+    }
+    [data-dpr="2"] .pop-tstd-giftpackage .pop-tstd-top .pop-tstd-close {
+        font-size: 56px;
+    }
+    [data-dpr="3"] .pop-tstd-giftpackage .pop-tstd-top .pop-tstd-close {
+        font-size: 112px;
+    }
+    [data-dpr="1"] .pop-tstd-giftpackage .pop-tstd-top span {
+        font-size: 20px;
+    }
+    [data-dpr="2"] .pop-tstd-giftpackage .pop-tstd-top span {
+        font-size: 40px;
+    }
+    [data-dpr="3"] .pop-tstd-giftpackage .pop-tstd-top span {
+        font-size: 80px;
+    }
+    [data-dpr="1"] .pop-tstd-giftpackage .pop-gift-lists:before {
+        font-size: 12px;
+    }
+    [data-dpr="2"] .pop-tstd-giftpackage .pop-gift-lists:before {
+        font-size: 25px;
+    }
+    [data-dpr="3"] .pop-tstd-giftpackage .pop-gift-lists:before {
+        font-size: 36px;
+    }
+    [data-dpr="1"] .pop-tstd-giftpackage .pop-gift-lists ul li a:after {
+        font-size: 12px;
+    }
+    [data-dpr="2"] .pop-tstd-giftpackage .pop-gift-lists ul li a:after {
+        font-size: 24px;
+    }
+    [data-dpr="3"] .pop-tstd-giftpackage .pop-gift-lists ul li a:after {
+        font-size: 36px;
+    }
+
+    [data-dpr="1"] .pop-tstd-giftpackage .pop-gift-rules ul li span {
+        font-size: 12px;
+    }
+    [data-dpr="2"] .pop-tstd-giftpackage .pop-gift-rules ul li span {
+        font-size: 24px;
+    }
+    [data-dpr="3"] .pop-tstd-giftpackage .pop-gift-rules ul li span {
+        font-size: 36px;
+    }
+
+</style>
+
+<div class="pop-tstd-giftpackage" style="display: block;">
+    <div class="pop-tstd-top">
+        <span>冒险礼包</span>
+        <a href="javascript:;" class="pop-tstd-close">&times;</a>
+    </div>
+    <div class="pop-gift-lists" data-before="5478675545">
+        <ul>
+            <li><a href="javascript:;" data-after="橙将x12"><img src="images/avatar.png" alt="橙将x12"/></a></li>
+            <li><a href="javascript:;" data-after="橙将x12"><img src="images/avatar.png" alt="橙将x12"/></a></li>
+            <li><a href="javascript:;" data-after="橙将x12"><img src="images/avatar.png" alt="橙将x12"/></a></li>
+            <li><a href="javascript:;" data-after="橙将x12"><img src="images/avatar.png" alt="橙将x12"/></a></li>
+        </ul>
+    </div>
+    <div class="pop-gift-rules">
+        <ul>
+            <li><span data-before="1">礼包内容：木材3000，铁矿3000，粮草3000</span></li>
+            <li><span data-before="2">领取说明：由于ICS禁止使用礼包激活码，此礼包仅限于安卓用户使用，请直接在游戏内激活。</span></li>
+            <li><span data-before="3">注意事项：打江山东京</span></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

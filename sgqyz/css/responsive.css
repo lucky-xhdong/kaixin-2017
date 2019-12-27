@@ -1,0 +1,118 @@
+@media (max-width: 1440px) {
+    .bg-carousel-wrapper .carousel ul li {
+        height: 585px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-01 {
+        padding-top: 80px;
+    }
+    .bg-carousel-wrapper .bx-controls {
+        top: 386px;
+    }
+}
+@media (max-width: 1366px) {
+    .bg-carousel-wrapper .carousel ul li {
+        height: 554px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-01 {
+        padding-top: 40px;
+    }
+    .bg-carousel-wrapper .bx-controls {
+        top: 346px;
+    }
+}
+@media (max-width: 1280px) {
+    .bg-carousel-wrapper .carousel ul li {
+        height: 520px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-01 {
+        padding-top: 20px;
+    }
+    .bg-carousel-wrapper .bx-controls {
+        top: 336px;
+    }
+}
+@media (max-width: 1200px) {
+    header .sgqyz-common-nav,
+    .logo-wrapper,
+    .sgqyz-home-body .sgqyz-home-container,
+    .sgqyz-news-body .sgqyz-news-container,
+    .sgqyz-signin-body .sgqyz-signin-container,
+    .bg-carousel-wrapper .bx-controls,
+    .topBar .inner,
+    .friend-links, .footer  {
+        width: 1000px;
+    }
+    .bg-carousel-wrapper .bx-controls {
+        margin-left: -500px;
+    }
+    header .sgqyz-common-nav ul.nav li a {
+        padding:6px 30px;
+    }
+    .logo-wrapper .logo {
+        left: 292px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-01 .moudle-01-right .btn-more {
+        margin-left: 40px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-01 .moudle-01-right .server-lists .bottom ul {
+        width: 155px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists {
+        width: 432px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists nav ul li a {
+        padding: 11px 18px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .wujiangku .cascade-wujiangku .carousel-controls,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .cascade-wujiangku .carousel-controls {
+        left: -60px;
+        right: -60px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists .con .multiple-wrapper ul li a,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists .con .new-wrapper ul li a,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists .con .activity-wrapper ul li a,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists .con .gonglue-wrapper ul li a,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-02 .center .news-lists .con .media-wrapper ul li a {
+        max-width: 280px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-04 .cascade-screenshots ul {
+        height: 215px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-05 .links {
+        width: 454px;
+    }
+    .sgqyz-news-body .sgqyz-news-container .sgqyz-moudle .right {
+        width: 700px;
+    }
+    .sgqyz-news-body .sgqyz-news-container .sgqyz-moudle .right .news-lists-wrapper .news-lists ul li a {
+        max-width: 550px;
+    }
+
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .carousel-controls {
+        left: 0;
+        right: 0;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .wujiangku .cascade-wujiangku .carousel-controls .btn-prev,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .cascade-wujiangku .carousel-controls .btn-prev {
+        left: -60px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .wujiangku .cascade-wujiangku .carousel-controls .btn-next,
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .cascade-wujiangku .carousel-controls .btn-next {
+        right: -60px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .carousel-controls .btn-prev {
+        left: 15px;
+    }
+    .sgqyz-home-body .sgqyz-home-container .sgqyz-moudle-03 .bingzhongku .carousel-controls .btn-next {
+        right: 15px;
+    }
+    .sgqyz-news-body .sgqyz-news-container .sgqyz-moudle {
+        padding-top: 150px;;
+    }
+}

@@ -1,0 +1,33 @@
+.mmx-introduce-section {
+  background: url("../images/bg-body-02.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  .position(relative);
+  &:after {
+    content: '';
+    .position(absolute);
+    .width(100%);
+    .height(100%);
+    left: @left;
+    bottom: @bottom;
+    .z-index(-1);
+    background: url("../images/bg-body-02-repeat.jpg") repeat-y;
+    -webkit-background-size: 10rem .1rem;
+    background-size: 10rem .1rem;
+  }
+  article {
+    min-height: 5rem;
+    text-align: center;
+    h1 {
+      font: 18px "黑体";
+      color: #666;
+      padding: 3rem 0;
+    }
+  }
+}
+[data-dpr="2"] .mmx-introduce-section article h1 {
+  font: 36px "黑体";
+}
+[data-dpr="3"] .mmx-introduce-section article h1 {
+  font: 54px "黑体";
+}

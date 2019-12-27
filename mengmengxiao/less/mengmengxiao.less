@@ -1,0 +1,352 @@
+.mmx-home-body {
+  width: 10rem;
+  margin: 0 auto;
+  .mmx-home-btn-group {
+    .position(relative);
+    background: url("../images/bg-body-01.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    &:after {
+      content: '';
+      .position(absolute);
+      .width(100%);
+      .height(100%);
+      left: @left;
+      bottom: @bottom;
+      .z-index(-1);
+      background: url("../images/bg-body-01-repeat.jpg") repeat-y;
+      -webkit-background-size: 10rem .1rem;
+      background-size: 10rem .1rem;
+    }
+    .video-wrapper {
+      .pad-t(8.328rem);
+      a {
+        .display(block);
+        .width(1.312rem);
+        .height(1.218rem);
+        .mar-hororver(0, .531rem);
+        .text-indent(-156.23rem);
+        background: url("../images/icon-sprite.png") no-repeat;
+        -webkit-background-size: 2.656rem 5.312rem;
+        background-size: 2.656rem 5.312rem;
+        background-position: 0 -4rem;
+      }
+    }
+    .btn-download-wrapper {
+      .text-align(center);
+      .font-size(0);
+      li {
+        .display(inline-block);
+        .ver-align(middle);
+        .mar-hororver(.156rem, .172rem);
+        a {
+          .display(block);
+          .height(1.39rem);
+          background: url("../images/btn-sprite.png") no-repeat;
+          -webkit-background-size: 8.593rem 4.062rem;
+          background-size: 8.593rem 4.062rem;
+          &.android {
+            .width(4.047rem);
+            background-position: 0 -2.547rem;
+          }
+          &.appstore {
+            .width(4.5rem);
+            background-position: -4.047rem -2.577rem;
+          }
+        }
+      }
+    }
+    .target-wrapper {
+      .font-size(0);
+      li {
+        a {
+          .display(block);
+          .width(6.562rem);
+          .height(2.062rem);
+          .mar-hororver(0, auto);
+          background: url("../images/banner-sprite.png") no-repeat;
+          -webkit-background-size: 9.593rem 8.125rem;
+          background-size: 9.593rem 8.125rem;
+          &.micro-blog {
+            background-position: 0 -2.078rem;
+          }
+          &.wechat {
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .mmx-activities-imgs {
+    .position(relative);
+    .pad-all(1.375rem, 0, .203rem, 0);
+    background: url("../images/bg-body-02.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    &:before, &:after {
+      content: '';
+      .position(absolute);
+    }
+    &:before {
+      .width(9.593rem);
+      .height(1.093rem);
+      left: @per-left;
+      top: @top;
+      .mar-l(-4.797rem);
+      background: url("../images/banner-sprite.png") no-repeat;
+      -webkit-background-size: 9.593rem 8.125rem;
+      background-size: 9.593rem 8.125rem;
+      background-position: 0 -4.14rem;
+    }
+    &:after {
+      .width(100%);
+      .height(100%);
+      left: @left;
+      bottom: @bottom;
+      .z-index(-1);
+      background: url("../images/bg-body-02-repeat.jpg") repeat-y;
+      -webkit-background-size: 10rem .1rem;
+      background-size: 10rem .1rem;
+    }
+    ul {
+      li {
+        .mar-b(.343rem);
+        a {
+          .position(relative);
+          .display(block);
+          &:before {
+            content: '';
+            .position(absolute);
+            .width(.937rem);
+            .height(.906rem);
+            top: @per-top;
+            left: .203rem;
+            .mar-t(-.468rem);
+            background: url("../images/icon-sprite.png") no-repeat;
+            -webkit-background-size: 2.656rem 5.312rem;
+            background-size: 2.656rem 5.312rem;
+            background-position: 0 0;
+          }
+          img {
+            .display(block);
+            .mar-hororver(0, auto);
+            .maxwidth(72%)
+          }
+        }
+      }
+    }
+  }
+  .mmx-hot-infoes {
+    .position(relative);
+    .pad-all(1.688rem, 0, .203rem, 0);
+    background: url("../images/bg-body-03.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    &:before, &:after {
+      content: '';
+      .position(absolute);
+    }
+    &:before {
+      .width(9.593rem);
+      .height(1.375rem);
+      left: @per-left;
+      top: @top;
+      .mar-l(-4.797rem);
+      background: url("../images/banner-sprite.png") no-repeat;
+      -webkit-background-size: 9.593rem 8.125rem;
+      background-size: 9.593rem 8.125rem;
+      background-position: 0 -5.312rem;
+    }
+    &:after {
+      .width(100%);
+      .height(100%);
+      left: @left;
+      bottom: @bottom;
+      .z-index(-1);
+      background: url("../images/bg-body-03-repeat.jpg") repeat-y;
+      -webkit-background-size: 10rem .1rem;
+      background-size: 10rem .1rem;
+    }
+    ul {
+      li {
+        clear: both;
+        .mar-hororver(0, .438rem);
+        .info-detail {
+          .width(6.359rem);
+          .minheight(5.967rem);
+          .border-radius(8px);
+          .mar-b(.346rem);
+          .position(relative);
+          &:before , &:after {
+            content: '';
+            .position(absolute);
+          }
+          .btn-activity-detail {
+            .display(block);
+            .text-indent(-156.23rem);
+            .width(2.625rem);
+            .height(1.062rem);
+            .mar-t(.171rem);
+            background: url("../images/btn-sprite.png") no-repeat;
+            -webkit-background-size: 8.593rem 4.062rem;
+            background-size: 8.593rem 4.062rem;
+            background-position: -5.75rem -1.281rem;
+          }
+          &.info-01 {
+            .bg-color(#ee80b2);
+            .float(right);
+            .pad-all(1.765rem, .343rem, .312rem, .64rem);
+            &:before {
+              .width(5.937rem);
+              .height(1.953rem);
+              left: @per-left;
+              top: -.468rem;
+              .mar-l(-2.968rem);
+              background: url("../images/mengtushangxian.png") no-repeat;
+              -webkit-background-size: 5.937rem 1.953rem;
+              background-size: 5.937rem 1.953rem;
+            }
+            &:after {
+              .width(3.687rem);
+              .height(4.359rem);
+              top: 1rem;
+              left: -3rem;
+              .mar-t(-.468rem);
+              background: url("../images/girl-mengtu.png") no-repeat;
+              -webkit-background-size: 3.687rem 4.359rem;
+              background-size: 3.687rem 4.359rem;
+            }
+            p {
+              font: 16px "黑体";
+              .color(#fff);
+              -webkit-text-shadow:#df5c9a 2px 0 0,#df5c9a 0 2px 0,#df5c9a -2px 0 0,#df5c9a 0 -2px 0;
+              -moz-text-shadow:#df5c9a 2px 0 0,#df5c9a 0 2px 0,#df5c9a -2px 0 0,#df5c9a 0 -2px 0;
+              text-shadow:#df5c9a 2px 0 0,#df5c9a 0 2px 0,#df5c9a -2px 0 0,#df5c9a 0 -2px 0;
+//              *filter: Glow(Color = #df5c9a, Strength = 1);
+            }
+            .btn-activity-detail {
+              .float(right);
+            }
+          }
+          &.info-02 {
+            .bg-color(#efd78a);
+            .pad-all(1.734rem, .312rem, .312rem, .625rem);
+            &:before {
+              .width(6.453rem);
+              .height(1.218rem);
+              left: -.328rem;
+              top: .218rem;
+              background: url("../images/zhaomenglu.png") no-repeat;
+              -webkit-background-size: 6.453rem 1.218rem;
+              background-size: 6.453rem 1.218rem;
+            }
+            &:after {
+              .width(3.367rem);
+              .height(4.359rem);
+              top: 1.171rem;
+              right: -3.125rem;
+              .mar-t(-.4rem);
+              background: url("../images/girl-luna.png") no-repeat;
+              -webkit-background-size: 3.367rem 4.359rem;
+              background-size: 3.367rem 4.359rem;
+            }
+            p {
+              font: 16px "黑体";
+              .color(#915d08);
+              -webkit-text-shadow:#fefdfc 2px 0 0,#fefdfc 0 2px 0,#fefdfc -2px 0 0,#fefdfc 0 -2px 0;
+              -moz-text-shadow:#fefdfc 2px 0 0,#fefdfc 0 2px 0,#fefdfc -2px 0 0,#fefdfc 0 -2px 0;
+              text-shadow:#fefdfc 2px 0 0,#fefdfc 0 2px 0,#fefdfc -2px 0 0,#fefdfc 0 -2px 0;
+              //              *filter: Glow(Color = #df5c9a, Strength = 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .mmx-game-specials {
+    .position(relative);
+    .pad-all(1.375rem, 0, .203rem, 0);
+    background: url("../images/bg-body-04.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    &:before, &:after {
+      content: '';
+      .position(absolute);
+    }
+    &:before {
+      .width(9.593rem);
+      .height(1.25rem);
+      left: @per-left;
+      top: @top;
+      .mar-l(-4.797rem);
+      background: url("../images/banner-sprite.png") no-repeat;
+      -webkit-background-size: 9.593rem 8.125rem;
+      background-size: 9.583rem 8.125rem;
+      background-position: 0 -6.796rem;
+    }
+    &:after {
+      .width(100%);
+      .height(100%);
+      left: @left;
+      bottom: @bottom;
+      .z-index(-1);
+      background: url("../images/bg-body-04-repeat.jpg") repeat-y;
+      -webkit-background-size: 10rem .1rem;
+      background-size: 10rem .1rem;
+    }
+    .img-wrapper {
+      .width(7.843rem);
+      .mar-hororver(.562rem, auto);
+      overflow: hidden;
+      ul {
+        .font-size(0);
+        .text-align(center);
+        li {
+          .display(inline-block);
+          .width(3.351rem);
+          .mar-hororver(0, .078rem);
+          border: 3px solid #fff;
+        }
+      }
+    }
+    .bx-controls {
+      .position(absolute);
+      .width(100%);
+      .height(1.328rem);
+      .pad-hororver(0, .3125rem);
+      top: @per-top;
+      .mar-t(-.656rem);
+      left: 0;
+      .font-size(0);
+      .bx-controls-direction {
+        a {
+          .width(.656rem);
+          .height(1.328rem);
+          .display(block);
+          background: url("../images/icon-sprite.png") no-repeat;
+          -webkit-background-size: 2.656rem 5.312rem;
+          background-size: 2.656rem 5.312rem;
+          &.bx-prev {
+            .float(left);
+            background-position: 0 -1.312rem;
+          }
+          &.bx-next {
+            .float(right);
+            background-position: -.718rem -1.312rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-dpr="2"] .mmx-home-body .mmx-hot-infoes ul li .info-detail.info-01 p ,
+[data-dpr="2"] .mmx-home-body .mmx-hot-infoes ul li .info-detail.info-02 p {
+  font-size: 28px
+}
+
+[data-dpr="3"] .mmx-home-body .mmx-hot-infoes ul li .info-detail.info-01 p,
+[data-dpr="3"] .mmx-home-body .mmx-hot-infoes ul li .info-detail.info-02 p {
+  font-size: 36px
+}

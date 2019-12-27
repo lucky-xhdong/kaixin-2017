@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+    <title></title>
+    <link rel="stylesheet" href="css/gameplat_global.css">
+    <link rel="stylesheet" href="css/gameplat-sgqyz.css"/>
+    <script src="js/html5.js"></script><!--IE8支持html5标签-->
+    <script src="js/respond.src.js"></script><!--IE8支持媒体查询，这句话必须放在css引入语句后面-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC"><div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div><div class="line"></div><div class="fdLogo"><a href="/">飞豆网_开心网</a></div></h1>
+        <!-- BEGIN logout_menu -->
+        <div class="fr">
+            <a class="qqLogin dev_qqlogin" href="javascript:void(0);" onclick="return false;" data-goto="http://feidou.com/">QQ登录</a>
+            <a class="weiboLogin dev_sinalogin" href="javascript:void(0);" onclick="return false;" data-goto="http://feidou.com/">微博登录</a>
+            <ul class="funList">
+                <li><a href="/login.php">登录</a></li>
+                <li><a href="/reg.php">注册</a></li>
+            </ul>
+        </div>
+        <!-- END logout_menu -->
+    </div>
+</div>
+<!-- header start -->
+<header class="sgqyz-common-header">
+    <nav class="sgqyz-common-nav">
+        <ul class="nav">
+            <li class="active"><a href="javascript:;" target="_blank">官网首页</a></li>
+            <li><a href="javascript:;" target="_blank">新闻资讯</a></li>
+            <li><a href="javascript:;" target="_blank">游戏资料</a></li>
+            <li><a href="javascript:;" target="_blank">武将库</a></li>
+            <li><a href="javascript:;" target="_blank">官方论坛</a></li>
+            <li><a href="javascript:;" target="_blank">充值</a></li>
+            <li><a href="javascript:;" target="_blank">关注公众号赢大奖</a></li>
+        </ul>
+        <ul class="subscription">
+            <li>
+                <a href="javascript:;"><i class="icon icon-wechat"></i></a>
+                <div class="wechat-wrapper" data-before="微信公众号" data-after="扫描左侧二维码关注公众号">
+                    <div class="mask">
+                        <img src="images/weixin.jpg" alt="微信" width="67"/>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="icon icon-weibo"></i></a>
+                <div class="webo-wrapper" data-before="微博扫一扫" data-after="扫描左侧二维码关注官方微博">
+                    <div class="mask">
+                        <img src="images/weibo.jpg" alt="微博" width="66"/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- 背景轮播图 start -->
+<div class="bg-carousel-wrapper">
+    <!-- logo start -->
+    <div class="logo-wrapper">
+        <a href="javascript:;" class="logo">logo</a>
+    </div>
+    <!-- logo end -->
+    <div class="bxslider carousel bg-carousel">
+        <ul>
+            <li><a href="javascript:;"><img src="images/bg-carousel-01.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/bg-carousel-02.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 背景轮播图 end -->
+<div class="sgqyz-news-body">
+    <div class="sgqyz-news-container">
+        <div class="logo-wrapper">
+            <a href="javascript:;" class="logo">logo</a>
+        </div>
+        <!--背景图分页按钮 start-->
+        <div class="bg-carousel-pager"></div>
+        <!--背景图分页按钮 end-->
+        <div class="sgqyz-moudle fadeInUp animated">
+            <div class="left">
+                <!--登录前 start-->
+                <div class="login-before">
+                    <h2 data-after="/login">用户登录</h2>
+
+                    <div class="form-group">
+                        <ul>
+                            <li><input value="用户名" name="un" type="text" id="username"></li>
+                            <li><input name="" type="text" value="密码" id="pwd_show"  /><input name="" type="password" id="pwd_unshow" style="display:none;"/></li>
+                        </ul>
+                        <button class="btn-login" type="submit">登录</button>
+                        <p class="login-error">账号和密码不匹配！</p>
+                    </div>
+                    <div class="other-handle">
+                        <label><input type="checkbox"/>记住账号</label>
+                        <a href="javascript:;" class="forgot-password">忘记密码？</a>
+                        <a href="javascript:;" class="register">注册</a>
+                    </div>
+                    <div class="other-login-way" data-before="其他登录方式：">
+                        <ul>
+                            <li><a href="javascript:;"><i class="icon icon-qq"></i></a></li>
+                            <li><a href="javascript:;"><i class="icon icon-wechat"></i></a></li>
+                            <li><a href="javascript:;"><i class="icon icon-weibo"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="join-qq-group">
+                        <a href="javascript:;" class="icon-qq-group">加入QQ群聊</a>
+                    </div>
+                </div>
+                <!--登录前 end-->
+                <!--登录后 start-->
+                <div class="login-after">
+                    <h2 data-after="/login">用户登录</h2>
+                    <div class="user-info">
+                        <span class="user-name">你好，fgjkajf</span>
+                        <a href="javascript:;" class="user-center">用户中心</a>
+                    </div>
+                    <div class="game-recharge">
+                        <a href="javascript:;" class="authentication">防沉迷认证</a>
+                        <a href="javascript:;" class="recharge">游戏充值</a>
+                    </div>
+                    <p class="login-time">登录时间：2017-02-24 16:38</p>
+                    <p class="game-name">三国群英传一统天下&emsp;推荐您进入</p>
+
+                    <div class="servers"><a href="javascript:;" class="server-name">S1精英测试服</a></div>
+                    <div class="logout-wrapper"><a href="javascript:;" class="logout">注销</a></div>
+                </div>
+                <!--登录后 end-->
+                <!--我要充值 start-->
+                <div class="recharge-wrapper">
+                    <i class="icon-recharge">充值</i><a href="javascript:;" data-after="RECHARGE">我要充值</a>
+                </div>
+                <!--我要充值 end-->
+                <!--注册加入 start-->
+                <div class="register-wrapper">
+                    <i class="icon-register">注册</i><a href="javascript:;" data-after="REGISTER ADD">注册加入</a>
+                </div>
+                <!--注册加入 end-->
+                <!--服务器列表 start-->
+                <div class="server-wrapper">
+                    <h2 data-after="/SERVER LIST">服务器列表</h2>
+                    <div class="server-lists">
+                        <div class="top" data-before="服务器">
+                            <input type="text">
+                            <a href="javascript:;">快速进入</a>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li><a href="javascript:;"><span>四区</span><span>桃园结义</span><span>火爆开启</span><em>H</em></a></li>
+                                <li><a href="javascript:;"><span>四区</span><span>桃园结义</span><span>火爆开启</span><em>H</em></a></li>
+                                <li><a href="javascript:;"><span>四区</span><span>桃园结义</span><span>火爆开启</span><em>H</em></a></li>
+                                <li><a href="javascript:;"><span>四区</span><span>桃园结义</span><span>火爆开启</span><em>H</em></a></li>
+                                <li><a href="javascript:;"><span>四区</span><span>桃园结义</span><span>火爆开启</span><em>H</em></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="btn-more">查看更多服务器</a>
+                </div>
+                <!--服务器列表 end-->
+                <!--广告图 start-->
+                <div class="ad-banner">
+                    <a href="javascript:;"><img src="images/ad.jpg" alt=""/></a>
+                </div>
+                <!--广告图 end-->
+                <!--游戏截图 start-->
+                <div class="game-screenshots">
+                    <h2 data-after="/SCREENSHOTS">游戏截图</h2>
+                    <div class="bxslider">
+                        <ul class="bxslider-small">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/carousel-01.jpg" alt=""/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/carousel-01.jpg" alt=""/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/carousel-01.jpg" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--游戏截图 end-->
+                <!--客服中心 start-->
+                <div class="customer-service">
+                    <h2 data-after="/CUSTOMER SERVICE">客服中心</h2>
+                    <div class="customer-phone">
+                        <p>客服电话：010-22565485</p>
+                        <p>客服电话：010-22565485</p>
+                    </div>
+                </div>
+                <!--客服中心 end-->
+            </div>
+            <div class="right">
+                <div class="news-headlines">
+                    <!--面包屑导航 start-->
+                    <div class="breadcrumb" data-before="新闻公告">
+                        <ul data-before="当前位置：">
+                            <li>
+                                <span>三国群英传</span>>
+                                <a href="javascript:;" class="active">新闻公告</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--面包屑导航 end-->
+                    <!--新闻详情 start-->
+                    <article>
+                        <div class="caption" data-before="三国群英传一统天下开服公告">
+                            <span data-before="作者：">三国群英传一桶天下</span><span data-before="时间：">2017-02-15  16:00</span>
+                        </div>
+                        <div class="content" data-before="三国群英传一统天下3月30日首服">
+                            <p>亲爱的玩家：</p>
+                            <p>安静点开放进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟通和商业化聚一聚京杭大运河几月几日圆角会有规划局事严爵研究复联发科达股份可噶法国卡热开个头高还挺好吧安静点开放进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟和商业化聚一聚京杭大运河几月几日圆角会有规划局人事严爵研究复联发科达股份可噶法国卡热开个头高还挺好吧安静点开进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟通和商业化聚一聚京杭大运河几月几日圆角会有规划局</p>
+                            <img src="images/detail.jpg" alt=""/>
+                            <p>安静点开放进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟通和商业化聚一聚京杭大运河几月几日圆角会有规划局事严爵研究复联发科达股份可噶法国卡热开个头高还挺好吧安静点开放进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟和商业化聚一聚京杭大运河几月几日圆角会有规划局人事严爵研究复联发科达股份可噶法国卡热开个头高还挺好吧安静点开进口的法律框架的福利卡价格恢豆沙粉的咖妃噶热沟通和商业化聚一聚京杭大运河几月几日圆角会有规划局</p>
+                        </div>
+                    </article>
+                    <!--新闻详情 end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width: 980px;margin: 20px auto -30px;">
+    <h3 class="mb f14">友情链接</h3>
+    <p>
+        <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+        <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+        <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+        <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+        <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+        <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+        <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+        <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+        <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+    </p>
+</div>
+<div class="footer cfix">
+    <div class="fl">
+        <a href="" target="_blank">
+            <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+        </a>
+    </div>
+    <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+    <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.bg-carousel.js"></script>
+<script>
+    $(document).ready(function(){
+
+        //背景图轮播
+        $('.bg-carousel').bgCarousel({
+            items: '.bg-carousel li',
+            pageWrapper: '.bg-carousel-pager',
+            pager: true
+        });
+        $('.bxslider-small').bxSlider({
+            slideWidth: 268,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            auto: true,
+            autoControls: true,
+            pager: false,
+            controls: false
+        });
+        $("#username").focus(function(){//默认文字消失
+            if($(this).val()==this.defaultValue){
+                $(this).val("");
+            }
+        }).blur(function(){//默认文字出现
+            if($(this).val()==""){
+                $(this).val(this.defaultValue);
+            }
+        });
+        $("#pwd_show").focus(function(){
+            if($(this).val() != "密码") return;
+            $(this).hide();
+            $("#pwd_unshow").show().val('').focus();
+        });
+        $("#pwd_unshow").onblur = function(){
+            if($(this).val() != "") return;
+            $(this).hide();
+            $("#pwd_show").show().val('密码');
+        }
+    });
+</script>
+</body>
+</html>

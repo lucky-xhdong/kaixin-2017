@@ -1,0 +1,373 @@
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body {
+  .mar(0);
+}
+ul, ol {
+  .mar(0);
+  .pad(0);
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  .maxwidth(100%);
+}
+.mar(@x) {
+  margin: @x;
+}
+
+.marI(@x) {
+  margin: @x !important;
+}
+
+.mar-hororver(@x, @y) {
+  margin: @arguments;
+}
+
+.mar-hororverI(@x, @y) {
+  margin: @arguments !important;
+}
+
+.mar-t(@x) {
+  margin-top: @x;
+}
+
+.mar-tI(@x) {
+  margin-top: @x !important;
+}
+
+.mar-l(@x) {
+  margin-left: @x;
+}
+
+.mar-lI(@x) {
+  margin-left: @x !important;
+}
+
+.mar-r(@x) {
+  margin-right: @x;
+}
+
+.mar-rI(@x) {
+  margin-right: @x !important;
+}
+
+.mar-b(@x) {
+  margin-bottom: @x;
+}
+
+.mar-bI(@x) {
+  margin-bottom: @x !important;
+}
+
+.mar-all(@t,@r,@b,@l) {
+  margin: @arguments;
+}
+
+.mar-allI(@t,@r,@b,@l) {
+  margin: @arguments !important;
+}
+
+.pad(@x) {
+  padding: @x;
+}
+
+.padI(@x) {
+  padding: @x !important;
+}
+
+.pad-hororver(@x, @y) {
+  padding: @arguments;
+}
+
+.pad-hororverI(@x, @y) {
+  padding: @arguments !important;
+}
+
+.pad-t(@x) {
+  padding-top: @x;
+}
+
+.pad-tI(@x) {
+  padding-top: @x !important;
+}
+
+.pad-l(@x) {
+  padding-left: @x;
+}
+
+.pad-lI(@x) {
+  padding-left: @x !important;
+}
+
+.pad-r(@x) {
+  padding-right: @x;
+}
+
+.pad-rI(@x) {
+  padding-right: @x !important;
+}
+
+.pad-b(@x) {
+  padding-bottom: @x;
+}
+
+.pad-bI(@x) {
+  padding-bottom: @x !important;
+}
+
+.pad-all(@t,@r,@b,@l) {
+  padding: @arguments;
+}
+
+.pad-allI(@t,@r,@b,@l) {
+  padding: @arguments !important;
+}
+
+.float(@x) {
+  float: @x;
+}
+
+.floatI(@x) {
+  float: @x !important;
+}
+
+.display(@x) {
+  display: @x;
+  *display: @x;
+  zoom: 1;
+}
+
+.displayI(@x) {
+  display: @x !important;
+}
+
+.ver-align(@x) {
+  vertical-align: @x;
+}
+
+.ver-alignI(@x) {
+  vertical-align: @x !important;
+}
+.font-size(@x) {
+  font-size: @x;
+}
+
+.font-sizeI(@x) {
+  font-size: @x !important;
+}
+
+.text-align(@x) {
+  text-align: @x;
+}
+
+.text-alignI(@x) {
+  text-align: @x !important;
+}
+
+.text-indent(@x) {
+  text-indent: @x;
+}
+
+.text-indentI(@x) {
+  text-indent: @x !important;
+}
+
+.white-space(@x) {
+  white-space: @x;
+}
+
+.white-spaceI(@x) {
+  white-space: @x !important;
+}
+
+.word-bread(@x) {
+  word-break: @x;
+}
+
+.word-breadI(@x) {
+  word-break: @x !important;
+}
+
+.word-wrap(@x) {
+  word-wrap: @x;
+}
+
+.word-wrapI(@x) {
+  word-wrap: @x !important;
+}
+
+.text-nowrap() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text-break() {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.line-height(@x) {
+  line-height: @x;
+}
+
+.line-heightI(@x) {
+  line-height: @x !important;
+}
+
+.hei-over() {
+  height: auto;
+  overflow: hidden;
+}
+
+.color(@x) {
+  color: @x;
+}
+
+.colorI(@x) {
+  color: @x !important;
+}
+
+.bg-color(@x) {
+  background-color: @x;
+}
+
+.bg-colorI(@x) {
+  background-color: @x !important;
+}
+
+.border-radius(@x) {
+  border-radius: @x;
+  -moz-border-radius: @x;
+  -webkit-border-radius: @x;
+}
+
+.border-radiusI(@x) {
+  border-radius: @x !important;
+  -moz-border-radius: @x !important;
+  -webkit-border-radius: @x !important;
+}
+
+.border-radius-all(@t,@r,@b,@l) {
+  border-radius: @arguments;
+  -moz-border-radius: @arguments;
+  -webkit-border-radius: @arguments;
+}
+
+.border-radiusI-all(@t,@r,@b,@l) {
+  border-radius: @arguments !important;
+  -moz-border-radius: @arguments !important;
+  -webkit-border-radius: @arguments !important;
+}
+
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow: @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+.text-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-text-shadow: @style @c;
+  text-shadow: @style @c;
+}
+
+.text-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .text-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+.position(@x) {
+  position: @x;
+}
+
+.positionI(@x) {
+  position: @x !important;
+}
+
+@top: 0px;
+@left: 0px;
+@right: 0px;
+@bottom: 0px;
+@per-top: 50%;
+@per-left: 50%;
+.pos-value-a() {
+  top: @top;
+  left: @left;
+  right: @right;
+  bottom: @bottom;
+}
+
+.z-index(@x) {
+  z-index: @x;
+}
+
+.z-indexI(@x) {
+  z-index: @x !important;
+}
+
+.width(@x) {
+  width: @x;
+}
+
+.widthI(@x) {
+  width: @x !important;
+}
+
+.maxwidth(@x) {
+  max-width: @x;
+}
+
+.maxwidthI(@x) {
+  max-width: @x !important;
+}
+
+.minwidth(@x) {
+  min-width: @x;
+}
+
+.minwidthI(@x) {
+  min-width: @x !important;
+}
+
+.height (@x) {
+  height: @x;
+}
+
+.heightI (@x) {
+  height: @x !important;
+}
+
+.maxheight(@x) {
+  max-height: @x;
+}
+
+.maxheightI(@x) {
+  max-height: @x !important;
+}
+
+.minheight(@x) {
+  min-height: @x;
+}
+
+.minheightI(@x) {
+  min-height: @x !important;
+}
+
+.cursor(@x) {
+  cursor: @x;
+}

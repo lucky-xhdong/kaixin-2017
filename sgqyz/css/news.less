@@ -1,0 +1,540 @@
+.sgqyz-news-body {
+  background: #000 url("../images/bg-body-01.jpg") no-repeat;
+  background-position: center 718px;
+  .sgqyz-news-container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    .bg-carousel-pager {
+      position: absolute;
+      right: 0;
+      top: 480px;
+      z-index: 11;
+    }
+    .sgqyz-moudle {
+      position: relative;
+      padding-top: 358px;
+      padding-bottom: 20px;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+        height: 40px;
+      }
+      .left, .right {
+        float: left;
+      }
+      .left {
+        width: 299px;
+        .server-wrapper {
+          background-color: #363434;
+          padding-left: 15px;
+          padding-right: 10px;
+          overflow: hidden;
+          h2 {
+            font: 18px 'SimHei';
+            color: #cecece;
+            padding: 16px 0 11px 0;
+            margin: 0;
+            border-bottom: 1px solid #434349;
+            &:after {
+              content: attr(data-after);
+              font: 12px 'SimHei';
+              color: #52535b;
+              display: inline-block;
+              vertical-align: bottom;
+              padding-left: 7px;
+              text-transform: uppercase;
+            }
+          }
+          .server-lists {
+            .top {
+              position: relative;
+              padding: 5px 10px 5px 102px;
+              border-bottom: 1px solid #afafaf;
+              &:before {
+                content: attr(data-before);
+                position: absolute;
+                width: 81px;
+                height: 18px;
+                font-size: 0;
+                top: 50%;
+                margin-top: -9px;
+                left: 0;
+                background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                background-position: -227px -455px;
+              }
+              input, a {
+                height:19px;
+                display: inline-block;
+                vertical-align: middle;
+                font-family: 'SimHei';
+                font-size: 14px;
+              }
+              input {
+                width:32px;
+                padding: 5px 2px;
+                color: #404147;
+                background-color: #afafaf;
+                &:focus {
+                  outline: none;
+                }
+              }
+              a {
+                color: #fff;
+                letter-spacing: -1px;
+                width: 58px;
+                text-align: center;;
+                padding: 2px 1px;
+                background-color: #963000;
+                margin-left: 22px;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+            .bottom {
+              ul {
+                li {
+                  position: relative;
+                  border-bottom: 1px dashed #afafaf;
+                  padding-left: 27px;
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    width: 11px;
+                    height: 12px;
+                    left: 7px;
+                    top: 50%;
+                    margin-top: -6px;
+                    background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+                    background-position: -178px -252px;
+                  }
+                  a {
+                    font: 15px 'SimHei';
+                    color: #afafaf;
+                    display: block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    line-height: 30px;
+                    &:hover {
+                      color: #e94d00;
+                    }
+                    span {
+                      display: inline-block;
+                      vertical-align: middle;
+                      &:first-child {
+                        padding-right: 20px;
+                      }
+                      &:first-child + span {
+                        padding-right: 19px;
+                      }
+                    }
+                    em {
+                      font-style: normal;
+                      position: absolute;
+                      right: 0;
+                      top: 8px;
+                      border: 1px solid #bd9d60;
+                      color: #bd9d60;
+                      font-weight: bold;
+                      line-height: normal;
+                      padding: 0 1px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .btn-more {
+            width: 215px;
+            height: 35px;
+            display: block;
+            margin: 14px auto;
+            font-size: 0;
+            background: url("../images/sprite-sgqyz-pc.png") no-repeat;
+            background-position: 0 -501px;
+            &:hover {
+              background-position: 0 -537px;
+            }
+          }
+        }
+        .ad-banner {
+          img {
+            max-width: 100%;
+          }
+        }
+        .game-screenshots {
+          background-color: #292929;
+          padding-left: 15px;
+          padding-right: 10px;
+          h2 {
+            font: 18px 'SimHei';
+            color: #cecece;
+            padding: 16px 0 11px 0;
+            margin: 0;
+            border-bottom: 1px solid #434349;
+            &:after {
+              content: attr(data-after);
+              font: 12px 'SimHei';
+              color: #52535b;
+              display: inline-block;
+              vertical-align: bottom;
+              padding-left: 7px;
+              text-transform: uppercase;
+            }
+          }
+          .bxslider {
+            padding: 12px 0;
+            ul {
+              li {
+                img {
+                  max-width: 100%;
+                }
+              }
+            }
+            .bx-controls-auto {
+              display: none;
+            }
+          }
+        }
+        .customer-service {
+          padding: 13px 20px;
+          background-color: #2f2f2f;
+          h2 {
+            font: 18px 'SimHei';
+            color: #cecece;
+            padding: 9px 0;
+            margin: 0;
+            border-bottom: 1px solid #434349;
+            &:after {
+              content: attr(data-after);
+              font: 12px 'SimHei';
+              color: #52535b;
+              display: inline-block;
+              vertical-align: bottom;
+              padding-left: 7px;
+              text-transform: uppercase;
+            }
+          }
+          .customer-phone {
+            p {
+              margin:15px 0;
+              font: 16px 'SimHei';
+              color: #b2b0ad;
+            }
+          }
+        }
+      }
+      .right {
+        width: 900px;
+        .news-lists-wrapper, .news-headlines {
+          min-height: 940px;
+          background-color: #202020;
+          .breadcrumb {
+            background-color: #3d3d3d;
+            border-bottom: 1px solid #3f4449;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              font: 35px 'SimHei';
+              color: #fff;
+              padding: 22px 25px 12px 25px;
+            }
+            ul {
+              border-bottom: 1px solid #353f5a;
+              padding: 8px 25px;
+              &:before {
+                content: attr(data-before);
+                font: 15px 'SimHei';
+                color: #aaabae;
+              }
+              li {
+                display: inline-block;
+                vertical-align: middle;
+                font: 15px 'SimHei';
+                color: #aaabae;
+                span, a {
+                  font: 15px 'SimHei';
+                  color: #aaabae;
+                }
+              }
+            }
+          }
+        }
+        .news-lists-wrapper {
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          .news-lists {
+            padding: 25px 50px;
+            ul {
+              li {
+                line-height: 33px;
+                overflow: hidden;
+                border-bottom: 1px dashed #6f6f6f;
+                &:after {
+                  font: 14px SimHei;
+                  line-height: 35px;
+                }
+                &:after {
+                  content: attr(data-after);
+                  color: #cacbc9;
+                  float: right;
+                }
+                a {
+                  font: 14px SimHei;
+                  color: #aaabae;
+                  line-height: 33px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  max-width: 750px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  -webkit-transition: all .1s ease .2s;
+                  -moz-transition: all .1s ease .2s;
+                  -ms-transition: all .1s ease .2s;
+                  -o-transition: all .1s ease .2s;
+                  transition: all .1s ease .2s;
+                }
+                &:hover {
+                  &:after {
+                    color: #dfcea5;
+                  }
+                  a {
+                    color: #dfcea5;
+                    font: 15px SimHei;
+                  }
+                }
+              }
+            }
+            .pager {
+              text-align: center;
+              font-size: 0;
+              padding: 30px 0;
+              span, a {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 5px;
+                color: #fff;
+              }
+              span {
+                &.active {
+                  font-size: 16px;
+                }
+              }
+              a {
+                font: 14px 'SimHei';
+                background-color: #2d416f;
+                padding: 3px 7px;
+              }
+            }
+          }
+          .content {
+            &:before {
+              content: attr(data-before);
+              display: block;
+              font: 17px SimHei;
+              color: #b9954a;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              line-height: 32px;
+            }
+            p {
+              &:first-child {
+                text-indent: 20px;
+              }
+              margin: 0;
+              font: 13px 'SimHei';
+              line-height: 20px;
+              color: #9ca0a3;
+            }
+          }
+          .view-wrapper {
+            float: right;
+            margin-top: 14px;
+            position: relative;
+            overflow: hidden;
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              transition: all 0.4s ease .1s;
+              z-index: 1;
+            }
+            &:before {
+              width: 100%;
+              height: 1px;
+              top: 0;
+              left: 0;
+              background-color: #d7d7d7;
+              -webkit-transform: translateX(-100%);
+              -moz-transform: translateX(-100%);
+              -ms-transform: translateX(-100%);
+              -o-transform: translateX(-100%);
+              transform: translateX(-100%);
+            }
+            &:after {
+              width: 1px;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-color: #d7d7d7;
+              -webkit-transform: translateY(-100%);
+              -moz-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+              -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+            }
+            a {
+              display: block;
+              padding: 3px;
+              border: 1px solid #d7d7d7;
+              font: 15px SimHei;
+              color: #d7d7d7;
+              position: relative;
+              &:hover {
+                color: #b9954a;
+              }
+              &:before, &:after {
+                content: '';
+                position: absolute;
+                transition: all 0.4s ease 0s;
+                z-index: 1;
+              }
+              &:before {
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -1px;
+                background-color: #d7d7d7;
+                -webkit-transform: translateX(-100%);
+                -moz-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                -o-transform: translateX(-100%);
+                transform: translateX(-100%);
+              }
+              &:after {
+                width: 1px;
+                height: 100%;
+                top: 0;
+                right: -1px;
+                background-color: #d7d7d7;
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+              }
+            }
+            &:hover {
+              &:before, &:after {
+                background-color: #b9954a;
+              }
+              &:before {
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+              }
+              &:after {
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                transform: translateY(0);
+              }
+              a {
+                &:before, &:after {
+                  background-color: #b9954a;
+                }
+                &:before {
+                  -webkit-transform: translateX(0);
+                  -moz-transform: translateX(0);
+                  -ms-transform: translateX(0);
+                  -o-transform: translateX(0);
+                  transform: translateX(0);
+                }
+                &:after {
+                  -webkit-transform: translateY(0);
+                  -moz-transform: translateY(0);
+                  -ms-transform: translateY(0);
+                  -o-transform: translateY(0);
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+        }
+        .news-headlines {
+          background-color: #202020;
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          article {
+            padding: 0 30px;
+            .caption {
+              text-align: center;
+              border-bottom: 1px dashed #747477;
+              &:before {
+                content: attr(data-before);
+                display: block;
+                font: 25px SimHei;
+                color: #9d9d9e;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                line-height: 32px;
+                padding-top: 20px;
+              }
+              span {
+                font: 13px SimHei;
+                display: inline-block;
+                vertical-align: middle;
+                color: #9d9d9e;
+                padding-top: 10px;
+                padding-bottom: 4px;
+                &:first-child {
+                  margin-right: 100px;
+                }
+                &:before {
+                  content: attr(data-before);
+                  display: inline-block;
+                  vertical-align: middle;
+                  max-width: 300px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+              }
+            }
+            .content {
+              padding: 10px 0;
+              p {
+                text-indent: 30px;
+                margin: 0;
+                font: 15px 'SimHei';
+                line-height: 30px;
+                color: #9d9d9e;
+              }
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

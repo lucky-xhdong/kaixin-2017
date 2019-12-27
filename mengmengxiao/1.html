@@ -1,0 +1,54 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+</head>
+<style>
+
+    .search {
+        background: #008800;
+        color: #fff;
+        border: none;
+        height: 26px;
+        line-height: 20px;
+        width: 63x;
+    }
+
+    .searchhover {
+        background: #000099;
+        color: #fff;
+        border: none;
+        height: 26px;
+        line-height: 20px;
+        width: 63px;
+    }
+</style>
+
+<body onload="js()">
+<input type="button" id="btn" class="search" name="btn" value="登 录"/>
+<input type="button" id="btn2" class="search" name="btn" value="注 销"/>
+<script type="text/javascript">
+
+    function js() {
+        // 使ie6 button支持hover属性 obj是要支持hover的实体  hover是btn:hover的样式，init是初始样式
+        obj = "btn";
+        alert(navigator.appName);
+        if (navigator.appName == "Microsoft Internet Explorer" && parseFloat(navigator.appVersion) == 4) {// 判断ie6
+            var o = document.getElementsByName(obj);
+            for (var i = 0; i < o.length; i++) {
+                if (o[i].type == "button") {
+                    //o[i].className = "search";
+                    o[i].onmouseover = function () {
+                        this.className = "searchhover"
+                    }
+                    o[i].onmouseout = function () {
+                        this.className = "search"
+                    };
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

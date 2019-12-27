@@ -1,0 +1,931 @@
+body {
+  margin: 0;
+  font-family: Mincho,Helvetica,Arial,sans-serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic";
+}
+
+* {
+  box-sizing: border-box;
+}
+@media all and (orientation: landscape){
+
+  .exchange-container {
+    padding: .227rem 0;
+    h2 {
+      color: #959494;
+      padding: 0 .826rem;
+    }
+    .account-info {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      padding: .2rem .1067rem;
+      margin: .133rem .826rem;
+      min-height: .88rem;
+      span {
+        color: #b0b0b0;
+        &:first-child {
+          padding-right: .613rem;
+        }
+        &:before {
+          content: attr(data-before);
+        }
+        em {
+          font-style: normal;
+          color: #ff3434;
+        }
+      }
+    }
+    .select-wrapper {
+      padding: 0 .826rem;
+      select {
+        border: 1px solid #cdcdcd;
+        border-radius: 0;
+        width: 100%;
+        height: .453rem;
+        color: #b0b0b0;
+        margin-bottom: .133rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .coin-lists {
+      padding: 0 .48rem;
+      &:before {
+        content: attr(data-before);
+        color: #959494;
+        display: block;
+        margin: 0 .347rem;
+        padding-top: .133rem;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        li {
+          display: inline-block;
+          width: 27.3%;
+          border: 1px solid #959494;
+          background-color: #f2f2f2;
+          margin: 1% 3%;
+          a {
+            display: block;
+            font: 18px NSimSun;
+            color: #959494;
+            text-decoration: none;
+            padding: .187rem .16rem;
+            &:after {
+              content: attr(data-after);
+              color: #ff3434;
+              float: right;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      .btn-exchange {
+        display: block;
+        width: 3.3rem;
+        height: .65rem;
+        padding: .2rem;
+        margin: .133rem auto;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: url("../images/btn-recharge.png") no-repeat;
+        -webkit-background-size: 3.28rem 2.8rem;
+        background-size: 3.28rem 2.8rem;
+        background-position: 0 0;
+        &:hover {
+          background-position: 0 -.71rem;
+        }
+      }
+    }
+  }
+
+  .recharge-step-first {
+    padding: .373rem 1.027rem;
+    &:after {
+      content: '';
+      display: table;
+      width: 100%;
+      clear: both;
+    }
+    .recharge-panel {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      width: 100%;
+      min-height: 2.36rem;
+    }
+    .recharge-exchange-way {
+      float: left;
+      width: 8.48rem;
+      .blocksit-lists {
+        padding: .267rem 0;
+        ul {
+          padding: 0;
+          font-size: 0;
+          text-align: center;
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          li {
+            float: left;
+            background-color: #f2f2f2;
+            border: 1px solid #fff;
+            outline: 1px solid #01b801;
+            width: 2rem;
+            height: 1.6rem;
+            position: relative;
+            &:first-child {
+              margin-right: 1rem;
+              &:after {
+                content: '';
+                position: absolute;
+                width: .547rem;
+                height: .2rem;
+                top: 50%;
+                right: -.76rem;
+                margin-top: -.1rem;
+                background: url("../images/btn-recharge.png") no-repeat;
+                -webkit-background-size: 3.28rem 2.8rem;
+                background-size: 3.28rem 2.8rem;
+                background-position: -2.73rem -1.413rem;
+              }
+            }
+            &:first-child + li {
+              margin-right: 1.08rem;
+              &:after {
+                content: '';
+                position: absolute;
+                width: .32rem;
+                height: .26rem;
+                top: 50%;
+                right: -.68rem;
+                margin-top: -.12rem;
+                background: url("../images/btn-recharge.png") no-repeat;
+                -webkit-background-size: 3.28rem 2.8rem;
+                background-size: 3.28rem 2.8rem;
+                background-position: -2.96rem -1.68rem;
+              }
+            }
+            .blocksit {
+              display: table;
+              width: 100%;
+              height: 100%;
+              span {
+                display: table-cell;
+                vertical-align: middle;
+                color: #007c00;
+                padding: 0 .133rem;
+              }
+            }
+          }
+        }
+      }
+      p {
+        text-align: center;
+        span {
+          color: #ff3434;
+          padding: 0 .133rem;
+        }
+      }
+      .btn-group {
+        text-align: center;
+        font-size: 0;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.1rem;
+          height: .65rem;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          padding: .2rem;
+          margin: .4rem;
+          background: url("../images/btn-recharge.png") no-repeat;
+          -webkit-background-size: 3.28rem 2.8rem;
+          background-size: 3.28rem 2.8rem;
+          background-position: 0 -1.413rem;
+          &:hover {
+            background-position: 0 -2.12rem;
+          }
+        }
+      }
+    }
+    .recharge-brand-lists {
+      float: right;
+      width: 2.401rem;
+      margin: .067rem 0;
+      ul {
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.401rem;
+          height: .72rem;
+          line-height: .72rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          margin: .067rem 0;
+          padding: 0 .133rem;
+          img {
+            max-width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .recharge-step-second {
+    padding: .227rem 0;
+    h2 {
+      color: #959494;
+      margin: 0 .826rem;
+      position: relative;
+      &:after {
+        content: attr(data-after);
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: right;
+        color: #02ad01;
+        padding: .08rem 0;
+      }
+    }
+    .account-info {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      padding: .2rem .1067rem;
+      margin: .133rem .826rem;
+      min-height: .88rem;
+      span {
+        color: #b0b0b0;
+        &:first-child {
+          padding-right: .613rem;
+        }
+        &:before {
+          content: attr(data-before);
+        }
+        em {
+          font-style: normal;
+          color: #ff3434;
+        }
+      }
+    }
+    .recharge-tab-switch {
+      margin: .16rem .826rem;
+      position: relative;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+      aside {
+        position: absolute;
+        top: .52rem;
+        left: 0;
+        width: 2.28rem;
+        ul {
+          padding: 0;
+          font-size: 0;
+          li {
+            width: 2.28rem;
+            background-color: #f2f2f2;
+            border: 1px solid #cdcdcd;
+            margin: .067rem 0;
+            text-align: center;
+            position: relative;
+
+            a {
+              text-decoration: none;
+              color: #959494;
+              display: block;
+              padding: .24rem;
+            }
+            &.active {
+              &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #f2f2f2;
+                right: -1px;
+                top: 0;
+                z-index: 1;
+              }
+              a {
+                color: #007c00;
+              }
+            }
+          }
+        }
+      }
+      section {
+        min-height: 3.68rem;
+        background-color: #f2f2f2;
+        border: 1px solid #cdcdcd;
+        padding: .133rem .75rem;
+        margin-left: 2.27rem;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #959494;
+          margin: .133rem 0;
+        }
+        ul {
+          padding: 0;
+          font-size: 0;
+          li {
+            display: inline-block;
+            width: 3.08rem;
+            border: 1px solid #959494;
+            text-align: center;
+            margin-right: .75rem;
+            margin-bottom: .133rem;
+            a {
+              color: #959494;
+              display: block;
+              padding: .187rem 0;
+              text-decoration: none;
+            }
+            &:hover {
+              border-color: #01b201;
+              a {
+                color: #01b201;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      .btn-exchange {
+        display: block;
+        width: 3.3rem;
+        height: .65rem;
+        padding: .2rem;
+        margin: .133rem auto;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: url("../images/btn-recharge.png") no-repeat;
+        -webkit-background-size: 3.28rem 2.8rem;
+        background-size: 3.28rem 2.8rem;
+        background-position: 0 0;
+        &:hover {
+          background-position: 0 -.71rem;
+        }
+      }
+    }
+    .recharge-brand-lists {
+      margin: .067rem 0;
+      ul {
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.401rem;
+          height: .72rem;
+          line-height: .72rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          margin: .067rem .08rem;
+          padding: 0 .133rem;
+          img {
+            max-width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 667px) {
+    .recharge-step-first {
+      .recharge-exchange-way {
+        width: 7.6rem;
+        .blocksit-lists {
+          ul {
+            li {
+              width: 1.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .recharge-step-first {
+      .recharge-exchange-way {
+        width: 7rem;
+        .blocksit-lists {
+          ul {
+            li {
+              width: 1.55rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (orientation: portrait){
+
+  .exchange-container {
+    padding: .227rem 0;
+    h2 {
+      color: #959494;
+      padding: 0 .4rem;
+    }
+    .account-info {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      padding: .2rem .1067rem;
+      margin: .133rem .4rem;
+      min-height: .88rem;
+      span {
+        color: #b0b0b0;
+        &:first-child {
+          padding-right: .613rem;
+        }
+        &:before {
+          content: attr(data-before);
+        }
+        em {
+          font-style: normal;
+          color: #ff3434;
+        }
+      }
+    }
+    .select-wrapper {
+      padding: 0 .4rem;
+      select {
+        border: 1px solid #cdcdcd;
+        border-radius: 0;
+        width: 100%;
+        height: .453rem;
+        color: #b0b0b0;
+        margin-bottom: .133rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .coin-lists {
+      padding: 0 .1rem;
+      &:before {
+        content: attr(data-before);
+        color: #959494;
+        display: block;
+        margin: 0 .347rem;
+        padding-top: .133rem;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        li {
+          display: inline-block;
+          width: 44%;
+          border: 1px solid #959494;
+          background-color: #f2f2f2;
+          margin: 1.5% 3%;
+          a {
+            display: block;
+            font: 18px NSimSun;
+            color: #959494;
+            text-decoration: none;
+            padding: .187rem .16rem;
+            &:after {
+              content: attr(data-after);
+              color: #ff3434;
+              float: right;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      .btn-exchange {
+        display: block;
+        width: 3.3rem;
+        height: .65rem;
+        padding: .2rem;
+        margin: .133rem auto;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: url("../images/btn-recharge.png") no-repeat;
+        -webkit-background-size: 3.28rem 2.8rem;
+        background-size: 3.28rem 2.8rem;
+        background-position: 0 0;
+        &:hover {
+          background-position: 0 -.71rem;
+        }
+      }
+    }
+  }
+
+  .recharge-step-first {
+    padding: .373rem .4rem;
+    &:after {
+      content: '';
+      display: table;
+      width: 100%;
+      clear: both;
+    }
+    .recharge-panel {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      width: 100%;
+      min-height: 2.36rem;
+    }
+    .recharge-exchange-way {
+      .blocksit-lists {
+        padding: .267rem 0;
+        ul {
+          padding: 0;
+          font-size: 0;
+          text-align: center;
+          &:after {
+            content: '';
+            display: table;
+            width: 100%;
+            clear: both;
+          }
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #f2f2f2;
+            border: 1px solid #fff;
+            outline: 1px solid #01b801;
+            width: 2rem;
+            height: 1.6rem;
+            position: relative;
+            &:first-child {
+              margin-right: 1rem;
+              &:after {
+                content: '';
+                position: absolute;
+                width: .547rem;
+                height: .2rem;
+                top: 50%;
+                right: -.76rem;
+                margin-top: -.1rem;
+                background: url("../images/btn-recharge.png") no-repeat;
+                -webkit-background-size: 3.28rem 2.8rem;
+                background-size: 3.28rem 2.8rem;
+                background-position: -2.73rem -1.413rem;
+              }
+            }
+            &:first-child + li {
+              margin-right: 1.08rem;
+              &:after {
+                content: '';
+                position: absolute;
+                width: .32rem;
+                height: .26rem;
+                top: 50%;
+                right: -.68rem;
+                margin-top: -.12rem;
+                background: url("../images/btn-recharge.png") no-repeat;
+                -webkit-background-size: 3.28rem 2.8rem;
+                background-size: 3.28rem 2.8rem;
+                background-position: -2.96rem -1.68rem;
+              }
+            }
+            .blocksit {
+              display: table;
+              width: 100%;
+              height: 100%;
+              span {
+                display: table-cell;
+                vertical-align: middle;
+                color: #007c00;
+                padding: 0 .133rem;
+              }
+            }
+          }
+        }
+      }
+      p {
+        text-align: center;
+        span {
+          color: #ff3434;
+          padding: 0 .133rem;
+        }
+      }
+      .btn-group {
+        text-align: center;
+        font-size: 0;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.1rem;
+          height: .65rem;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          padding: .2rem;
+          margin: .4rem;
+          background: url("../images/btn-recharge.png") no-repeat;
+          -webkit-background-size: 3.28rem 2.8rem;
+          background-size: 3.28rem 2.8rem;
+          background-position: 0 -1.413rem;
+          &:hover {
+            background-position: 0 -2.12rem;
+          }
+        }
+      }
+    }
+    .recharge-brand-lists {
+      margin: .067rem 0;
+      ul {
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.401rem;
+          height: .72rem;
+          line-height: .72rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          margin: .067rem .05rem;
+          padding: 0 .133rem;
+          img {
+            max-width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .recharge-step-second {
+    padding: .227rem 0;
+    h2 {
+      color: #959494;
+      margin: 0 .4rem;
+      position: relative;
+      &:after {
+        content: attr(data-after);
+        display: block;
+        text-align: left;
+        color: #02ad01;
+        padding: .08rem 0;
+      }
+    }
+    .account-info {
+      background-color: #f2f2f2;
+      border: 1px solid #fff;
+      outline: 1px solid #cdcdcd;
+      padding: .2rem .1067rem;
+      margin: .133rem .4rem;
+      min-height: .88rem;
+      span {
+        color: #b0b0b0;
+        &:first-child {
+          padding-right: .613rem;
+        }
+        &:before {
+          content: attr(data-before);
+        }
+        em {
+          font-style: normal;
+          color: #ff3434;
+        }
+      }
+    }
+    .recharge-tab-switch {
+      margin: .16rem .4rem;
+      position: relative;
+      &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+      aside {
+        position: absolute;
+        top: .52rem;
+        left: 0;
+        width: 2rem;
+        ul {
+          padding: 0;
+          font-size: 0;
+          li {
+            width: 2.28rem;
+            background-color: #f2f2f2;
+            border: 1px solid #cdcdcd;
+            margin: .067rem 0;
+            text-align: center;
+            position: relative;
+
+            a {
+              text-decoration: none;
+              color: #959494;
+              display: block;
+              padding: .24rem .133rem;
+            }
+            &.active {
+              &:after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: #f2f2f2;
+                right: -2px;
+                top: 0;
+                z-index: 1;
+              }
+              a {
+                color: #007c00;
+              }
+            }
+          }
+        }
+      }
+      section {
+        min-height: 3.68rem;
+        background-color: #f2f2f2;
+        border: 1px solid #cdcdcd;
+        padding: .133rem .267rem;
+        margin-left: 2.26rem;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #959494;
+          margin: .133rem 0;
+        }
+        ul {
+          padding: 0;
+          font-size: 0;
+          li {
+            display: inline-block;
+            width: 3.08rem;
+            border: 1px solid #959494;
+            text-align: center;
+            margin-right: .75rem;
+            margin-bottom: .133rem;
+            a {
+              color: #959494;
+              display: block;
+              padding: .187rem .133rem;
+              text-decoration: none;
+            }
+            &:hover {
+              border-color: #01b201;
+              a {
+                color: #01b201;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      .btn-exchange {
+        display: block;
+        width: 3.3rem;
+        height: .65rem;
+        padding: .2rem;
+        margin: .133rem auto;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: url("../images/btn-recharge.png") no-repeat;
+        -webkit-background-size: 3.28rem 2.8rem;
+        background-size: 3.28rem 2.8rem;
+        background-position: 0 0;
+        &:hover {
+          background-position: 0 -.71rem;
+        }
+      }
+    }
+    .recharge-brand-lists {
+      margin: .067rem 0;
+      ul {
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.401rem;
+          height: .72rem;
+          line-height: .72rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          margin: .067rem .08rem;
+          padding: 0 .133rem;
+          img {
+            max-width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+ @media (max-width: 414px) {
+   .recharge-step-second {
+     .recharge-tab-switch {
+       section {
+         ul {
+           li {
+             width: auto;
+             margin-right: .133rem;
+           }
+         }
+       }
+     }
+   }
+ }
+}
+
+[data-dpr="1"] .exchange-container h2,
+[data-dpr="1"] .exchange-container .coin-lists:before,
+[data-dpr="1"] .recharge-step-second .recharge-tab-switch aside ul li a,
+[data-dpr="1"] .recharge-step-second .recharge-tab-switch section:before {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .exchange-container h2,
+[data-dpr="2"] .exchange-container .coin-lists:before,
+[data-dpr="2"] .recharge-step-second .recharge-tab-switch aside ul li a,
+[data-dpr="2"] .recharge-step-second .recharge-tab-switch section:before {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .exchange-container h2,
+[data-dpr="3"] .exchange-container .coin-lists:before,
+[data-dpr="3"] .recharge-step-second .recharge-tab-switch aside ul li a,
+[data-dpr="3"] .recharge-step-second .recharge-tab-switch section:before {
+  font-size: 30px;
+}
+
+[data-dpr="1"] .exchange-container .btn-group .btn-exchange,
+[data-dpr="1"] .recharge-step-first .btn-group .btn-exchange,
+[data-dpr="1"] .recharge-step-second .btn-group .btn-exchange {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .exchange-container .btn-group .btn-exchange,
+[data-dpr="2"] .recharge-step-first .btn-group .btn-exchange,
+[data-dpr="2"] .recharge-step-second .btn-group .btn-exchange {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .exchange-container .btn-group .btn-exchange,
+[data-dpr="3"] .recharge-step-first .btn-group .btn-exchange,
+[data-dpr="3"] .recharge-step-second .btn-group .btn-exchange {
+  font-size: 30px;
+}
+
+[data-dpr="1"] .exchange-container .account-info span:before,
+[data-dpr="1"] .exchange-container .select-wrapper select,
+[data-dpr="1"] .exchange-container .coin-lists ul li a,
+[data-dpr="1"] .recharge-step-first .recharge-exchange-way .blocksit-lists ul li span,
+[data-dpr="1"] .recharge-step-second h2:after,
+[data-dpr="1"] .recharge-step-second .recharge-tab-switch section ul li a {
+  font-size: 9px;
+}
+
+[data-dpr="2"] .exchange-container .account-info span:before,
+[data-dpr="2"] .exchange-container .select-wrapper select,
+[data-dpr="2"] .exchange-container .coin-lists ul li a,
+[data-dpr="2"] .recharge-step-first .recharge-exchange-way .blocksit-lists ul li span,
+[data-dpr="2"] .recharge-step-second h2:after,
+[data-dpr="2"] .recharge-step-second .recharge-tab-switch section ul li a {
+  font-size: 18px;
+}
+
+[data-dpr="3"] .exchange-container .account-info span:before,
+[data-dpr="3"] .exchange-container .select-wrapper select,
+[data-dpr="3"] .exchange-container .coin-lists ul li a,
+[data-dpr="3"] .recharge-step-first .recharge-exchange-way .blocksit-lists ul li span,
+[data-dpr="3"] .recharge-step-second h2:after,
+[data-dpr="3"] .recharge-step-second .recharge-tab-switch section ul li a {
+  font-size: 27px;
+}
